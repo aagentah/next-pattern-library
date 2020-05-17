@@ -1,0 +1,11 @@
+.docs-nav {
+  width: 100%;
+  max-width: 200px;
+  min-height: 100vh;
+  @extend .br;
+  @extend .bc-black;
+}
+
+.docs-main {
+  width: calc(100% - 200px);
+}
