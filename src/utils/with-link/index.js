@@ -15,25 +15,20 @@ export default function WithLink(props) {
     setCanRedirect(true);
   };
 
-  const handleRouterRedirect = () => {
-    if (canRedirect) return <RouterRedirect push to={withLinkProps.url} />;
-    return false;
-  };
-
   switch (withLinkProps.type) {
-    case "internal":
+    case "next":
       if (RouterRedirect) {
         return (
           <React.Fragment>
-            <a
+            <RouterRedirect
               className="link"
-              href={withLinkProps.url}
+              href={withLinkProps.href}
               onClick={handleClick}
+              {...withLinkProps.routerLinkProps}
               {...props}
             >
               {props.children}
-            </a>
-            {handleRouterRedirect()}
+            </RouterRedirect>
           </React.Fragment>
         );
       }
@@ -43,7 +38,7 @@ export default function WithLink(props) {
         <a
           className="link"
           target={withLinkProps.target || "_self"}
-          href={withLinkProps.url}
+          href={withLinkProps.href}
           {...props}
         >
           {props.children}
