@@ -14,4 +14,4 @@ export Image from "./elements/image";
 export Label from "./elements/label";
 
 // utils
-export PageThemeParallax from "./utils/page-theme-parallax";
+//

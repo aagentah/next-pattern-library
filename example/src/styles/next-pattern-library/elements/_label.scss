@@ -1,0 +1,7 @@
+.label__wrapper {
+  .label {
+    @extend .pv1;
+    @extend .tal;
+    @extend .f6;
+  }
+}

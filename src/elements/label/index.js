@@ -9,7 +9,7 @@ import WithLink from "../../utils/with-link";
 export default function Label(props) {
   const {
     /* Options */
-    type,
+    customClass,
     text,
     color,
     backgroundColor,
@@ -25,7 +25,7 @@ export default function Label(props) {
       <WithLink withLinkProps={withLinkProps}>
         <span
           {...hasOnClick}
-          className={`label ${type} ${color} bg-${backgroundColor}`}
+          className={`label ${customClass} ${color} bg-${backgroundColor}`}
         >
           {text}
         </span>

@@ -20,7 +20,7 @@ export default function LabelPreview(props) {
           <div className="col-12  col-4-md">
             <Label
               /* Options */
-              type={"date"}
+              customClass={null}
               text={"17/08/1996"}
               color={"black"}
               backgroundColor={"white"}
@@ -32,7 +32,7 @@ export default function LabelPreview(props) {
           <div className="col-12  col-4-md">
             <Label
               /* Options */
-              type={"author"}
+              customClass={null}
               text={"Dan Jones"}
               color={"black"}
               backgroundColor={"white"}
@@ -44,7 +44,7 @@ export default function LabelPreview(props) {
           <div className="col-12  col-4-md">
             <Label
               /* Options */
-              type={"price"}
+              customClass={null}
               text={"£9.99"}
               color={"black"}
               backgroundColor={"white"}
@@ -56,7 +56,7 @@ export default function LabelPreview(props) {
           <div className="col-12  col-4-md">
             <Label
               /* Options */
-              type={"sale-price"}
+              customClass={null}
               text={"£4.99"}
               color={"secondary-color"}
               backgroundColor={"white"}
@@ -68,7 +68,7 @@ export default function LabelPreview(props) {
           <div className="col-12  col-4-md">
             <Label
               /* Options */
-              type={"category"}
+              customClass={"ph2"}
               text={"Interview"}
               color={"white"}
               backgroundColor={"secondary-color"}

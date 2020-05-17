@@ -3,8 +3,7 @@ export default [
     name: "type",
     default: "",
     type: "enum",
-    description:
-      "<code>internal</code>, <code>external</code>, <code>form</code>"
+    description: "<code>next</code>, <code>external</code>, <code>form</code>"
   },
   {
     name: "url",
@@ -23,5 +22,12 @@ export default [
     default: "",
     type: "enum",
     description: "<code>Link</code> Component per react-router-dom, null"
+  },
+  {
+    name: "routerLinkProps",
+    default: "",
+    type: "Object",
+    description:
+      "Takes routerLink properties such as next-js's <code>as</code>, null"
   }
 ];

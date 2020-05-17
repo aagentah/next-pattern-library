@@ -1,10 +1,9 @@
 export default [
   {
-    name: "type",
+    name: "customClass",
     default: "",
-    type: "enum",
-    description:
-      "<code>date</code>, <code>author</code>, <code>price</code>, <code>sale-price</code>, <code>category</code>"
+    type: "string",
+    description: "Custom CSS class (IE. A modifier)"
   },
   {
     name: "text",
