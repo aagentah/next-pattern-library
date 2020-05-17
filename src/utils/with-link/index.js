@@ -21,13 +21,12 @@ export default function WithLink(props) {
         return (
           <React.Fragment>
             <RouterRedirect
-              className="link"
               href={withLinkProps.href}
               onClick={handleClick}
               {...withLinkProps.routerLinkProps}
               {...props}
             >
-              {props.children}
+              <a className="link">{props.children}</a>
             </RouterRedirect>
           </React.Fragment>
         );
