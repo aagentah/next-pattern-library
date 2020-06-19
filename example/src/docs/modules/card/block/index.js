@@ -7,11 +7,15 @@ import {
   Copy,
   Button
 } from "next-pattern-library";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import PreviewWrapper from "../../../../components/preview-wrapper";
 import propDocs from "../propDocs";
 
 export default function CardBlockPreview({ ...props }) {
+  const buttonIcon = <FontAwesomeIcon icon={faArrowRight} />;
+
   const cardImage = (
     <Image
       /* Options */
@@ -75,7 +79,7 @@ export default function CardBlockPreview({ ...props }) {
       text={"Secondary"}
       color={"black"}
       fluid={false}
-      icon={"arrow-right"}
+      icon={buttonIcon}
       iconFloat={null}
       inverted={false}
       loading={false}

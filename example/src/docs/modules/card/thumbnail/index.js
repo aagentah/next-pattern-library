@@ -1,10 +1,14 @@
 import React from "react";
 import { Card, Image, Label, Heading, Copy } from "next-pattern-library";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import PreviewWrapper from "../../../../components/preview-wrapper";
 import propDocs from "../propDocs";
 
 export default function CardThumbnailPreview({ ...props }) {
+  const buttonIcon = <FontAwesomeIcon icon={faArrowRight} />;
+
   const cardImage = (
     <Image
       /* Options */

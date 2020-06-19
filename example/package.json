@@ -5,12 +5,15 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "next-pattern-library": "file:..",
     "prop-types": "^15.6.2",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
-    "next-pattern-library": "file:.."
+    "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

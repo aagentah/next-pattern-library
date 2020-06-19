@@ -9,7 +9,6 @@ import AvatarPreview from "./docs/modules/avatar";
 
 // elements
 import ButtonPreview from "./docs/elements/button";
-import IconPreview from "./docs/elements/icon";
 import HeadingPreview from "./docs/elements/heading";
 import CopyPreview from "./docs/elements/copy";
 import ImagePreview from "./docs/elements/image";
@@ -46,9 +45,6 @@ export default function App() {
                 <Link to="/button">Button</Link>
               </li>
               <li className="mb1">
-                <Link to="/icon">Icon</Link>
-              </li>
-              <li className="mb1">
                 <Link to="/heading">Heading</Link>
               </li>
               <li className="mb1">
@@ -81,7 +77,6 @@ export default function App() {
           <Route path="/avatar" component={AvatarPreview} />
           {/* Elements */}
           <Route path="/button" component={ButtonPreview} />
-          <Route path="/icon" component={IconPreview} />
           <Route path="/heading" component={HeadingPreview} />
           <Route path="/copy" component={CopyPreview} />
           <Route path="/image" component={ImagePreview} />

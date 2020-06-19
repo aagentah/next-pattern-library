@@ -58,6 +58,8 @@
 
 .accordion__section {
   code {
-    @extend .f6;  @extend .black;  @extend .bg-light-grey;
+    @extend .f6;
+    @extend .black;
+    @extend .bg-light-grey;
   }
 }

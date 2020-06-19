@@ -1,10 +1,14 @@
 import React from "react";
 import { Hero, Image, Heading, Copy, Button } from "next-pattern-library";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import PreviewWrapper from "../../../components/preview-wrapper";
 import propDocs from "./propDocs";
 
 export default function HeroPreview({ ...props }) {
+  const buttonIcon = <FontAwesomeIcon icon={faArrowRight} />;
+
   const heroImage = (
     <Image
       /* Options */
@@ -53,7 +57,7 @@ export default function HeroPreview({ ...props }) {
       text={"Secondary"}
       color={"black"}
       fluid={false}
-      icon={"arrow-right"}
+      icon={buttonIcon}
       iconFloat={null}
       inverted={false}
       loading={false}

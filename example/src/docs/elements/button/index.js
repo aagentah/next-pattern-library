@@ -1,10 +1,14 @@
 import React from "react";
 import { Button } from "next-pattern-library";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import PreviewWrapper from "../../../components/preview-wrapper";
 import propDocs from "./propDocs";
 
 export default function ButtonPreview({ ...props }) {
+  const buttonIcon = <FontAwesomeIcon icon={faArrowRight} />;
+
   return (
     <React.Fragment>
       <PreviewWrapper title={"Button"} description={""} propDocs={propDocs} />
@@ -211,7 +215,7 @@ export default function ButtonPreview({ ...props }) {
               text={"Secondary"}
               color={"black"}
               fluid={false}
-              icon={"arrow-right"}
+              icon={buttonIcon}
               iconFloat={null}
               inverted={false}
               loading={false}
@@ -234,7 +238,7 @@ export default function ButtonPreview({ ...props }) {
               text={"Inverted"}
               color={"black"}
               fluid={false}
-              icon={"arrow-right"}
+              icon={buttonIcon}
               iconFloat={null}
               inverted={true}
               loading={false}
@@ -257,7 +261,7 @@ export default function ButtonPreview({ ...props }) {
               text={"Loading"}
               color={"black"}
               fluid={false}
-              icon={"arrow-right"}
+              icon={buttonIcon}
               iconFloat={null}
               inverted={false}
               loading={true}
@@ -280,7 +284,7 @@ export default function ButtonPreview({ ...props }) {
               text={"Disabled"}
               color={"black"}
               fluid={false}
-              icon={"arrow-right"}
+              icon={buttonIcon}
               iconFloat={null}
               inverted={true}
               loading={false}
@@ -305,7 +309,7 @@ export default function ButtonPreview({ ...props }) {
               text={"Secondary Small"}
               color={"black"}
               fluid={false}
-              icon={"arrow-right"}
+              icon={buttonIcon}
               iconFloat={null}
               inverted={false}
               loading={false}
@@ -329,7 +333,7 @@ export default function ButtonPreview({ ...props }) {
               color={"black"}
               fluid={false}
               iconFloat={"left"}
-              icon={"arrow-right"}
+              icon={buttonIcon}
               inverted={false}
               loading={false}
               disabled={false}
@@ -351,7 +355,7 @@ export default function ButtonPreview({ ...props }) {
               text={"Secondary Large"}
               color={"black"}
               fluid={false}
-              icon={"arrow-right"}
+              icon={buttonIcon}
               iconFloat={"right"}
               inverted={false}
               loading={false}
@@ -374,7 +378,7 @@ export default function ButtonPreview({ ...props }) {
               text={"Secondary X-Large"}
               color={"black"}
               fluid={false}
-              icon={"arrow-right"}
+              icon={buttonIcon}
               iconFloat={"left"}
               inverted={false}
               loading={false}
