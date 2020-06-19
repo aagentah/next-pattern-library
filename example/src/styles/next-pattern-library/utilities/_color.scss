@@ -1,18 +1,18 @@
 @each $color, $hex in $colors {
   .#{$color} {
-    color: var(--#{$color});
+    color: var(--$color);
     transition: background-color ease-in 0.3s;
   }
 
   .fill-#{$color},
   .fill-#{$color} svg,
   .fill-#{$color} svg * {
-    fill: var(--#{$color});
+    fill: var(--$color);
     transition: fill ease-in 0.3s;
   }
 
   .bg-#{$color} {
-    background-color: var(--#{$color});
+    background-color: var(--$color);
     transition: background-color ease-in 0.3s;
   }
 }
@@ -27,12 +27,12 @@
   @include breakpoint-up($modifier, $grid-breakpoints) {
     @each $color, $hex in $colors {
       .#{$color}-#{$infix} {
-        color: var(--#{$color});
+        color: var(--$color);
         transition: background-color ease-in 0.3s;
       }
 
       .bg-#{$color}-#{$infix} {
-        background-color: var(--#{$color});
+        background-color: var(--$color);
         transition: background-color ease-in 0.3s;
       }
     }

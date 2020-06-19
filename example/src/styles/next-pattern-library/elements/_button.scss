@@ -162,24 +162,24 @@
 
 @each $color, $hex in $colors {
   .button.primary.#{$color} {
-    background-color: var(--#{$color});
+    background-color: var(--$color);
     color: var(--white);
     fill: var(--white);
 
     &:hover:not(.loading):not(.disabled) {
       background-color: var(--white);
-      color: var(--#{$color});
-      fill: var(--#{$color});
+      color: var(--$color);
+      fill: var(--$color);
     }
   }
 
   .button.primary.#{$color}.inverted {
     background-color: var(--white);
-    color: var(--#{$color});
-    fill: var(--#{$color});
+    color: var(--$color);
+    fill: var(--$color);
 
     &:hover:not(.loading):not(.disabled) {
-      background-color: var(--#{$color});
+      background-color: var(--$color);
       color: var(--white);
       fill: var(--white);
     }

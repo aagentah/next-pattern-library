@@ -19,10 +19,10 @@
 
 @each $color, $hex in $colors {
   .#{$color}-hover:hover {
-    color: var(--#{$color});
+    color: var(--$color);
   }
 
   .bg-#{$color}-hover:hover {
-    background-color: var(--#{$color});
+    background-color: var(--$color);
   }
 }
