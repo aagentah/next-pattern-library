@@ -14,7 +14,6 @@ export default function Heading(props) {
     color,
     size,
     truncate,
-    reveal,
     onClick,
     /* Children */
     withLinkProps
@@ -23,7 +22,6 @@ export default function Heading(props) {
   const hasOnClick = onClick ? { onClick } : "";
   const ElementType = htmlEntity || "h1";
   const hasTruncate = truncate ? true : false;
-  const hasReveal = reveal ? "heading--reveal" : "";
   const ElementTypeInner = hasTruncate ? TruncateMarkup : React.Fragment;
 
   const heightSmall = 22;
@@ -34,19 +32,19 @@ export default function Heading(props) {
   let lineHeight;
   switch (size) {
     case "small":
-      lineHeight = hasReveal ? heightSmall + 4 : heightSmall;
+      lineHeight = heightSmall;
       break;
     case "medium":
-      lineHeight = hasReveal ? heightMedium + 4 : heightMedium;
+      lineHeight = heightMedium;
       break;
     case "large":
-      lineHeight = hasReveal ? heightLarge + 4 : heightLarge;
+      lineHeight = heightLarge;
       break;
     case "x-large":
-      lineHeight = hasReveal ? heightXLarge + 4 : heightXLarge;
+      lineHeight = heightXLarge;
       break;
     default:
-      lineHeight = hasReveal ? heightSmall + 4 : heightSmall;
+      lineHeight = heightSmall;
   }
 
   const styles = {
@@ -58,7 +56,7 @@ export default function Heading(props) {
     <WithLink withLinkProps={withLinkProps}>
       <ElementType
         {...hasOnClick}
-        className={`heading ${size} ${color} ${hasReveal}`}
+        className={`heading ${size} ${color}`}
         style={styles}
       >
         <ElementTypeInner lines={truncate}>

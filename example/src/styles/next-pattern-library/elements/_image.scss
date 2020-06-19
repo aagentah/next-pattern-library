@@ -6,8 +6,8 @@
   overflow: hidden;
   opacity: 0;
 
-  -webkit-animation-name: fade-in;
-  animation-name: fade-in;
+  -webkit-animation-name: image__wrapper;
+  animation-name: image__wrapper;
   -webkit-animation-duration: 0.2s;
   animation-duration: 0.2s;
   animation-timing-function: ease-in;
@@ -15,7 +15,7 @@
   animation-fill-mode: forwards;
 }
 
-@keyframes fade-in {
+@keyframes image__wrapper {
   from {
     opacity: 0;
   }
@@ -38,23 +38,4 @@
   filter: blur(5px);
   clip-path: inset(0);
   object-fit: cover;
-}
-
-.image,
-.image__loading {
-  -webkit-animation-name: zoom;
-  animation-name: zoom;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(1.2);
-  }
-  to {
-    transform: scale(1);
-  }
 }
