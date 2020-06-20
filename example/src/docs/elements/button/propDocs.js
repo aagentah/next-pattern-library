@@ -34,7 +34,7 @@ export default [
     name: "icon",
     default: "",
     type: "string",
-    description: "Icon component per <code>react-fontawesome</code>"
+    description: "Icon component per <code>Icon</code> component"
   },
   {
     name: "iconFloat",

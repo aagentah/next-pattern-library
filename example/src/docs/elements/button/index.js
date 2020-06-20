@@ -1,13 +1,14 @@
 import React from "react";
-import { Button } from "next-pattern-library";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Button, Icon } from "next-pattern-library";
 
 import PreviewWrapper from "../../../components/preview-wrapper";
 import propDocs from "./propDocs";
 
 export default function ButtonPreview({ ...props }) {
-  const buttonIcon = <FontAwesomeIcon icon={faArrowRight} />;
+  const buttonIcon = {
+    prefix: "fas",
+    iconName: "arrow-right"
+  };
 
   return (
     <React.Fragment>
