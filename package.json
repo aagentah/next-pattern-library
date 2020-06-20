@@ -60,10 +60,6 @@
     "dist"
   ],
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.29",
-    "@fortawesome/free-brands-svg-icons": "^5.13.1",
-    "@fortawesome/free-solid-svg-icons": "^5.13.1",
-    "@fortawesome/react-fontawesome": "^0.1.11",
     "classnames": "^2.2.6",
     "loadash": "^1.0.0",
     "react-parallax": "^2.2.0",

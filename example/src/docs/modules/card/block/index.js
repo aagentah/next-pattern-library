@@ -13,7 +13,7 @@ import PreviewWrapper from "../../../../components/preview-wrapper";
 import propDocs from "../propDocs";
 
 export default function CardBlockPreview({ ...props }) {
-  const buttonIcon = <Icon prefix="fas" iconName="arrow-right" />;
+  const buttonIcon = <Icon faClass="fa fa-arrow-right" />;
 
   const cardImage = (
     <Image

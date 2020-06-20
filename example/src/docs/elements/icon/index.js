@@ -16,7 +16,7 @@ export default function IconPreview({ ...props }) {
               "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
-            <Icon prefix="fas" iconName="arrow-right" />
+            <Icon faClass="fa fa-spinner fa-spin" />
           </div>
 
           <div
@@ -24,7 +24,7 @@ export default function IconPreview({ ...props }) {
               "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
-            <Icon prefix="fas" iconName="arrow-right" />
+            <Icon faClass="fa fa-spinner fa-spin" />
           </div>
 
           <div
@@ -32,7 +32,7 @@ export default function IconPreview({ ...props }) {
               "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
-            <Icon prefix="fas" iconName="arrow-right" />
+            <Icon faClass="fa fa-spinner fa-spin" />
           </div>
 
           <div
@@ -40,7 +40,7 @@ export default function IconPreview({ ...props }) {
               "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
-            <Icon prefix="fas" iconName="arrow-right" />
+            <Icon faClass="fa fa-spinner fa-spin" />
           </div>
         </div>
       </div>
