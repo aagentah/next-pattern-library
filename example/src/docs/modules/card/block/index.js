@@ -5,16 +5,15 @@ import {
   Label,
   Heading,
   Copy,
-  Button
+  Button,
+  Icon
 } from "next-pattern-library";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import PreviewWrapper from "../../../../components/preview-wrapper";
 import propDocs from "../propDocs";
 
 export default function CardBlockPreview({ ...props }) {
-  const buttonIcon = <FontAwesomeIcon icon={faArrowRight} />;
+  const buttonIcon = <Icon prefix="fas" iconName="arrow-right" />;
 
   const cardImage = (
     <Image

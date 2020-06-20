@@ -13,6 +13,7 @@ import HeadingPreview from "./docs/elements/heading";
 import CopyPreview from "./docs/elements/copy";
 import ImagePreview from "./docs/elements/image";
 import LabelPreview from "./docs/elements/label";
+import IconPreview from "./docs/elements/icon";
 
 // utils
 import WithLink from "./docs/utils/with-link";
@@ -57,6 +58,10 @@ export default function App() {
               <li className="mb1">
                 <Link to="/label">Label</Link>
               </li>
+
+              <li className="mb1">
+                <Link to="/icon">Icon</Link>
+              </li>
             </ul>
 
             <h1 className="t-title  f5  bold  mb2">Utils</h1>
@@ -81,6 +86,7 @@ export default function App() {
           <Route path="/copy" component={CopyPreview} />
           <Route path="/image" component={ImagePreview} />
           <Route path="/label" component={LabelPreview} />
+          <Route path="/icon" component={IconPreview} />
 
           {/* Utils */}
           <Route path="/with-link" component={WithLink} />

@@ -7,10 +7,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Icon(props) {
   library.add(fas);
 
-  const { icon } = props;
+  const { prefix, iconName } = props;
 
-  if (icon) {
-    return <FontAwesomeIcon icon={[icon.prefix, icon.iconName]} />;
+  if (prefix && iconName) {
+    return <FontAwesomeIcon icon={[prefix, iconName]} {...props} />;
   }
 
   return false;

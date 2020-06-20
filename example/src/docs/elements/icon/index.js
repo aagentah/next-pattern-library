@@ -7,7 +7,7 @@ import propDocs from "./propDocs";
 export default function IconPreview({ ...props }) {
   return (
     <React.Fragment>
-      <PreviewWrapper title={"Button"} description={""} propDocs={propDocs} />
+      <PreviewWrapper title={"Icon"} description={""} propDocs={propDocs} />
 
       <div className="container  mla  mra">
         <div className={"flex  flex-wrap  justify-center"}>
@@ -16,7 +16,7 @@ export default function IconPreview({ ...props }) {
               "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
-            <Icon prefix="fas" iconName="arrow-right" />;
+            <Icon prefix="fas" iconName="arrow-right" />
           </div>
 
           <div
@@ -24,7 +24,7 @@ export default function IconPreview({ ...props }) {
               "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
-            <Icon prefix="fas" iconName="arrow-right" />;
+            <Icon prefix="fas" iconName="arrow-right" />
           </div>
 
           <div
@@ -32,7 +32,7 @@ export default function IconPreview({ ...props }) {
               "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
-            <Icon prefix="fas" iconName="arrow-right" />;
+            <Icon prefix="fas" iconName="arrow-right" />
           </div>
 
           <div
@@ -40,7 +40,7 @@ export default function IconPreview({ ...props }) {
               "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
-            <Icon prefix="fas" iconName="arrow-right" />;
+            <Icon prefix="fas" iconName="arrow-right" />
           </div>
         </div>
       </div>

@@ -5,10 +5,7 @@ import PreviewWrapper from "../../../components/preview-wrapper";
 import propDocs from "./propDocs";
 
 export default function ButtonPreview({ ...props }) {
-  const buttonIcon = {
-    prefix: "fas",
-    iconName: "arrow-right"
-  };
+  const buttonIcon = <Icon prefix="fas" iconName="arrow-right" />;
 
   return (
     <React.Fragment>

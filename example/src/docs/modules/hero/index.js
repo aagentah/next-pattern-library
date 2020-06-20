@@ -1,13 +1,11 @@
 import React from "react";
-import { Hero, Image, Heading, Copy, Button } from "next-pattern-library";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Hero, Image, Heading, Copy, Button, Icon } from "next-pattern-library";
 
 import PreviewWrapper from "../../../components/preview-wrapper";
 import propDocs from "./propDocs";
 
 export default function HeroPreview({ ...props }) {
-  const buttonIcon = <FontAwesomeIcon icon={faArrowRight} />;
+  const buttonIcon = <Icon prefix="fas" iconName="arrow-right" />;
 
   const heroImage = (
     <Image
