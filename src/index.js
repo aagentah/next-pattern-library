@@ -12,6 +12,7 @@ export Heading from "./elements/heading";
 export Copy from "./elements/copy";
 export Image from "./elements/image";
 export Label from "./elements/label";
+export Input from "./elements/input";
 
 // utils
 //

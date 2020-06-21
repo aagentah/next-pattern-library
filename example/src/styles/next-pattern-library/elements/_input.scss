@@ -1,0 +1,52 @@
+.input__wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  //
+}
+
+.input--text {
+  width: 100%;
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid palette(grey);
+  height: 35px;
+  @extend .f6;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.input--text ~ .input__focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: palette(dark-grey);
+  transition: 0.4s;
+}
+
+.input--text:focus ~ .input__focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.input__label {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  @extend .t-secondary;
+  @extend .grey;
+  @extend .f6;
+}
+
+.input--text:focus ~ .input__label,
+.input--has-value ~ .input__label {
+  bottom: 35px;
+  @extend .f7;
+}

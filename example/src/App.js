@@ -14,6 +14,7 @@ import CopyPreview from "./docs/elements/copy";
 import ImagePreview from "./docs/elements/image";
 import LabelPreview from "./docs/elements/label";
 import IconPreview from "./docs/elements/icon";
+import InputPreview from "./docs/elements/input";
 
 // utils
 import WithLink from "./docs/utils/with-link";
@@ -54,13 +55,14 @@ export default function App() {
               <li className="mb1">
                 <Link to="/image">Image</Link>
               </li>
-
               <li className="mb1">
                 <Link to="/label">Label</Link>
               </li>
-
               <li className="mb1">
                 <Link to="/icon">Icon</Link>
+              </li>
+              <li className="mb1">
+                <Link to="/input">Input</Link>
               </li>
             </ul>
 
@@ -87,6 +89,7 @@ export default function App() {
           <Route path="/image" component={ImagePreview} />
           <Route path="/label" component={LabelPreview} />
           <Route path="/icon" component={IconPreview} />
+          <Route path="/input" component={InputPreview} />
 
           {/* Utils */}
           <Route path="/with-link" component={WithLink} />
