@@ -4,7 +4,12 @@ export default function Icon(props) {
   const { faClass } = props;
 
   if (faClass) {
-    return <i className={`icon  ${faClass}`}></i>;
+    return (
+      <div>
+        yo
+        <span className={`icon  ${faClass}`}></span>
+      </div>
+    );
   }
 
   return false;
