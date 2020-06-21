@@ -11,8 +11,7 @@ export default function Input(props) {
   const {
     /* Options */
     type,
-    label,
-    placeholder
+    label
   } = props;
 
   const hasValueClass = classNames({
@@ -32,7 +31,6 @@ export default function Input(props) {
       <input
         className={`input  input--${type}  input--${hasValueClass}`}
         type={type}
-        placeholder={placeholder}
         onChange={handleInput}
       />
       {label && <span className="input__label">{label}</span>}
