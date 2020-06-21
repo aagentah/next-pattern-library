@@ -6,6 +6,26 @@ import PreviewWrapper from "../../../components/preview-wrapper";
 import propDocs from "./propDocs";
 
 export default function HeadingPreview(props) {
+  const exampleCode = () => {
+    return (
+      <pre>{`
+  import { Heading } from "next-pattern-library";
+
+  <Heading
+    /* Options */
+    htmlEntity={"h1"}
+    text={"X-Large Heading"}
+    color={"black"}
+    size={"x-large"}
+    truncate={null}
+    onClick={null}
+    /* Children */
+    withLinkProps={null}
+  />
+          `}</pre>
+    );
+  };
+
   const withLinkProps = {
     type: "internal",
     url: "/",
@@ -15,7 +35,12 @@ export default function HeadingPreview(props) {
 
   return (
     <React.Fragment>
-      <PreviewWrapper title={"Heading"} description={""} propDocs={propDocs} />
+      <PreviewWrapper
+        title={"Heading"}
+        description={""}
+        propDocs={propDocs}
+        exampleCode={exampleCode}
+      />
 
       <div className="container  mla  mra  relative">
         <div className={"flex  flex-wrap  mb4"}>

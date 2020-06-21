@@ -5,11 +5,41 @@ import PreviewWrapper from "../../../components/preview-wrapper";
 import propDocs from "./propDocs";
 
 export default function ButtonPreview({ ...props }) {
+  const exampleCode = () => {
+    return (
+      <pre>{`
+  import { Button } from "next-pattern-library";
+
+  <Button
+    /* Options */
+    type={"primary"}
+    size={"medium"}
+    text={"Primary"}
+    color={"black"}
+    fluid={false}
+    icon={null}
+    iconFloat={null}
+    inverted={false}
+    loading={false}
+    disabled={false}
+    onClick={null}
+    /* Children */
+    withLinkProps={null}
+  />
+          `}</pre>
+    );
+  };
+
   const buttonIcon = <Icon icon={["fas", "arrow-right"]} />;
 
   return (
     <React.Fragment>
-      <PreviewWrapper title={"Button"} description={""} propDocs={propDocs} />
+      <PreviewWrapper
+        title={"Button"}
+        description={""}
+        propDocs={propDocs}
+        exampleCode={exampleCode}
+      />
 
       <div className="container  mla  mra">
         <div className={"flex  flex-wrap  justify-center"}>

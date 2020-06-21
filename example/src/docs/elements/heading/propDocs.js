@@ -18,10 +18,11 @@ export default [
     description: ""
   },
   {
-    name: "size",
+    name: "enum",
     default: "",
     type: "string",
-    description: ""
+    description:
+      "<code>small</code>, <code>medium</code>, <code>large</code>, <code>x-large</code>"
   },
   {
     name: "truncate",

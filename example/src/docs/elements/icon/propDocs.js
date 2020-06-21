@@ -1,14 +1,8 @@
 export default [
   {
-    name: "prefix",
+    name: "...",
     default: "",
     type: "string",
-    description: ""
-  },
-  {
-    name: "iconName",
-    default: "",
-    type: "string",
-    description: ""
+    description: `Props per <a href="https://github.com/FortAwesome/react-fontawesome" target="_blank">React FontAwesome</a>.`
   }
 ];
