@@ -31,7 +31,7 @@ export default function InputPreview({ ...props }) {
               "col-24  col-8-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
-            <Input type="text" label="Name" />
+            <Input type="text" label="Name" required={true} />
           </div>
         </div>
       </div>

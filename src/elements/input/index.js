@@ -11,7 +11,8 @@ export default function Input(props) {
   const {
     /* Options */
     type,
-    label
+    label,
+    required
   } = props;
 
   const hasValueClass = classNames({
@@ -32,6 +33,7 @@ export default function Input(props) {
         className={`input  input--${type}  input--${hasValueClass}`}
         type={type}
         onChange={handleInput}
+        required={`${required}`}
       />
       {label && <span className="input__label">{label}</span>}
       <span class="input__focus-border"></span>
