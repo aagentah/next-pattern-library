@@ -5,7 +5,7 @@ import classNames from "classnames";
  * A Input.
  */
 
-export default function Input(props) {
+export default React.forwardRef((props, ref) => {
   const [hasValue, setHasValue] = useState(false);
 
   const {
@@ -13,7 +13,6 @@ export default function Input(props) {
     type,
     label,
     name,
-    ref,
     required,
     disabled,
     readOnly
@@ -47,4 +46,4 @@ export default function Input(props) {
       <span class="input__focus-border"></span>
     </div>
   );
-}
+});
