@@ -38,9 +38,9 @@ export default function Input(props) {
         type={type}
         name={name}
         ref={ref}
-        required={`${required}`}
-        disabled={`${disabled}`}
-        readOnly={`${readOnly}`}
+        required={required}
+        disabled={disabled}
+        readOnly={readOnly}
         onChange={handleInput}
       />
       {label && <span className="input__label">{label}</span>}
