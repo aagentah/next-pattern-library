@@ -10,7 +10,16 @@ export default function InputPreview({ ...props }) {
       <pre>{`
   import { Input } from "next-pattern-library";
 
-  <Input type="text" label="Username" name="username" required={true} />
+  <Input
+    /* Options */
+    type="text"
+    label="Username"
+    name="username"
+    ref={null}
+    required={true}
+    disabled={false}
+    readOnly={false}
+  />
           `}</pre>
     );
   };
@@ -32,10 +41,14 @@ export default function InputPreview({ ...props }) {
             }
           >
             <Input
+              /* Options */
               type="text"
               label="Username"
               name="username"
+              ref={null}
               required={true}
+              disabled={false}
+              readOnly={false}
             />
           </div>
         </div>

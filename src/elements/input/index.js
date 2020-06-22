@@ -13,7 +13,10 @@ export default function Input(props) {
     type,
     label,
     name,
-    required
+    ref,
+    required,
+    disabled,
+    readOnly
   } = props;
 
   const hasValueClass = classNames({
@@ -34,7 +37,10 @@ export default function Input(props) {
         className={`input  input--${type}  input--${hasValueClass}`}
         type={type}
         name={name}
+        ref={ref}
         required={`${required}`}
+        disabled={`${disabled}`}
+        readOnly={`${readOnly}`}
         onChange={handleInput}
       />
       {label && <span className="input__label">{label}</span>}

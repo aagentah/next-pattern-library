@@ -10,5 +10,23 @@ export default [
     default: "text",
     type: "string",
     description: ""
+  },
+  {
+    name: "name",
+    default: "text",
+    type: "string",
+    description: ""
+  },
+  {
+    name: "required",
+    default: "text",
+    type: "bool",
+    description: ""
+  },
+  {
+    name: "disabled",
+    default: "text",
+    type: "bool",
+    description: ""
   }
 ];
