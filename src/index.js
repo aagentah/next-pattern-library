@@ -4,6 +4,7 @@
 export Card from "./modules/card";
 export Hero from "./modules/hero";
 export Avatar from "./modules/avatar";
+export Modal from "./modules/modal";
 
 // elements
 export Button from "./elements/button";

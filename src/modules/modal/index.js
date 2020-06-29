@@ -1,0 +1,19 @@
+import React from "react";
+
+/**
+ * A card displays site content in a manner similar to a playing card.
+ */
+
+export default function Modal(props) {
+  const {
+    /* Options */
+    size,
+    active
+  } = props;
+
+  return (
+    <section className={`modal  modal--${size}  ${active ? "active" : ""}`}>
+      <div className="modal__dialog">{props.children}</div>
+    </section>
+  );
+}

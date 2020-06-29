@@ -6,6 +6,7 @@ import HeroPreview from "./docs/modules/hero";
 import CardBlockPreview from "./docs/modules/card/block";
 import CardThumbnailPreview from "./docs/modules/card/thumbnail";
 import AvatarPreview from "./docs/modules/avatar";
+import ModalPreview from "./docs/modules/modal";
 
 // elements
 import ButtonPreview from "./docs/elements/button";
@@ -38,6 +39,9 @@ export default function App() {
               </li>
               <li className="mb1">
                 <Link to="/avatar">Avatar</Link>
+              </li>
+              <li className="mb1">
+                <Link to="/modal">Modal</Link>
               </li>
             </ul>
 
@@ -82,6 +86,7 @@ export default function App() {
           <Route path="/card/block" component={CardBlockPreview} />
           <Route path="/card/thumbnail" component={CardThumbnailPreview} />
           <Route path="/avatar" component={AvatarPreview} />
+          <Route path="/modal" component={ModalPreview} />
           {/* Elements */}
           <Route path="/button" component={ButtonPreview} />
           <Route path="/heading" component={HeadingPreview} />
