@@ -59,22 +59,22 @@ $type-scale: (
 }
 
 $colors: (
-  black: #000000,
-  almost-black: #111111,
-  dark-grey: #343434,
-  mid-grey: #555555,
-  grey: #777777,
-  silver: #999999,
-  light-silver: #aaaaaa,
-  moon-grey: #cccccc,
-  light-grey: #eeeeee,
-  almost-white: #f5f5f5,
-  white: #ffffff,
-  blue: #096dff,
-  red: #ff0000,
-  green: #1c9c08,
-  primary-color: #00c4b4,
-  secondary-color: #ff00cd
+  black: --black,
+  almost-black: --almost-black,
+  dark-grey: --dark-grey,
+  mid-grey: --mid-grey,
+  grey: --grey,
+  silver: --silver,
+  light-silver: --light-silver,
+  moon-grey: --moon-grey,
+  light-grey: --light-grey,
+  almost-white: --almost-white,
+  white: --white,
+  blue: --blue,
+  red: --red,
+  green: --green,
+  primary-color: --primary-color,
+  secondary-color: --secondary-color
 ) !default;
 
 $body-color: palette(black) !default;
