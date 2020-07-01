@@ -15,7 +15,7 @@ export default function InputPreview({ ...props }) {
     type="text"
     label="Username"
     name="username"
-    ref={null}
+    value=""
     required={true}
     disabled={false}
     readOnly={false}
