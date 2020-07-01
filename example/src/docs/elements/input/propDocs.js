@@ -24,6 +24,12 @@ export default [
     description: ""
   },
   {
+    name: "icon",
+    default: "",
+    type: "string",
+    description: "Icon component per <code>Icon</code> component"
+  },
+  {
     name: "required",
     default: "",
     type: "bool",

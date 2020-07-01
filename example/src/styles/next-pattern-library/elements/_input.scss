@@ -36,7 +36,7 @@
 }
 
 .input__label {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   pointer-events: none;
   position: absolute;
   left: 0;
@@ -46,8 +46,27 @@
   @extend .f6;
 }
 
+.input__icon {
+  position: absolute;
+  bottom: 5px;
+  left: 2px;
+}
+
+.input__icon ~ .input:not(:focus):not(.input--has-value) ~ .input__label {
+  left: 24px;
+}
+
+.input__icon ~ .input {
+  padding-left: 24px;
+}
+
 .input:focus ~ .input__label,
 .input--has-value ~ .input__label {
   bottom: 35px;
   @extend .f7;
+}
+
+.input:disabled,
+.input:read-only {
+  cursor: not-allowed;
 }

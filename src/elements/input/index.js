@@ -15,6 +15,7 @@ export default function Input(props) {
     label,
     name,
     value,
+    icon,
     required,
     disabled,
     readOnly
@@ -43,6 +44,8 @@ export default function Input(props) {
 
   return (
     <div className="input__wrapper">
+      {icon && <span className="input__icon">{icon}</span>}
+
       <input
         className={`input  input--${type}  input--${hasValueClass}`}
         type={type}
@@ -53,6 +56,7 @@ export default function Input(props) {
         readOnly={readOnly}
         onChange={handleInput}
       />
+
       {label && <span className="input__label">{label}</span>}
       <span class="input__focus-border"></span>
     </div>
