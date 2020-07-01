@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/next-pattern-library/static/css/main.37f45777.chunk.css",
+    "main.css": "/next-pattern-library/static/css/main.db8e3178.chunk.css",
     "main.js": "/next-pattern-library/static/js/main.7ee410bf.chunk.js",
     "main.js.map": "/next-pattern-library/static/js/main.7ee410bf.chunk.js.map",
     "runtime~main.js": "/next-pattern-library/static/js/runtime~main.fc2eebf2.js",
@@ -8,8 +8,8 @@
     "static/js/2.9e62a27a.chunk.js": "/next-pattern-library/static/js/2.9e62a27a.chunk.js",
     "static/js/2.9e62a27a.chunk.js.map": "/next-pattern-library/static/js/2.9e62a27a.chunk.js.map",
     "index.html": "/next-pattern-library/index.html",
-    "precache-manifest.7989ceb374049bc3ac15ed3d54a42f9d.js": "/next-pattern-library/precache-manifest.7989ceb374049bc3ac15ed3d54a42f9d.js",
+    "precache-manifest.6083ca204dcc9f0bba9a9f9d14772bac.js": "/next-pattern-library/precache-manifest.6083ca204dcc9f0bba9a9f9d14772bac.js",
     "service-worker.js": "/next-pattern-library/service-worker.js",
-    "static/css/main.37f45777.chunk.css.map": "/next-pattern-library/static/css/main.37f45777.chunk.css.map"
+    "static/css/main.db8e3178.chunk.css.map": "/next-pattern-library/static/css/main.db8e3178.chunk.css.map"
   }
 }
