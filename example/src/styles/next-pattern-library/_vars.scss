@@ -77,8 +77,8 @@ $colors: (
   secondary-color: --secondary-color
 ) !default;
 
-$body-color: palette(black) !default;
-$body-background-color: palette(white) !default;
+$body-color: var(--black) !default;
+$body-background-color: var(--white) !default;
 
 // grid
 

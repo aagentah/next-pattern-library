@@ -11,7 +11,7 @@
   width: 100%;
   border: 0;
   padding: 7px 0;
-  border-bottom: 1px solid palette(grey);
+  border-bottom: 1px solid var(--grey);
   height: 35px;
   @extend .f6;
 
@@ -26,7 +26,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: palette(dark-grey);
+  background-color: var(--dark-grey);
   transition: 0.4s;
 }
 
