@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import classNames from "classnames";
 
 /**
  * A Input.
  */
 
-export default React.forwardRef((props, ref) => {
+export default function Input(props) {
+  const [inputValue, setInputValue] = useState("");
   const [hasValue, setHasValue] = useState(false);
 
   const {
@@ -13,16 +14,26 @@ export default React.forwardRef((props, ref) => {
     type,
     label,
     name,
+    value,
     required,
     disabled,
     readOnly
   } = props;
+
+  useEffect(() => {
+    if (value) {
+      setHasValue(true);
+      setInputValue(value);
+    }
+  }, [value]);
 
   const hasValueClass = classNames({
     "has-value": hasValue
   });
 
   const handleInput = e => {
+    setInputValue(e.target.value);
+
     if (e.target.value) {
       setHasValue(true);
     } else {
@@ -36,7 +47,7 @@ export default React.forwardRef((props, ref) => {
         className={`input  input--${type}  input--${hasValueClass}`}
         type={type}
         name={name}
-        ref={ref}
+        value={inputValue}
         required={required}
         disabled={disabled}
         readOnly={readOnly}
@@ -46,4 +57,4 @@ export default React.forwardRef((props, ref) => {
       <span class="input__focus-border"></span>
     </div>
   );
-});
+}

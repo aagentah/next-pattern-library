@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Input } from "next-pattern-library";
 
 import PreviewWrapper from "../../../components/preview-wrapper";
@@ -45,7 +45,7 @@ export default function InputPreview({ ...props }) {
               type="text"
               label="Username"
               name="username"
-              ref={null}
+              value=""
               required={true}
               disabled={false}
               readOnly={false}

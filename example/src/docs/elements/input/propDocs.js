@@ -1,31 +1,43 @@
 export default [
   {
     name: "type",
-    default: "text",
+    default: "",
     type: "enum",
     description: `Enum per <code>text</code>, <code>email</code>`
   },
   {
     name: "label",
-    default: "text",
+    default: "",
     type: "string",
     description: ""
   },
   {
     name: "name",
-    default: "text",
+    default: "",
+    type: "string",
+    description: ""
+  },
+  {
+    name: "value",
+    default: "",
     type: "string",
     description: ""
   },
   {
     name: "required",
-    default: "text",
+    default: "",
     type: "bool",
     description: ""
   },
   {
     name: "disabled",
-    default: "text",
+    default: "",
+    type: "bool",
+    description: ""
+  },
+  {
+    name: "readOnly",
+    default: "",
     type: "bool",
     description: ""
   }
