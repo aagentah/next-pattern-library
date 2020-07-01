@@ -40,7 +40,7 @@
   pointer-events: none;
   position: absolute;
   left: 0;
-  bottom: 7px;
+  bottom: 9px;
   @extend .t-secondary;
   @extend .grey;
   @extend .f6;
@@ -48,16 +48,17 @@
 
 .input__icon {
   position: absolute;
-  bottom: 5px;
+  bottom: 8px;
   left: 2px;
+  color: var(--dark-grey);
 }
 
 .input__icon ~ .input:not(:focus):not(.input--has-value) ~ .input__label {
-  left: 24px;
+  left: 25px;
 }
 
 .input__icon ~ .input {
-  padding-left: 24px;
+  padding-left: 25px;
 }
 
 .input:focus ~ .input__label,
