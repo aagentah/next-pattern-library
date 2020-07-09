@@ -30,6 +30,8 @@ export default function Button(props) {
   const isDisabled = disabled ? "disabled" : "";
   const hasOnClick = onClick ? { onClick } : "";
 
+  const link = withLinkProps ? { withLinkProps: withLinkProps } : null;
+
   const contents = () => {
     if (loading) {
       return (
@@ -71,9 +73,9 @@ export default function Button(props) {
     <WithLink
       {...isAriaLoading}
       {...hasOnClick}
+      {...link}
       disabled={props.disabled}
       className={`button ${color} ${type} ${isFluid} ${isInverted} ${isLoading} ${isDisabled} ${size}`}
-      withLinkProps={withLinkProps}
     >
       {contents()}
     </WithLink>

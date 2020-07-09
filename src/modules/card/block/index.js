@@ -24,8 +24,8 @@ export default function CardBlock(props) {
     const renderLabels = () => {
       if (!labelBlock.length) return false;
 
-      const listItems = labelBlock.map(label => (
-        <span className="card__label" key={"key"}>
+      const listItems = labelBlock.map((label, i) => (
+        <span key={`${label}-${i}`} className="card__label">
           {label}
         </span>
       ));

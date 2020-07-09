@@ -44,10 +44,10 @@ export default function Copy(props) {
   };
 
   return (
-    <p {...hasOnClick} className={`copy ${size} ${color}`} style={styles}>
+    <span {...hasOnClick} className={`copy ${size} ${color}`} style={styles}>
       <ElementType lines={truncate}>
         <span>{text}</span>
       </ElementType>
-    </p>
+    </span>
   );
 }

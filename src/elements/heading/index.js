@@ -30,6 +30,7 @@ export default function Heading(props) {
   const heightXLarge = 38;
 
   let lineHeight;
+
   switch (size) {
     case "small":
       lineHeight = heightSmall;
@@ -52,14 +53,17 @@ export default function Heading(props) {
     height: hasTruncate ? `${lineHeight * (truncate || 1)}px` : "auto"
   };
 
+  const link = withLinkProps ? { withLinkProps: withLinkProps } : null;
+  const lines = truncate ? { lines: truncate } : null;
+
   return (
-    <WithLink withLinkProps={withLinkProps}>
+    <WithLink {...link}>
       <ElementType
         {...hasOnClick}
         className={`heading ${size} ${color}`}
         style={styles}
       >
-        <ElementTypeInner lines={truncate}>
+        <ElementTypeInner {...lines}>
           <span>{text}</span>
         </ElementTypeInner>
       </ElementType>

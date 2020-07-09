@@ -27,13 +27,11 @@ export default function Image(props) {
     height: hasHeight
   };
 
+  const link = withLinkProps ? { withLinkProps: withLinkProps } : null;
+
   return (
     <figure>
-      <WithLink
-        className="image__wrapper"
-        style={styles}
-        withLinkProps={withLinkProps}
-      >
+      <WithLink className="image__wrapper" style={styles} {...link}>
         <ElementType
           src={src}
           placeholder={placeholder}
