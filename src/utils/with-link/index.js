@@ -10,8 +10,6 @@ export default function WithLink(props) {
   if (!withLinkProps) return <div {...props}>{props.children}</div>;
   const RouterLink = withLinkProps.routerLink;
 
-  console.log("props", props);
-
   switch (withLinkProps.type) {
     case "next":
       if (RouterLink) {
