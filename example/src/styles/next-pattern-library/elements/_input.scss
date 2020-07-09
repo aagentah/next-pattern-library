@@ -1,3 +1,5 @@
+// Wrapper
+
 .input__wrapper {
   height: 50px;
   width: 100%;
@@ -6,6 +8,8 @@
   @extend .flex;
   @extend .align-end;
 }
+
+// Input
 
 .input {
   width: 100%;
@@ -20,6 +24,17 @@
   }
 }
 
+.input__icon ~ .input {
+  padding-left: 25px;
+}
+
+.input:disabled,
+.input:read-only {
+  cursor: not-allowed;
+}
+
+// Focus Border
+
 .input ~ .input__focus-border {
   position: absolute;
   bottom: 0;
@@ -30,10 +45,12 @@
   transition: 0.4s;
 }
 
-.input:focus ~ .input__focus-border {
+.input:not(:disabled):not(:read-only):focus ~ .input__focus-border {
   width: 100%;
   transition: 0.4s;
 }
+
+// Label
 
 .input__label {
   transition: all 0.2s ease-in-out;
@@ -46,19 +63,8 @@
   @extend .f6;
 }
 
-.input__icon {
-  position: absolute;
-  bottom: 8px;
-  left: 2px;
-  color: var(--dark-grey);
-}
-
 .input__icon ~ .input:not(:focus):not(.input--has-value) ~ .input__label {
   left: 25px;
-}
-
-.input__icon ~ .input {
-  padding-left: 25px;
 }
 
 .input:focus ~ .input__label,
@@ -67,7 +73,11 @@
   @extend .f7;
 }
 
-.input:disabled,
-.input:read-only {
-  cursor: not-allowed;
+// Icon
+
+.input__icon {
+  position: absolute;
+  bottom: 8px;
+  left: 2px;
+  color: var(--dark-grey);
 }
