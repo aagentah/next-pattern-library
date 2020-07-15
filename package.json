@@ -20,7 +20,8 @@
     "prepare": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
-    "lint": "eslint '**/*.js'; exit 0"
+    "lint": "eslint '**/*.js'; exit 0",
+    "lint-fix": "eslint --fix '**/*.js'; exit 0"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
