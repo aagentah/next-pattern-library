@@ -10,10 +10,10 @@ export default function ModalPreview({ ...props }) {
   const heroHeading = (
     <Heading
       /* Options */
-      htmlEntity={"h1"}
-      text={"Lorem ipsum dolor sit amet."}
-      color={"black"}
-      size={"large"}
+      htmlEntity="h1"
+      text="Lorem ipsum dolor sit amet."
+      color="black"
+      size="large"
       truncate={1}
       reveal={null}
       /* Children */
@@ -24,9 +24,9 @@ export default function ModalPreview({ ...props }) {
   const heroCopy = (
     <Copy
       /* Options */
-      text={"Lorem ipsum dolor sit amet."}
-      color={"black"}
-      size={"medium"}
+      text="Lorem ipsum dolor sit amet."
+      color="black"
+      size="medium"
       truncate={1}
     />
   );
@@ -34,10 +34,10 @@ export default function ModalPreview({ ...props }) {
   const heroButton = (
     <Button
       /* Options */
-      type={"primary"}
-      size={"medium"}
-      text={"Close Modal"}
-      color={"black"}
+      type="primary"
+      size="medium"
+      text="Close Modal"
+      color="black"
       fluid={false}
       icon={null}
       iconFloat={null}
@@ -54,13 +54,13 @@ export default function ModalPreview({ ...props }) {
 
   return (
     <React.Fragment>
-      <PreviewWrapper title={"Modal"} description={""} propDocs={propDocs} />
+      <PreviewWrapper title="Modal" description="" propDocs={propDocs} />
 
       <div className="container  mla  mra">
-        <div className={"flex  flex-wrap  mb4"}>
+        <div className="flex  flex-wrap  mb4">
           <Modal
             /* Options */
-            size={"small"}
+            size="small"
             active={modalActive}
           >
             <div className="pb2">{heroHeading}</div>
@@ -70,10 +70,10 @@ export default function ModalPreview({ ...props }) {
 
           <Button
             /* Options */
-            type={"primary"}
-            size={"medium"}
-            text={"Toggle Modal"}
-            color={"black"}
+            type="primary"
+            size="medium"
+            text="Toggle Modal"
+            color="black"
             fluid={false}
             icon={null}
             iconFloat={null}

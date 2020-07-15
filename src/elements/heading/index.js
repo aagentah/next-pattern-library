@@ -21,7 +21,7 @@ export default function Heading(props) {
 
   const hasOnClick = onClick ? { onClick } : "";
   const ElementType = htmlEntity || "h1";
-  const hasTruncate = truncate ? true : false;
+  const hasTruncate = !!truncate;
   const ElementTypeInner = hasTruncate ? TruncateMarkup : React.Fragment;
 
   const heightSmall = 22;
@@ -53,7 +53,7 @@ export default function Heading(props) {
     height: hasTruncate ? `${lineHeight * (truncate || 1)}px` : "auto"
   };
 
-  const link = withLinkProps ? { withLinkProps: withLinkProps } : null;
+  const link = withLinkProps ? { withLinkProps } : null;
   const lines = truncate ? { lines: truncate } : null;
 
   return (

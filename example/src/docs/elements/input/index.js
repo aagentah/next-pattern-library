@@ -7,7 +7,8 @@ import propDocs from "./propDocs";
 export default function InputPreview({ ...props }) {
   const exampleCode = () => {
     return (
-      <pre>{`
+      <pre>
+        {`
   import { Input } from "next-pattern-library";
 
   <Input
@@ -21,7 +22,8 @@ export default function InputPreview({ ...props }) {
     disabled={false}
     readOnly={false}
   />
-          `}</pre>
+          `}
+      </pre>
     );
   };
 
@@ -30,18 +32,16 @@ export default function InputPreview({ ...props }) {
   return (
     <React.Fragment>
       <PreviewWrapper
-        title={"Icon"}
-        description={""}
+        title="Icon"
+        description=""
         propDocs={propDocs}
         exampleCode={exampleCode}
       />
 
       <div className="container  mla  mra">
-        <div className={"flex  flex-wrap"}>
+        <div className="flex  flex-wrap">
           <div
-            className={
-              "col-24  col-8-md  flex  justify-center  justify-start-md  align-end  mb4  ph3"
-            }
+            className="col-24  col-8-md  flex  justify-center  justify-start-md  align-end  mb4  ph3"
           >
             <Input
               /* Options */
@@ -50,15 +50,13 @@ export default function InputPreview({ ...props }) {
               name="username"
               value=""
               icon={inputIcon}
-              required={true}
+              required
               disabled={false}
               readOnly={false}
             />
           </div>
           <div
-            className={
-              "col-24  col-8-md  flex  justify-center  justify-start-md  align-end  mb4  ph3"
-            }
+            className="col-24  col-8-md  flex  justify-center  justify-start-md  align-end  mb4  ph3"
           >
             <Input
               /* Options */
@@ -67,7 +65,7 @@ export default function InputPreview({ ...props }) {
               name="username"
               value=""
               icon={null}
-              required={true}
+              required
               disabled={false}
               readOnly={false}
             />

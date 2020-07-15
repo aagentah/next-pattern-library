@@ -30,7 +30,7 @@ export default function Button(props) {
   const isDisabled = disabled ? "disabled" : "";
   const hasOnClick = onClick ? { onClick } : "";
 
-  const link = withLinkProps ? { withLinkProps: withLinkProps } : null;
+  const link = withLinkProps ? { withLinkProps } : null;
 
   const contents = () => {
     if (loading) {
@@ -56,14 +56,14 @@ export default function Button(props) {
             <span>{text}</span>
           </div>
         );
-      } else {
+      } 
         return (
           <div className="flex  align-center">
             <span>{text}</span>
             <div className="button__icon  button__icon--right">{icon}</div>
           </div>
         );
-      }
+      
     }
 
     return text;

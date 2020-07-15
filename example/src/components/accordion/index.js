@@ -21,10 +21,10 @@ export default function Accordion(props) {
     <div className="accordion__section">
       <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
         <p className="accordion__title">{props.title}</p>
-        <p className={`${setRotate}`} width={10} fill={"#777"}>
+        <p className={`${setRotate}`} width={10} fill="#777">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill={"#777"}
+            fill="#777"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -57,7 +57,11 @@ export default function Accordion(props) {
                 <span className="f6  black">{row.default || "-"}</span>
               </div>
               <div className="col-4  t-primary">
-                <span className="f6  black">&#123;{row.type || "-"}&#125;</span>
+                <span className="f6  black">
+                  &#123;
+                  {row.type || "-"}
+                  &#125;
+                </span>
               </div>
               <div className="col-12  t-primary">
                 <span

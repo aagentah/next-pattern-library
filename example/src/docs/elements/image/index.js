@@ -7,7 +7,8 @@ import propDocs from "./propDocs";
 export default function ImagePreview(props) {
   const exampleCode = () => {
     return (
-      <pre>{`
+      <pre>
+        {`
   import { Image } from "next-pattern-library";
 
   <Image
@@ -19,28 +20,29 @@ export default function ImagePreview(props) {
     height={400}
     onClick={null}
   />
-          `}</pre>
+          `}
+      </pre>
     );
   };
 
   return (
     <React.Fragment>
       <PreviewWrapper
-        title={"Image"}
-        description={""}
+        title="Image"
+        description=""
         propDocs={propDocs}
         exampleCode={exampleCode}
       />
 
       <div className="container  mla  mra">
-        <div className={"flex  flex-wrap  mb4"}>
-          <div className={"col-24  col-8-md  pa3"}>
+        <div className="flex  flex-wrap  mb4">
+          <div className="col-24  col-8-md  pa3">
             <Image
               /* Options */
-              src={"https://via.placeholder.com/1000x1000"}
-              placeholder={"https://via.placeholder.com/100x100"}
-              alt={"This is the alt text."}
-              figcaption={"This is a figcaption."}
+              src="https://via.placeholder.com/1000x1000"
+              placeholder="https://via.placeholder.com/100x100"
+              alt="This is the alt text."
+              figcaption="This is a figcaption."
               height={400}
               onClick={null}
             />

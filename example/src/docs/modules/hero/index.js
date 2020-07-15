@@ -10,9 +10,9 @@ export default function HeroPreview({ ...props }) {
   const heroImage = (
     <Image
       /* Options */
-      src={"https://via.placeholder.com/1000x3000"}
-      placeholder={"https://via.placeholder.com/500x500"}
-      alt={"This is the alt text."}
+      src="https://via.placeholder.com/1000x3000"
+      placeholder="https://via.placeholder.com/500x500"
+      alt="This is the alt text."
       figcaption={null}
       height={250}
       onClick={null}
@@ -24,10 +24,10 @@ export default function HeroPreview({ ...props }) {
   const heroHeading = (
     <Heading
       /* Options */
-      htmlEntity={"h1"}
-      text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
-      color={"black"}
-      size={"large"}
+      htmlEntity="h1"
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      color="black"
+      size="large"
       truncate={1}
       reveal={null}
       /* Children */
@@ -38,11 +38,9 @@ export default function HeroPreview({ ...props }) {
   const heroCopy = (
     <Copy
       /* Options */
-      text={
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta."
-      }
-      color={"black"}
-      size={"medium"}
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta."
+      color="black"
+      size="medium"
       truncate={1}
     />
   );
@@ -50,10 +48,10 @@ export default function HeroPreview({ ...props }) {
   const heroButton = (
     <Button
       /* Options */
-      type={"secondary"}
-      size={"medium"}
-      text={"Secondary"}
-      color={"black"}
+      type="secondary"
+      size="medium"
+      text="Secondary"
+      color="black"
       fluid={false}
       icon={buttonIcon}
       iconFloat={null}
@@ -68,10 +66,10 @@ export default function HeroPreview({ ...props }) {
 
   return (
     <React.Fragment>
-      <PreviewWrapper title={"Hero"} description={""} propDocs={propDocs} />
+      <PreviewWrapper title="Hero" description="" propDocs={propDocs} />
 
       <div className="container  mla  mra">
-        <div className={"flex  flex-wrap  mb4"}>
+        <div className="flex  flex-wrap  mb4">
           <Hero
             /* Options */
             height={250}
@@ -83,7 +81,7 @@ export default function HeroPreview({ ...props }) {
           />
         </div>
 
-        <div className={"flex  flex-wrap  mb4"}>
+        <div className="flex  flex-wrap  mb4">
           <Hero
             /* Options */
             height={250}
@@ -95,7 +93,7 @@ export default function HeroPreview({ ...props }) {
           />
         </div>
 
-        <div className={"flex  flex-wrap  mb4"}>
+        <div className="flex  flex-wrap  mb4">
           <Hero
             /* Options */
             height={250}

@@ -16,7 +16,7 @@ export default function Copy(props) {
     truncate
   } = props;
 
-  const hasTruncate = truncate ? true : false;
+  const hasTruncate = !!truncate;
   const ElementType = hasTruncate ? TruncateMarkup : React.Fragment;
   const hasOnClick = onClick ? { onClick } : "";
 

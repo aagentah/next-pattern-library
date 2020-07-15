@@ -7,10 +7,8 @@ export default function WithLinkPreview({ ...props }) {
   return (
     <React.Fragment>
       <PreviewWrapper
-        title={"WithLink"}
-        description={
-          "Governs the routing props for individual Modules and Components"
-        }
+        title="WithLink"
+        description="Governs the routing props for individual Modules and Components"
         propDocs={propDocs}
       />
     </React.Fragment>

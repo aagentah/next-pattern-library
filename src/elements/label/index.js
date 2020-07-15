@@ -19,7 +19,7 @@ export default function Label(props) {
   } = props;
 
   const hasOnClick = onClick ? { onClick } : "";
-  const link = withLinkProps ? { withLinkProps: withLinkProps } : null;
+  const link = withLinkProps ? { withLinkProps } : null;
 
   return (
     <span className="label__wrapper">

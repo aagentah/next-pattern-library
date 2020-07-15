@@ -27,7 +27,7 @@ export default function Image(props) {
     height: hasHeight
   };
 
-  const link = withLinkProps ? { withLinkProps: withLinkProps } : null;
+  const link = withLinkProps ? { withLinkProps } : null;
 
   return (
     <figure>
@@ -37,7 +37,7 @@ export default function Image(props) {
           placeholder={placeholder}
           height={height}
           alt={alt}
-        ></ElementType>
+        />
       </WithLink>
 
       {figcaption && (

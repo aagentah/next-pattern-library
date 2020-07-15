@@ -8,9 +8,9 @@ export default function AvatarPreview({ ...props }) {
   const heroImage = (
     <Image
       /* Options */
-      src={"https://via.placeholder.com/1000x3000"}
-      placeholder={"https://via.placeholder.com/500x500"}
-      alt={"This is the alt text."}
+      src="https://via.placeholder.com/1000x3000"
+      placeholder="https://via.placeholder.com/500x500"
+      alt="This is the alt text."
       figcaption={null}
       height={100}
       onClick={null}
@@ -22,10 +22,10 @@ export default function AvatarPreview({ ...props }) {
   const heroHeading = (
     <Heading
       /* Options */
-      htmlEntity={"p"}
-      text={"Author Name"}
-      color={"black"}
-      size={"medium"}
+      htmlEntity="p"
+      text="Author Name"
+      color="black"
+      size="medium"
       truncate={1}
       reveal={null}
       /* Children */
@@ -36,21 +36,19 @@ export default function AvatarPreview({ ...props }) {
   const heroCopy = (
     <Copy
       /* Options */
-      text={
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta."
-      }
-      color={"black"}
-      size={"medium"}
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta."
+      color="black"
+      size="medium"
       truncate={1}
     />
   );
 
   return (
     <React.Fragment>
-      <PreviewWrapper title={"Avatar"} description={""} propDocs={propDocs} />
+      <PreviewWrapper title="Avatar" description="" propDocs={propDocs} />
 
       <div className="container  mla  mra">
-        <div className={"flex  flex-wrap  mb4"}>
+        <div className="flex  flex-wrap  mb4">
           <Avatar
             /* Options */
             /* Children */
@@ -60,7 +58,7 @@ export default function AvatarPreview({ ...props }) {
           />
         </div>
 
-        <div className={"flex  flex-wrap  mb4"}>
+        <div className="flex  flex-wrap  mb4">
           <Avatar
             /* Options */
             /* Children */
@@ -70,7 +68,7 @@ export default function AvatarPreview({ ...props }) {
           />
         </div>
 
-        <div className={"flex  flex-wrap  mb4"}>
+        <div className="flex  flex-wrap  mb4">
           <Avatar
             /* Options */
             /* Children */

@@ -58,7 +58,7 @@ export default function Input(props) {
       />
 
       {label && <span className="input__label">{label}</span>}
-      <span className="input__focus-border"></span>
+      <span className="input__focus-border" />
     </div>
   );
 }
