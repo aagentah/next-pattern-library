@@ -1,24 +1,25 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 // modules
-import HeroPreview from "./docs/modules/hero";
-import CardBlockPreview from "./docs/modules/card/block";
-import CardThumbnailPreview from "./docs/modules/card/thumbnail";
-import AvatarPreview from "./docs/modules/avatar";
-import ModalPreview from "./docs/modules/modal";
+import HeroPreview from './docs/modules/hero';
+import CardBlockPreview from './docs/modules/card/block';
+import CardThumbnailPreview from './docs/modules/card/thumbnail';
+import AvatarPreview from './docs/modules/avatar';
+import ModalPreview from './docs/modules/modal';
+import TabsPreview from './docs/modules/tabs';
 
 // elements
-import ButtonPreview from "./docs/elements/button";
-import HeadingPreview from "./docs/elements/heading";
-import CopyPreview from "./docs/elements/copy";
-import ImagePreview from "./docs/elements/image";
-import LabelPreview from "./docs/elements/label";
-import IconPreview from "./docs/elements/icon";
-import InputPreview from "./docs/elements/input";
+import ButtonPreview from './docs/elements/button';
+import HeadingPreview from './docs/elements/heading';
+import CopyPreview from './docs/elements/copy';
+import ImagePreview from './docs/elements/image';
+import LabelPreview from './docs/elements/label';
+import IconPreview from './docs/elements/icon';
+import InputPreview from './docs/elements/input';
 
 // utils
-import WithLink from "./docs/utils/with-link";
+import WithLink from './docs/utils/with-link';
 
 export default function App() {
   return (
@@ -42,6 +43,9 @@ export default function App() {
               </li>
               <li className="mb1">
                 <Link to="/modal">Modal</Link>
+              </li>
+              <li className="mb1">
+                <Link to="/tabs">Tabs</Link>
               </li>
             </ul>
 
@@ -87,6 +91,7 @@ export default function App() {
           <Route path="/card/thumbnail" component={CardThumbnailPreview} />
           <Route path="/avatar" component={AvatarPreview} />
           <Route path="/modal" component={ModalPreview} />
+          <Route path="/tabs" component={TabsPreview} />
           {/* Elements */}
           <Route path="/button" component={ButtonPreview} />
           <Route path="/heading" component={HeadingPreview} />

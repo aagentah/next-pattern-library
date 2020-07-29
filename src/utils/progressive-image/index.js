@@ -9,7 +9,7 @@ export default function ProgressiveImage(props) {
   const { placeholder, height, alt, src } = props;
 
   return (
-    <>
+    <React.Fragment>
       <img
         className="w-100  image"
         style={{ height: `${height}px` }}
@@ -35,6 +35,6 @@ export default function ProgressiveImage(props) {
           opacity: highResImageLoaded ? "0" : "1"
         }}
       />
-    </>
+    </React.Fragment>
   );
 }

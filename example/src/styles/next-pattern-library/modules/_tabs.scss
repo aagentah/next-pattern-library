@@ -1,0 +1,33 @@
+.tabs {
+  width: 100%;
+}
+
+.tabs__nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs__nav-item {
+  transition: background-color 0.3s ease-in-out;
+  background-color: var(--white);
+  color: var(--black);
+  display: inline-block;
+  padding: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.tabs__nav-item:hover {
+  background-color: var(--almost-white);
+}
+
+.tabs__nav-item--active {
+  background-color: var(--almost-white);
+  color: var(--black);
+}
+
+.tabs__content {
+  background-color: var(--almost-white);
+  padding: 30px;
+}
