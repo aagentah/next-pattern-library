@@ -50,7 +50,7 @@ export default function CardBlock(props) {
 
   return (
     <div className="card  card--small">
-      {image && <div className="col-24">{image}</div>}
+      {image && <div className="col-24  card__image">{image}</div>}
       <div className="col-24  pt2">
         {renderContents()}
         <div className="flex  flex-wrap  align-start  card__button-wrapper">

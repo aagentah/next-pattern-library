@@ -9,7 +9,7 @@ export default function ProgressiveImage(props) {
   const { placeholder, height, alt, src } = props;
 
   return (
-    <span>
+    <>
       <img
         className="w-100  image"
         style={{ height: `${height}px` }}
@@ -25,6 +25,7 @@ export default function ProgressiveImage(props) {
           if (img.complete) action();
         }}
       />
+
       <img
         className="image__loading"
         alt={alt}
@@ -34,6 +35,6 @@ export default function ProgressiveImage(props) {
           opacity: highResImageLoaded ? "0" : "1"
         }}
       />
-    </span>
+    </>
   );
 }

@@ -1,5 +1,6 @@
 .card {
   width: 100%;
+  position: relative;
 }
 
 .card__image {
@@ -11,7 +12,7 @@
 }
 
 .card__contents-wrapper {
-  position: relative;
+  //
 }
 
 .card__label-block {

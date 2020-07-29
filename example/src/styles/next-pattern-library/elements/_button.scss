@@ -3,7 +3,6 @@
   background: transparent;
   box-shadow: none;
   outline: 0;
-  color: var(--black);
   cursor: pointer;
   position: relative;
   text-decoration: none;
@@ -184,6 +183,12 @@
       background-color: var($hex);
       color: var(--white);
       fill: var(--white);
+    }
+  }
+
+  .button.secondary.#{$color} {
+    &:after {
+      background-color: var($hex);
     }
   }
 }

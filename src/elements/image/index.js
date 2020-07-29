@@ -33,6 +33,7 @@ export default function Image(props) {
     <figure>
       <WithLink className="image__wrapper" style={styles} {...link}>
         <ElementType
+          className="image"
           src={src}
           placeholder={placeholder}
           height={height}
