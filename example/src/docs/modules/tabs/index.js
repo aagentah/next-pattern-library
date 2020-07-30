@@ -24,6 +24,7 @@ export default function ModalPreview({ ...props }) {
               { id: '2', tabTitle: 'Tab 2', tabContent: tabContent2 },
               { id: '3', tabTitle: 'Tab 3', tabContent: tabContent3 }
             ]}
+            defaultSelected={0}
           />
         </div>
       </div>

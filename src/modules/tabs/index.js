@@ -7,34 +7,43 @@ import React, { useState } from 'react';
 export default function Tabs(props) {
   const {
     /* Options */
-    content
+    content,
+    defaultSelected
   } = props;
 
-  const [visibleTab, setVisibleTab] = React.useState(content[0].id);
+  const [visibleTab, setVisibleTab] = useState(content[defaultSelected].id);
 
   const listTitles = content.map(item => (
     <li
       onClick={() => setVisibleTab(item.id)}
-      className={
-        visibleTab === item.id
-          ? 'tabs__nav-item  tabs__nav-item--active'
-          : 'tabs__nav-item'
-      }
+      className={`tabs__desktop-nav__item ${
+        visibleTab === item.id ? 'tabs__desktop-nav__item--active' : ''
+      }`}
     >
       {item.tabTitle}
     </li>
   ));
 
   const listContent = content.map(item => (
-    <p style={visibleTab === item.id ? {} : { display: 'none' }}>
-      {item.tabContent}
-    </p>
+    <div
+      className={`tabs__body__item ${
+        visibleTab === item.id ? '' : 'tabs__body__item--hidden'
+      }`}
+    >
+      <div
+        class="tabs__mobile-nav__item"
+        onClick={() => setVisibleTab(item.id)}
+      >
+        {item.tabTitle}
+      </div>
+      <div className="tabs__content">{item.tabContent}</div>
+    </div>
   ));
 
   return (
     <div className="tabs">
-      <ul className="tabs__nav">{listTitles}</ul>
-      <div className="tabs__content">{listContent}</div>
+      <ul className="tabs__desktop-nav">{listTitles}</ul>
+      <div className="tabs__body">{listContent}</div>
     </div>
   );
 }
