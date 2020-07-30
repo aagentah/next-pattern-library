@@ -35,7 +35,7 @@
   background-color: var(--almost-white);
 }
 
-.tabs__desktop-nav__item--active {
+.tabs__desktop-nav__item.active {
   background-color: var(--almost-white);
   color: var(--black);
 }
@@ -61,7 +61,7 @@
   @extend .pb0-md;
 }
 
-.tabs__body__item--hidden {
+.tabs__body__item:not(.active) {
   display: block;
 
   .tabs__content {
@@ -70,7 +70,7 @@
 }
 
 @include breakpoint-up(md) {
-  .tabs__body__item--hidden {
+  .tabs__body__item:not(.active) {
     display: none;
 
     .tabs__content {
@@ -87,7 +87,7 @@
   background: var(--almost-white);
   color: var(--black);
   padding: 20px;
-  margin-right: 10px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 

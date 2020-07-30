@@ -17,7 +17,7 @@ export default function Tabs(props) {
     <li
       onClick={() => setVisibleTab(item.id)}
       className={`tabs__desktop-nav__item ${
-        visibleTab === item.id ? 'tabs__desktop-nav__item--active' : ''
+        visibleTab === item.id ? 'active' : ''
       }`}
     >
       {item.tabTitle}
@@ -26,9 +26,7 @@ export default function Tabs(props) {
 
   const listContent = content.map(item => (
     <div
-      className={`tabs__body__item ${
-        visibleTab === item.id ? '' : 'tabs__body__item--hidden'
-      }`}
+      className={`tabs__body__item ${visibleTab === item.id ? 'active' : ''}`}
     >
       <div
         class="tabs__mobile-nav__item"
