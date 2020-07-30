@@ -57,8 +57,31 @@
 // Body Item
 
 .tabs__body__item {
+  position: relative;
   @extend .pb3;
   @extend .pb0-md;
+}
+
+.tabs__body__item .tabs__mobile-nav__item {
+  @extend .fw7;
+
+  &::after {
+    transition: transform 0.3s ease-in-out;
+    content: '';
+    position: absolute;
+    top: 23px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    transform: rotate(0deg);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24'%3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'/%3E%3C/svg%3E");
+  }
+}
+
+.tabs__body__item.active .tabs__mobile-nav__item {
+  &::after {
+    transform: rotate(90deg);
+  }
 }
 
 .tabs__body__item:not(.active) {
