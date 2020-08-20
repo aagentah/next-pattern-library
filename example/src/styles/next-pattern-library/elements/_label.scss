@@ -1,5 +1,6 @@
 .label__wrapper {
   .label {
+    transition: all 0.3s ease-in-out;
     @extend .pv1;
     @extend .tal;
     @extend .f6;

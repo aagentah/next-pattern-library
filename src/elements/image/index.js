@@ -1,6 +1,6 @@
-import React from "react";
-import ProgressiveImage from "../../utils/progressive-image";
-import WithLink from "../../utils/with-link";
+import React from 'react';
+import ProgressiveImage from '../../utils/progressive-image';
+import WithLink from '../../utils/with-link';
 
 /**
  * An Image.
@@ -19,9 +19,9 @@ export default function Image(props) {
     withLinkProps
   } = props;
 
-  const hasOnClick = onClick ? { onClick } : "";
-  const ElementType = placeholder ? ProgressiveImage : "img";
-  const hasHeight = height ? `${height}px` : "auto";
+  const hasOnClick = onClick ? { onClick } : '';
+  const ElementType = placeholder ? ProgressiveImage : 'img';
+  const hasHeight = height ? `${height}px` : 'auto';
 
   const styles = {
     height: hasHeight
@@ -33,6 +33,7 @@ export default function Image(props) {
     <figure>
       <WithLink className="image__wrapper" style={styles} {...link}>
         <ElementType
+          style={styles}
           className="image"
           src={src}
           placeholder={placeholder}
