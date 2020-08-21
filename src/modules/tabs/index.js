@@ -11,10 +11,11 @@ export default function Tabs(props) {
     defaultSelected
   } = props;
 
-  const [visibleTab, setVisibleTab] = useState(content[defaultSelected].id);
+  const [visibleTab, setVisibleTab] = useState(defaultSelected);
 
   const listTitles = content.map(item => (
     <li
+      key={item.id}
       onClick={() => setVisibleTab(item.id)}
       className={`tabs__desktop-nav__item ${
         visibleTab === item.id ? 'active' : ''
@@ -26,11 +27,12 @@ export default function Tabs(props) {
 
   const listContent = content.map(item => (
     <div
+      key={item.id}
       className={`tabs__body__item ${visibleTab === item.id ? 'active' : ''}`}
     >
       <div
-        class="tabs__mobile-nav__item"
-        onClick={() => setVisibleTab(item.id)}
+        className="tabs__mobile-nav__item"
+        onClick={() => setVisibleTab(item.id === visibleTab ? null : item.id)}
       >
         {item.tabTitle}
       </div>

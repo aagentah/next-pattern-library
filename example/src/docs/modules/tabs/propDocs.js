@@ -8,7 +8,7 @@ export default [
   {
     name: 'defaultSelected',
     default: '',
-    type: 'Integer',
-    description: ''
+    type: 'String',
+    description: '<code>id</code> of tab.'
   }
 ];
