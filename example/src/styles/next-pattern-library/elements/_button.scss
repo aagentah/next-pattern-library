@@ -108,7 +108,7 @@
   }
 
   &:after {
-    content: "";
+    content: '';
     transition: all 0.3s ease-in-out;
     position: absolute;
     bottom: -6px;
@@ -121,10 +121,6 @@
 
 .button.fluid {
   width: 100%;
-}
-
-.button.inverted {
-  //
 }
 
 .button.loading {
@@ -174,7 +170,6 @@
   }
 
   .button.primary.#{$color}.inverted {
-    background-color: var(--white);
     color: var($hex);
     fill: var($hex);
     border-color: var($hex);
@@ -191,4 +186,12 @@
       background-color: var($hex);
     }
   }
+}
+
+.button.primary.inverted {
+  background-color: var(--white);
+}
+
+.button.primary.inverted--transparent {
+  background-color: transparent;
 }

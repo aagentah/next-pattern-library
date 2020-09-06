@@ -1,75 +1,75 @@
 export default [
   {
-    name: "type",
-    default: "",
-    type: "enum",
-    description: "<code>primary</code>, <code>secondary</code>"
+    name: 'type',
+    default: '',
+    type: 'enum',
+    description: '<code>primary</code>, <code>secondary</code>'
   },
   {
-    name: "size",
-    default: "",
-    type: "enum",
+    name: 'size',
+    default: '',
+    type: 'enum',
     description:
-      "<code>small</code>, <code>medium</code>, <code>large</code>, <code>x-large</code>"
+      '<code>small</code>, <code>medium</code>, <code>large</code>, <code>x-large</code>'
   },
   {
-    name: "text",
-    default: "",
-    type: "string",
-    description: ""
+    name: 'text',
+    default: '',
+    type: 'string',
+    description: ''
   },
   {
-    name: "color",
-    default: "",
-    type: "string",
-    description: ""
+    name: 'color',
+    default: '',
+    type: 'string',
+    description: ''
   },
   {
-    name: "fluid",
-    default: "",
-    type: "bool",
-    description: ""
+    name: 'fluid',
+    default: '',
+    type: 'bool',
+    description: ''
   },
   {
-    name: "icon",
-    default: "",
-    type: "string",
-    description: "Icon component per <code>Icon</code> component"
+    name: 'icon',
+    default: '',
+    type: 'string',
+    description: 'Icon component per <code>Icon</code> component'
   },
   {
-    name: "iconFloat",
-    default: "",
-    type: "enum",
-    description: "<code>left</code>, <code>right</code>"
+    name: 'iconFloat',
+    default: '',
+    type: 'enum',
+    description: '<code>left</code>, <code>right</code>'
   },
   {
-    name: "inverted",
-    default: "",
-    type: "bool",
-    description: ""
+    name: 'inverted',
+    default: '',
+    type: "bool|string('transparent')",
+    description: ''
   },
   {
-    name: "loading",
-    default: "",
-    type: "bool",
-    description: ""
+    name: 'loading',
+    default: '',
+    type: 'bool',
+    description: ''
   },
   {
-    name: "disabled",
-    default: "",
-    type: "bool",
-    description: ""
+    name: 'disabled',
+    default: '',
+    type: 'bool',
+    description: ''
   },
   {
-    name: "onClick",
-    default: "",
-    type: "func",
-    description: ""
+    name: 'onClick',
+    default: '',
+    type: 'func',
+    description: ''
   },
   {
-    name: "withLinkProps",
-    default: "",
-    type: "Util",
-    description: "Props per <code>withLinkProps</code> util"
+    name: 'withLinkProps',
+    default: '',
+    type: 'Util',
+    description: 'Props per <code>withLinkProps</code> util'
   }
 ];

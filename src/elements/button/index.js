@@ -1,5 +1,5 @@
-import React from "react";
-import WithLink from "../../utils/with-link";
+import React from 'react';
+import WithLink from '../../utils/with-link';
 
 /**
  * A Button indicates a possible user action.
@@ -23,12 +23,14 @@ export default function Button(props) {
     withLinkProps
   } = props;
 
-  const isFluid = fluid ? "fluid" : "";
-  const isInverted = inverted ? "inverted" : "";
-  const isLoading = loading ? "loading" : "";
-  const isAriaLoading = loading ? { "aria-label": "Loading" } : "";
-  const isDisabled = disabled ? "disabled" : "";
-  const hasOnClick = onClick ? { onClick } : "";
+  const isFluid = fluid ? 'fluid' : '';
+  const isInverted = inverted ? 'inverted' : '';
+  const isInvertTransparent =
+    inverted === 'transparent' ? 'inverted--transparent' : '';
+  const isLoading = loading ? 'loading' : '';
+  const isAriaLoading = loading ? { 'aria-label': 'Loading' } : '';
+  const isDisabled = disabled ? 'disabled' : '';
+  const hasOnClick = onClick ? { onClick } : '';
 
   const link = withLinkProps ? { withLinkProps } : null;
 
@@ -49,21 +51,20 @@ export default function Button(props) {
     }
 
     if (icon) {
-      if (iconFloat === "left") {
+      if (iconFloat === 'left') {
         return (
           <div className="flex  align-center">
             <div className="button__icon  button__icon--left">{icon}</div>
             <span>{text}</span>
           </div>
         );
-      } 
-        return (
-          <div className="flex  align-center">
-            <span>{text}</span>
-            <div className="button__icon  button__icon--right">{icon}</div>
-          </div>
-        );
-      
+      }
+      return (
+        <div className="flex  align-center">
+          <span>{text}</span>
+          <div className="button__icon  button__icon--right">{icon}</div>
+        </div>
+      );
     }
 
     return text;
@@ -75,7 +76,7 @@ export default function Button(props) {
       {...hasOnClick}
       {...link}
       disabled={props.disabled}
-      className={`button ${color} ${type} ${isFluid} ${isInverted} ${isLoading} ${isDisabled} ${size}`}
+      className={`button ${color} ${type} ${isFluid} ${isInverted} ${isInvertTransparent} ${isLoading} ${isDisabled} ${size}`}
     >
       {contents()}
     </WithLink>

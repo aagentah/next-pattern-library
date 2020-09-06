@@ -1,8 +1,8 @@
-import React from "react";
-import { Button, Icon } from "next-pattern-library";
+import React from 'react';
+import { Button, Icon } from 'next-pattern-library';
 
-import PreviewWrapper from "../../../components/preview-wrapper";
-import propDocs from "./propDocs";
+import PreviewWrapper from '../../../components/preview-wrapper';
+import propDocs from './propDocs';
 
 export default function ButtonPreview({ ...props }) {
   const exampleCode = () => {
@@ -32,7 +32,7 @@ export default function ButtonPreview({ ...props }) {
     );
   };
 
-  const buttonIcon = <Icon icon={["fas", "arrow-right"]} />;
+  const buttonIcon = <Icon icon={['fas', 'arrow-right']} />;
 
   return (
     <React.Fragment>
@@ -45,9 +45,7 @@ export default function ButtonPreview({ ...props }) {
 
       <div className="container  mla  mra">
         <div className="flex  flex-wrap  justify-center">
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="primary"
@@ -66,9 +64,7 @@ export default function ButtonPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="primary"
@@ -87,9 +83,7 @@ export default function ButtonPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="primary"
@@ -108,9 +102,7 @@ export default function ButtonPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="primary"
@@ -131,9 +123,7 @@ export default function ButtonPreview({ ...props }) {
         </div>
 
         <div className="flex  flex-wrap  justify-center">
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="primary"
@@ -152,9 +142,7 @@ export default function ButtonPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="primary"
@@ -173,9 +161,7 @@ export default function ButtonPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="primary"
@@ -194,9 +180,7 @@ export default function ButtonPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="primary"
@@ -217,9 +201,7 @@ export default function ButtonPreview({ ...props }) {
         </div>
 
         <div className="flex  flex-wrap  justify-between">
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="secondary"
@@ -238,9 +220,7 @@ export default function ButtonPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="secondary"
@@ -259,9 +239,7 @@ export default function ButtonPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="secondary"
@@ -280,9 +258,7 @@ export default function ButtonPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="secondary"
@@ -303,9 +279,7 @@ export default function ButtonPreview({ ...props }) {
         </div>
 
         <div className="flex  flex-wrap  justify-between">
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="secondary"
@@ -324,9 +298,7 @@ export default function ButtonPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="secondary"
@@ -345,9 +317,7 @@ export default function ButtonPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="secondary"
@@ -366,9 +336,7 @@ export default function ButtonPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
-          >
+          <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
               /* Options */
               type="secondary"
