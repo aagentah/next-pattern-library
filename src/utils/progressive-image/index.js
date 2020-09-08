@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 /**
  * ProgressiveImage.
@@ -6,13 +6,13 @@ import React, { useState } from "react";
 
 export default function ProgressiveImage(props) {
   const [highResImageLoaded, setHighResImageLoaded] = useState(false);
-  const { placeholder, height, alt, src } = props;
+  const { placeholder, dimensions, alt, src } = props;
 
   return (
     <React.Fragment>
       <img
         className="w-100  image"
-        style={{ height: `${height}px` }}
+        style={dimensions}
         alt={alt}
         src={src}
         ref={input => {
@@ -28,11 +28,11 @@ export default function ProgressiveImage(props) {
 
       <img
         className="image__loading"
-        alt={alt}
+        alt="loading..."
         src={placeholder}
         style={{
-          height: `${height}px`,
-          opacity: highResImageLoaded ? "0" : "1"
+          ...dimensions,
+          opacity: highResImageLoaded ? '0' : '1'
         }}
       />
     </React.Fragment>

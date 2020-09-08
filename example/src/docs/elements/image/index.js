@@ -1,8 +1,8 @@
-import React from "react";
-import { Image } from "next-pattern-library";
+import React from 'react';
+import { Image } from 'next-pattern-library';
 
-import PreviewWrapper from "../../../components/preview-wrapper";
-import propDocs from "./propDocs";
+import PreviewWrapper from '../../../components/preview-wrapper';
+import propDocs from './propDocs';
 
 export default function ImagePreview(props) {
   const exampleCode = () => {
@@ -40,11 +40,15 @@ export default function ImagePreview(props) {
             <Image
               /* Options */
               src="https://via.placeholder.com/1000x1000"
-              placeholder="https://via.placeholder.com/100x100"
+              placeholder="https://via.placeholder.com/1000x1000"
               alt="This is the alt text."
               figcaption="This is a figcaption."
-              height={400}
+              height={200}
+              width={2000}
+              customClass="br4  shadow2"
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
         </div>

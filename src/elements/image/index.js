@@ -14,6 +14,8 @@ export default function Image(props) {
     alt,
     figcaption,
     height,
+    width,
+    customClass,
     onClick,
     /* Children */
     withLinkProps
@@ -22,32 +24,33 @@ export default function Image(props) {
   const hasOnClick = onClick ? { onClick } : '';
   const ElementType = placeholder ? ProgressiveImage : 'img';
   const hasHeight = height ? `${height}px` : 'auto';
+  const hasWidth = width ? `${width}px` : '100%';
 
-  const styles = {
-    height: hasHeight
+  const dimensions = {
+    height: hasHeight,
+    width: hasWidth,
+    maxWidth: '100%'
   };
 
   return (
-    <figure>
+    <figure style={dimensions}>
       <WithLink
-        className="image__wrapper"
-        style={styles}
+        style={dimensions}
+        className={`image__wrapper  ${customClass}`}
         {...(withLinkProps && { withLinkProps })}
       >
         <ElementType
-          style={styles}
+          style={dimensions}
           className="image"
           src={src}
           placeholder={placeholder}
-          height={height}
+          dimensions={dimensions}
           alt={alt}
         />
       </WithLink>
 
       {figcaption && (
-        <figcaption className="black  f6  t-secondary  tac  mla  mra  pt2">
-          {figcaption}
-        </figcaption>
+        <figcaption className="image__figcaption">{figcaption}</figcaption>
       )}
     </figure>
   );

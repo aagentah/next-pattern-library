@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 /**
  * A card displays site content in a manner similar to a playing card.
@@ -17,14 +17,14 @@ export default function CardThumbnail(props) {
     button
   } = props;
 
-  const hasOnClick = onClick ? { onClick } : "";
+  const hasOnClick = onClick ? { onClick } : '';
 
   const renderContents = () => {
     const renderLabels = () => {
       if (!labelBlock.length) return false;
 
-      const listItems = labelBlock.map((label, i) => (
-        <span key={`${label}-${i}`} className="card__label">
+      const listItems = labelBlock.map(label => (
+        <span key={label} className="card__label">
           {label}
         </span>
       ));

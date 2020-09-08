@@ -1,7 +1,6 @@
 .image__wrapper {
   display: block;
   position: relative;
-  width: 100%;
   height: 100%;
   overflow: hidden;
   opacity: 0;
@@ -37,4 +36,14 @@
   filter: blur(5px);
   clip-path: inset(0);
   object-fit: cover;
+}
+
+.image__figcaption {
+  @extend .black;
+  @extend .f6;
+  @extend .t-secondary;
+  @extend .tac;
+  @extend .mla;
+  @extend .mra;
+  @extend .pt3;
 }

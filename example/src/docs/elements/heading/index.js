@@ -1,6 +1,5 @@
 import React from 'react';
 import { Heading } from 'next-pattern-library';
-import { Link } from 'react-router-dom';
 
 import PreviewWrapper from '../../../components/preview-wrapper';
 import propDocs from './propDocs';
@@ -28,13 +27,6 @@ export default function HeadingPreview(props) {
     );
   };
 
-  const withLinkProps = {
-    type: 'external',
-    url: '/yo',
-    target: '_blank',
-    routerLink: Link
-  };
-
   return (
     <React.Fragment>
       <PreviewWrapper
@@ -55,7 +47,7 @@ export default function HeadingPreview(props) {
             truncate={null}
             onClick={null}
             /* Children */
-            withLinkProps={withLinkProps}
+            withLinkProps={null}
           />
         </div>
         <div className="flex  flex-wrap  mb4">
