@@ -54,6 +54,12 @@ export default [
     description: ''
   },
   {
+    name: 'customClass',
+    default: '',
+    type: 'string',
+    description: ''
+  },
+  {
     name: 'onClick',
     default: '',
     type: 'func',

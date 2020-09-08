@@ -18,6 +18,8 @@ export default function ImagePreview(props) {
     alt={"This is the alt text."}
     figcaption={"This is a figcaption."}
     height={400}
+    width={200}
+    customClass={null}
     onClick={null}
   />
           `}
