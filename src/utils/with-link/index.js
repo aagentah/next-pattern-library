@@ -6,10 +6,9 @@ import React from 'react';
 
 export default function WithLink(props) {
   const { withLinkProps, children, ...newProps } = props;
+  const base = newProps ? <div {...newProps}>{children}</div> : children;
 
-  if (!withLinkProps) {
-    return <div {...newProps}>{children}</div>;
-  }
+  if (!withLinkProps) return base;
 
   const { type, href, target, routerLink, routerLinkProps } = withLinkProps;
   const RouterLink = routerLink;
@@ -41,8 +40,8 @@ export default function WithLink(props) {
         </button>
       );
     case 'none':
-      return <div {...newProps}>{children}</div>;
+      return base;
     default:
-      return <div {...newProps}>{children}</div>;
+      return base;
   }
 }
