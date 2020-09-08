@@ -71,7 +71,7 @@ export default function Button(props) {
       {...isAriaLoading}
       {...hasOnClick}
       {...(withLinkProps && { withLinkProps })}
-      disabled={props.disabled}
+      disabled={disabled}
       className={`button ${color} ${type} ${isFluid} ${isInverted} ${isLoading} ${isDisabled} ${size}`}
     >
       {contents()}
