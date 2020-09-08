@@ -6,7 +6,7 @@ export default [
     description: '<code>next</code>, <code>external</code>, <code>form</code>'
   },
   {
-    name: 'url',
+    name: 'href',
     default: '',
     type: 'string',
     description: 'Typically the href value.'

@@ -41,16 +41,12 @@ export default function ImagePreview(props) {
           <div className="col-24  col-8-md  pa3">
             <Image
               /* Options */
-              src="https://via.placeholder.com/1000x1000"
-              placeholder="https://via.placeholder.com/1000x1000"
-              alt="This is the alt text."
-              figcaption="This is a figcaption."
-              height={200}
-              width={200}
-              customClass="br4  shadow2"
+              src={'https://via.placeholder.com/1000x1000'}
+              placeholder={'https://via.placeholder.com/100x100'}
+              alt={'This is the alt text.'}
+              figcaption={'This is a figcaption.'}
+              height={400}
               onClick={null}
-              /* Children */
-              withLinkProps={null}
             />
           </div>
         </div>

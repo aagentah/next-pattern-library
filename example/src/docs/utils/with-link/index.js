@@ -10,7 +10,7 @@ export default function WithLinkPreview({ ...props }) {
         {`
   const withLinkProps = {
     type: 'external',
-    url: '/yo',
+    href: '/yo',
     target: '_blank',
     routerLink: Link
   };
