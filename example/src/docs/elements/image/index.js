@@ -44,7 +44,7 @@ export default function ImagePreview(props) {
               alt="This is the alt text."
               figcaption="This is a figcaption."
               height={200}
-              width={2000}
+              width={200}
               customClass="br4  shadow2"
               onClick={null}
               /* Children */
