@@ -1,5 +1,5 @@
-import React from "react";
-import TruncateMarkup from "react-truncate-markup";
+import React from 'react';
+import TruncateMarkup from 'react-truncate-markup';
 
 /**
  * A Copy.
@@ -10,28 +10,24 @@ export default function Copy(props) {
     /* Options */
     text,
     color,
-    onClick,
     size,
-    iconFloat,
     truncate
   } = props;
 
-  const hasTruncate = !!truncate;
-  const ElementType = hasTruncate ? TruncateMarkup : React.Fragment;
-  const hasOnClick = onClick ? { onClick } : "";
+  const ElementType = truncate ? TruncateMarkup : React.Fragment;
 
   let lineHeight;
   switch (size) {
-    case "small":
+    case 'small':
       lineHeight = 18;
       break;
-    case "medium":
+    case 'medium':
       lineHeight = 22;
       break;
-    case "large":
+    case 'large':
       lineHeight = 24;
       break;
-    case "x-large":
+    case 'x-large':
       lineHeight = 26;
       break;
     default:
@@ -40,12 +36,12 @@ export default function Copy(props) {
 
   const styles = {
     lineHeight: `${lineHeight}px`,
-    height: hasTruncate ? `${lineHeight * (truncate || 1)}px` : "auto"
+    height: truncate ? `${lineHeight * (truncate || 1)}px` : 'auto'
   };
 
   return (
-    <span {...hasOnClick} className={`copy ${size} ${color}`} style={styles}>
-      <ElementType lines={truncate}>
+    <span className={`copy ${size} ${color}`} style={styles}>
+      <ElementType {...(truncate && { lines: truncate })}>
         <span>{text}</span>
       </ElementType>
     </span>

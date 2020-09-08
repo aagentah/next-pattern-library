@@ -26,9 +26,7 @@ export default function Button(props) {
   const isFluid = fluid ? 'fluid' : '';
   const isInverted = inverted ? 'inverted' : '';
   const isLoading = loading ? 'loading' : '';
-  const isAriaLoading = loading ? { 'aria-label': 'Loading' } : '';
   const isDisabled = disabled ? 'disabled' : '';
-  const hasOnClick = onClick ? { onClick } : '';
 
   const contents = () => {
     if (loading) {
@@ -68,10 +66,10 @@ export default function Button(props) {
 
   return (
     <WithLink
-      {...isAriaLoading}
-      {...hasOnClick}
+      {...(loading && { 'aria-label': 'Loading' })}
+      {...(disabled && { disabled, 'aria-label': 'Disabled' })}
+      {...(onClick && { onClick })}
       {...(withLinkProps && { withLinkProps })}
-      disabled={disabled}
       className={`button ${color} ${type} ${isFluid} ${isInverted} ${isLoading} ${isDisabled} ${size}`}
     >
       {contents()}

@@ -19,10 +19,8 @@ export default function Heading(props) {
     withLinkProps
   } = props;
 
-  const hasOnClick = onClick ? { onClick } : '';
   const ElementType = htmlEntity || 'h1';
-  const hasTruncate = !!truncate;
-  const ElementTypeInner = hasTruncate ? TruncateMarkup : React.Fragment;
+  const ElementTypeInner = truncate ? TruncateMarkup : React.Fragment;
 
   const heightSmall = 22;
   const heightMedium = 24;
@@ -50,15 +48,15 @@ export default function Heading(props) {
 
   const styles = {
     lineHeight: `${lineHeight}px`,
-    height: hasTruncate ? `${lineHeight * (truncate || 1)}px` : 'auto'
+    height: truncate ? `${lineHeight * (truncate || 1)}px` : 'auto'
   };
 
   return (
     <WithLink {...(withLinkProps && { withLinkProps })}>
       <ElementType
-        {...hasOnClick}
         className={`heading ${size} ${color}`}
         style={styles}
+        {...(onClick && { onClick })}
       >
         <ElementTypeInner {...(truncate && { lines: truncate })}>
           <span>{text}</span>

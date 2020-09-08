@@ -21,14 +21,13 @@ export default function Image(props) {
     withLinkProps
   } = props;
 
-  const hasOnClick = onClick ? { onClick } : '';
   const ElementType = placeholder ? ProgressiveImage : 'img';
-  const hasHeight = height ? `${height}px` : 'auto';
-  const hasWidth = width ? `${width}px` : '100%';
+  const heightVal = height ? `${height}px` : 'auto';
+  const widthVal = width ? `${width}px` : '100%';
 
   const dimensions = {
-    height: hasHeight,
-    width: hasWidth,
+    height: heightVal,
+    width: widthVal,
     maxWidth: '100%'
   };
 
@@ -38,6 +37,7 @@ export default function Image(props) {
         style={dimensions}
         className={`image__wrapper  ${customClass}`}
         {...(withLinkProps && { withLinkProps })}
+        {...(onClick && { onClick })}
       >
         <ElementType
           style={dimensions}
