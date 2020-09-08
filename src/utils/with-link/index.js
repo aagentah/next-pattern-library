@@ -1,5 +1,4 @@
 import React from 'react';
-import cloneDeep from 'lodash/cloneDeep';
 
 /**
  * Determines what link type children should be wrapped in.
@@ -7,7 +6,6 @@ import cloneDeep from 'lodash/cloneDeep';
 
 export default function WithLink(props) {
   const { withLinkProps, children, ...newProps } = props;
-  const newProps = cloneDeep(props);
 
   if (!withLinkProps) {
     return <div {...newProps}>{children}</div>;
