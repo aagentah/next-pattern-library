@@ -1,53 +1,52 @@
-import React, { useState } from "react";
+import React from 'react';
+import cloneDeep from 'lodash/cloneDeep';
 
 /**
  * Determines what link type children should be wrapped in.
  */
 
 export default function WithLink(props) {
-  const [canRedirect, setCanRedirect] = useState(false);
   const { withLinkProps } = props;
-  if (!withLinkProps) return <div {...props}>{props.children}</div>;
-  const RouterLink = withLinkProps.routerLink;
 
-  switch (withLinkProps.type) {
-    case "next":
-      if (RouterLink) {
-        return (
-          <React.Fragment>
-            <RouterLink
-              href={withLinkProps.href}
-              {...withLinkProps.routerLinkProps}
-            >
-              <a {...props}>{props.children}</a>
-            </RouterLink>
-          </React.Fragment>
-        );
-      }
-      break;
-    case "external":
+  // Clone props and delete withLink object
+  const cloneProps = cloneDeep(props);
+  delete cloneProps.withLinkProps;
+
+  if (!withLinkProps) return <div {...cloneProps}>{props.children}</div>;
+
+  const { type, url, target, routerLink, routerLinkProps } = withLinkProps;
+
+  const RouterLink = routerLink;
+
+  switch (type) {
+    case 'next':
+      return (
+        <React.Fragments>
+          <RouterLink href={url} {...routerLinkProps}>
+            <a {...cloneProps}>{props.children}</a>
+          </RouterLink>
+        </React.Fragments>
+      );
+    case 'external':
       return (
         <a
           className="link"
-          target={withLinkProps.target || "_self"}
-          href={withLinkProps.href}
-          {...props}
+          target={target || '_self'}
+          href={url}
+          {...cloneProps}
         >
           {props.children}
         </a>
       );
-      break;
-    case "form":
+    case 'form':
       return (
-        <button type="submit" {...props}>
+        <button type="submit" {...cloneProps}>
           {props.children}
         </button>
       );
-      break;
-    case "none":
-      return <div {...props}>{props.children}</div>;
-      break;
+    case 'none':
+      return <div {...cloneProps}>{props.children}</div>;
     default:
-      return <div {...props}>{props.children}</div>;
+      return <div {...cloneProps}>{props.children}</div>;
   }
 }

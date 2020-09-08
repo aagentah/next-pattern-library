@@ -1,6 +1,6 @@
-import React from "react";
-import TruncateMarkup from "react-truncate-markup";
-import WithLink from "../../utils/with-link";
+import React from 'react';
+import TruncateMarkup from 'react-truncate-markup';
+import WithLink from '../../utils/with-link';
 
 /**
  * A Heading.
@@ -19,8 +19,8 @@ export default function Heading(props) {
     withLinkProps
   } = props;
 
-  const hasOnClick = onClick ? { onClick } : "";
-  const ElementType = htmlEntity || "h1";
+  const hasOnClick = onClick ? { onClick } : '';
+  const ElementType = htmlEntity || 'h1';
   const hasTruncate = !!truncate;
   const ElementTypeInner = hasTruncate ? TruncateMarkup : React.Fragment;
 
@@ -32,16 +32,16 @@ export default function Heading(props) {
   let lineHeight;
 
   switch (size) {
-    case "small":
+    case 'small':
       lineHeight = heightSmall;
       break;
-    case "medium":
+    case 'medium':
       lineHeight = heightMedium;
       break;
-    case "large":
+    case 'large':
       lineHeight = heightLarge;
       break;
-    case "x-large":
+    case 'x-large':
       lineHeight = heightXLarge;
       break;
     default:
@@ -50,20 +50,17 @@ export default function Heading(props) {
 
   const styles = {
     lineHeight: `${lineHeight}px`,
-    height: hasTruncate ? `${lineHeight * (truncate || 1)}px` : "auto"
+    height: hasTruncate ? `${lineHeight * (truncate || 1)}px` : 'auto'
   };
 
-  const link = withLinkProps ? { withLinkProps } : null;
-  const lines = truncate ? { lines: truncate } : null;
-
   return (
-    <WithLink {...link}>
+    <WithLink {...(withLinkProps && { withLinkProps })}>
       <ElementType
         {...hasOnClick}
         className={`heading ${size} ${color}`}
         style={styles}
       >
-        <ElementTypeInner {...lines}>
+        <ElementTypeInner {...(truncate && { lines: truncate })}>
           <span>{text}</span>
         </ElementTypeInner>
       </ElementType>

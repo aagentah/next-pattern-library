@@ -36,6 +36,8 @@
     "template-curly-spacing": "off",
     "indent": "off",
     "no-underscore-dangle": "off",
-    "new-cap": "off"
+    "new-cap": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "no-restricted-syntax": "off"
   }
 }

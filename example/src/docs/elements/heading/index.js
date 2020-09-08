@@ -1,9 +1,9 @@
-import React from "react";
-import { Heading } from "next-pattern-library";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Heading } from 'next-pattern-library';
+import { Link } from 'react-router-dom';
 
-import PreviewWrapper from "../../../components/preview-wrapper";
-import propDocs from "./propDocs";
+import PreviewWrapper from '../../../components/preview-wrapper';
+import propDocs from './propDocs';
 
 export default function HeadingPreview(props) {
   const exampleCode = () => {
@@ -29,9 +29,9 @@ export default function HeadingPreview(props) {
   };
 
   const withLinkProps = {
-    type: "internal",
-    url: "/",
-    target: "_top",
+    type: 'external',
+    url: '/yo',
+    target: '_blank',
     routerLink: Link
   };
 
@@ -55,7 +55,7 @@ export default function HeadingPreview(props) {
             truncate={null}
             onClick={null}
             /* Children */
-            withLinkProps={null}
+            withLinkProps={withLinkProps}
           />
         </div>
         <div className="flex  flex-wrap  mb4">
