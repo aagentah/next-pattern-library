@@ -6,15 +6,14 @@ import cloneDeep from 'lodash/cloneDeep';
  */
 
 export default function WithLink(props) {
-  const { withLinkProps, children } = props;
-  const cloneProps = cloneDeep(props);
+  const { withLinkProps, children, ...newProps } = props;
+  const newProps = cloneDeep(props);
 
-  if (cloneProps.withLinkProps) delete cloneProps.withLinkProps;
-  if (cloneProps.children) delete cloneProps.children;
-  if (!withLinkProps) return <div {...cloneProps}>{children}</div>;
+  if (!withLinkProps) {
+    return <div {...newProps}>{children}</div>;
+  }
 
   const { type, href, target, routerLink, routerLinkProps } = withLinkProps;
-
   const RouterLink = routerLink;
 
   switch (type) {
@@ -22,7 +21,7 @@ export default function WithLink(props) {
       return (
         <React.Fragment>
           <RouterLink href={href} {...routerLinkProps}>
-            <a {...cloneProps}>{children}</a>
+            <a {...newProps}>{children}</a>
           </RouterLink>
         </React.Fragment>
       );
@@ -32,20 +31,20 @@ export default function WithLink(props) {
           className="link"
           target={target || '_self'}
           href={href}
-          {...cloneProps}
+          {...newProps}
         >
           {children}
         </a>
       );
     case 'form':
       return (
-        <button type="submit" {...cloneProps}>
+        <button type="submit" {...newProps}>
           {children}
         </button>
       );
     case 'none':
-      return <div {...cloneProps}>{children}</div>;
+      return <div {...newProps}>{children}</div>;
     default:
-      return <div {...cloneProps}>{children}</div>;
+      return <div {...newProps}>{children}</div>;
   }
 }
