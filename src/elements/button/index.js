@@ -25,8 +25,6 @@ export default function Button(props) {
 
   const isFluid = fluid ? 'fluid' : '';
   const isInverted = inverted ? 'inverted' : '';
-  const isInvertTransparent =
-    inverted === 'transparent' ? 'inverted--transparent' : '';
   const isLoading = loading ? 'loading' : '';
   const isAriaLoading = loading ? { 'aria-label': 'Loading' } : '';
   const isDisabled = disabled ? 'disabled' : '';
@@ -76,7 +74,7 @@ export default function Button(props) {
       {...hasOnClick}
       {...link}
       disabled={props.disabled}
-      className={`button ${color} ${type} ${isFluid} ${isInverted} ${isInvertTransparent} ${isLoading} ${isDisabled} ${size}`}
+      className={`button ${color} ${type} ${isFluid} ${isInverted} ${isLoading} ${isDisabled} ${size}`}
     >
       {contents()}
     </WithLink>

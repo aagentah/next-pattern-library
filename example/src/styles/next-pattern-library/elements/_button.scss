@@ -163,7 +163,7 @@
     border-color: var($hex);
 
     &:hover:not(.loading):not(.disabled) {
-      background-color: var(--white);
+      background-color: transparent;
       color: var($hex);
       fill: var($hex);
     }
@@ -189,9 +189,5 @@
 }
 
 .button.primary.inverted {
-  background-color: var(--white);
-}
-
-.button.primary.inverted--transparent {
   background-color: transparent;
 }
