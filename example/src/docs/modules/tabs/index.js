@@ -19,6 +19,9 @@ export default function ModalPreview({ ...props }) {
       { id: '3', tabTitle: 'Tab 3', tabContent: <p>Tab3</p> }
     ]}
     defaultSelected="1"
+    onToggle={(visibleTab, current) => {
+      //
+    }}
   />
           `}
       </pre>
@@ -50,6 +53,7 @@ export default function ModalPreview({ ...props }) {
               { id: '3', tabTitle: 'Tab 3', tabContent: tabContent3 }
             ]}
             defaultSelected="1"
+            onToggle={null}
           />
         </div>
       </div>

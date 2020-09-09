@@ -10,5 +10,11 @@ export default [
     default: '',
     type: 'String',
     description: '<code>id</code> of tab.'
+  },
+  {
+    name: 'onToggle',
+    default: '',
+    type: 'function(visibleTab, current)',
+    description: 'Fires when navigating tabs.'
   }
 ];
