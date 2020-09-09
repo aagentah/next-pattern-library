@@ -17,6 +17,7 @@ import ImagePreview from './docs/elements/image';
 import LabelPreview from './docs/elements/label';
 import IconPreview from './docs/elements/icon';
 import InputPreview from './docs/elements/input';
+import CheckboxPreview from './docs/elements/checkbox';
 
 // utils
 import WithLink from './docs/utils/with-link';
@@ -72,6 +73,9 @@ export default function App() {
               <li className="mb1">
                 <Link to="/input">Input</Link>
               </li>
+              <li className="mb1">
+                <Link to="/checkbox">Checkbox</Link>
+              </li>
             </ul>
 
             <h1 className="t-title  f5  bold  mb2">Utils</h1>
@@ -100,6 +104,7 @@ export default function App() {
           <Route path="/label" component={LabelPreview} />
           <Route path="/icon" component={IconPreview} />
           <Route path="/input" component={InputPreview} />
+          <Route path="/checkbox" component={CheckboxPreview} />
 
           {/* Utils */}
           <Route path="/with-link" component={WithLink} />

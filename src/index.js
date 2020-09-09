@@ -15,6 +15,7 @@ export Copy from './elements/copy';
 export Image from './elements/image';
 export Label from './elements/label';
 export Input from './elements/input';
+export Checkbox from './elements/checkbox';
 
 // utils
 //

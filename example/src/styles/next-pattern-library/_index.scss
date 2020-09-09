@@ -1,23 +1,24 @@
-@import "vendor/normalize";
+@import 'vendor/normalize';
 
 // front-scss
-@import "vars";
-@import "functions";
-@import "mixins";
-@import "utilities";
+@import 'vars';
+@import 'functions';
+@import 'mixins';
+@import 'utilities';
 
 // elements
-@import "elements/heading";
-@import "elements/copy";
-@import "elements/button";
-@import "elements/image";
-@import "elements/label";
-@import "elements/input";
+@import 'elements/heading';
+@import 'elements/copy';
+@import 'elements/button';
+@import 'elements/image';
+@import 'elements/label';
+@import 'elements/input';
+@import 'elements/checkbox';
 
 // modules
-@import "modules/hero";
-@import "modules/card";
-@import "modules/avatar";
-@import "modules/modal";
-@import "modules/tabs";
-@import "modules/page-theme-parallax";
+@import 'modules/hero';
+@import 'modules/card';
+@import 'modules/avatar';
+@import 'modules/modal';
+@import 'modules/tabs';
+@import 'modules/page-theme-parallax';
