@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Checkbox } from 'next-pattern-library';
+import { Radio } from 'next-pattern-library';
 
 import PreviewWrapper from '../../../components/preview-wrapper';
 import propDocs from './propDocs';
@@ -9,7 +9,7 @@ export default function InputPreview({ ...props }) {
     return (
       <pre>
         {`
-  <Checkbox
+  <Radio
     /* Options */
     label="Lorem ipseum dolor sit amet."
     name="1"
@@ -28,7 +28,7 @@ export default function InputPreview({ ...props }) {
   return (
     <React.Fragment>
       <PreviewWrapper
-        title="Checkbox"
+        title="Radio"
         description=""
         propDocs={propDocs}
         exampleCode={exampleCode}
@@ -36,22 +36,33 @@ export default function InputPreview({ ...props }) {
 
       <div className="container  mla  mra">
         <div className="flex  flex-wrap">
-          <div className="col-24  col-8-md  flex  justify-center  justify-start-md  align-end  mb4  ph3">
-            <Checkbox
+          <div className="col-24  flex  justify-center  justify-start-md  align-end  mb4  ph3">
+            <Radio
               /* Options */
               label="Lorem ipseum dolor sit amet."
-              name="1"
+              name="lorem"
               checked={true}
               required
               disabled={false}
               onClick={null}
             />
           </div>
-          <div className="col-24  col-8-md  flex  justify-center  justify-start-md  align-end  mb4  ph3">
-            <Checkbox
+          <div className="col-24  flex  justify-center  justify-start-md  align-end  mb4  ph3">
+            <Radio
               /* Options */
               label="Lorem ipseum dolor sit amet."
-              name="2"
+              name="lorem"
+              checked={false}
+              required
+              disabled={false}
+              onClick={null}
+            />
+          </div>
+          <div className="col-24  flex  justify-center  justify-start-md  align-end  mb4  ph3">
+            <Radio
+              /* Options */
+              label="Lorem ipseum dolor sit amet."
+              name="lorem"
               checked={false}
               required
               disabled={true}

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 /**
- * A Checkbox.
+ * A Radio.
  */
 
-export default function Checkbox(props) {
+export default function Radio(props) {
   const [checkedValue, setCheckedValue] = useState('');
 
   const {
@@ -28,14 +28,14 @@ export default function Checkbox(props) {
   };
 
   return (
-    <div className="checkbox__wrapper">
+    <div className="radio__wrapper">
       <label
-        className="checkbox__control  flex  align-center"
+        className="radio__control  flex  align-center"
         {...(onClick && { onClick: onClick(checkedValue) })}
       >
         <input
-          type="checkbox"
-          className="checkbox__input"
+          type="radio"
+          className="radio__input"
           name={name}
           checked={checkedValue}
           required={required}
@@ -43,8 +43,8 @@ export default function Checkbox(props) {
           onChange={handleInput}
         />
 
-        <div className="checkbox__indicator"></div>
-        <span className="checkbox__label">{label}</span>
+        <div className="radio__indicator"></div>
+        <span className="radio__label">{label}</span>
       </label>
     </div>
   );

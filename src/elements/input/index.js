@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import classNames from "classnames";
+import React, { useState, useEffect } from 'react';
+import classNames from 'classnames';
 
 /**
  * A Input.
  */
 
 export default function Input(props) {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState('');
   const [hasValue, setHasValue] = useState(false);
 
   const {
@@ -29,7 +29,7 @@ export default function Input(props) {
   }, [value]);
 
   const hasValueClass = classNames({
-    "has-value": hasValue
+    'has-value': hasValue
   });
 
   const handleInput = e => {
