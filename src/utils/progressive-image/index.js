@@ -7,22 +7,10 @@ import React, { useState } from 'react';
 export default function ProgressiveImage(props) {
   const [highResImageLoaded, setHighResImageLoaded] = useState(false);
   const { placeholder, dimensions, alt, src } = props;
+  const handleImageLoaded = () => setHighResImageLoaded(true);
 
   return (
     <React.Fragment>
-      <img
-        className="w-100  image"
-        style={dimensions}
-        alt={alt}
-        src={src}
-        ref={img => {
-          // onLoad replacement for SSR
-          if (!img) return;
-          img.onload = setHighResImageLoaded(true);
-          if (img.complete) setHighResImageLoaded(true);
-        }}
-      />
-
       <img
         className="image__loading"
         alt="loading..."
@@ -31,6 +19,14 @@ export default function ProgressiveImage(props) {
           ...dimensions,
           opacity: highResImageLoaded ? '0' : '1'
         }}
+      />
+
+      <img
+        className="w-100  image"
+        style={dimensions}
+        alt={alt}
+        src={src}
+        onLoad={handleImageLoaded}
       />
     </React.Fragment>
   );
