@@ -12,21 +12,21 @@ export default function ProgressiveImage(props) {
   return (
     <React.Fragment>
       <img
-        className="w-100  image"
-        style={dimensions}
-        alt={alt}
-        src={src}
-        onLoad={handleImageLoaded}
-      />
-
-      <img
-        className="image__loading"
+        className={`image__loading ${highResImageLoaded && 'is-loaded'}`}
         alt="loading..."
         src={placeholder}
         style={{
           ...dimensions,
           opacity: highResImageLoaded ? '0' : '1'
         }}
+      />
+
+      <img
+        className="w-100  image"
+        style={dimensions}
+        alt={alt}
+        src={src}
+        onLoad={handleImageLoaded}
       />
     </React.Fragment>
   );
