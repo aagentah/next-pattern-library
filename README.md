@@ -13,15 +13,13 @@ npm install --save github:danjonesdev/next-pattern-library
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import MyComponent from 'next-pattern-library'
+import MyComponent from 'next-pattern-library';
 
 class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
+  render() {
+    return <MyComponent />;
   }
 }
 ```
@@ -38,6 +36,16 @@ npm run predeploy
 
 ```bash
 npm run deploy
+```
+
+## Update NPM package
+
+```bash
+npm install --global np
+```
+
+```bash
+np
 ```
 
 ## License
