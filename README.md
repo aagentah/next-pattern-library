@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save github:danjonesdev/next-pattern-library
+npm install --save next-pattern-library
 ```
 
 ## Usage
