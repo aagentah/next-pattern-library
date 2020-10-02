@@ -48,7 +48,7 @@
     "eslint-plugin-react-hooks": "4.0.8",
     "gh-pages": "1.2.0",
     "react": "16.4.1",
-    "react-dom": "16.4.1",
+    "react-dom": "16.4.2",
     "rollup": "0.64.1",
     "rollup-plugin-babel": "3.0.7",
     "rollup-plugin-commonjs": "9.1.3",
