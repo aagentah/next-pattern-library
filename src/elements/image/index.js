@@ -35,7 +35,7 @@ export default function Image(props) {
     <figure style={dimensions}>
       <WithLink
         style={dimensions}
-        className={`image__wrapper  ${customClass}`}
+        className={`image__wrapper  ${customClass && customClass}`}
         {...(withLinkProps && { withLinkProps })}
         {...(onClick && { onClick })}
       >

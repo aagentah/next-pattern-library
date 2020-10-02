@@ -4,21 +4,32 @@ import React, { useState } from 'react';
  * ProgressiveImage.
  */
 
-export default function ProgressiveImage(props) {
-  const [highResImageLoaded, setHighResImageLoaded] = useState(false);
+const ProgressiveImage = React.memo(props => {
   const { placeholder, dimensions, alt, src } = props;
-  const handleImageLoaded = () => setHighResImageLoaded(true);
+
+  // Loaded states
+  const [highResLoaded, setHighResLoaded] = useState(false);
+  const [lowResLoaded, setLowResLoaded] = useState(false);
+
+  // Set loaded states
+  const handleHighResLoaded = () => {
+    if (!highResLoaded) setHighResLoaded(true);
+  };
+  const handleLowResLoaded = () => {
+    if (!lowResLoaded) setLowResLoaded(true);
+  };
 
   return (
     <React.Fragment>
       <img
-        className={`image__loading ${highResImageLoaded && 'is-loaded'}`}
+        className="image__loading"
         alt="loading..."
         src={placeholder}
         style={{
           ...dimensions,
-          opacity: highResImageLoaded ? '0' : '1'
+          opacity: !highResLoaded && !lowResLoaded ? '1' : '0'
         }}
+        onLoad={handleLowResLoaded}
       />
 
       <img
@@ -26,8 +37,10 @@ export default function ProgressiveImage(props) {
         style={dimensions}
         alt={alt}
         src={src}
-        onLoad={handleImageLoaded}
+        onLoad={handleHighResLoaded}
       />
     </React.Fragment>
   );
-}
+});
+
+export default ProgressiveImage;
