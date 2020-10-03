@@ -11,9 +11,7 @@ const useImageLoaded = () => {
   const onLoad = () => setLoaded(true);
 
   useEffect(() => {
-    if (ref.current && ref.current.complete) {
-      onLoad();
-    }
+    if (ref.current && ref.current.complete) onLoad();
   });
 
   return [ref, loaded, onLoad];
@@ -21,23 +19,31 @@ const useImageLoaded = () => {
 
 const ProgressiveImage = props => {
   const { placeholder, dimensions, alt, src } = props;
-  const [ref, loaded, onLoad] = useImageLoaded();
+  const [highResRef, highResLoaded, highResOnLoad] = useImageLoaded();
+  const [lowResRef, lowResLoaded, lowResOnLoad] = useImageLoaded();
 
   return (
     <React.Fragment>
       <img
-        ref={ref}
-        className="image__loading"
+        ref={lowResRef}
         alt="loading..."
         src={placeholder}
+        onLoad={lowResOnLoad}
         style={{
           ...dimensions,
-          opacity: !loaded ? '1' : '0'
+          opacity: !lowResLoaded && !highResLoaded ? '1' : '0'
         }}
-        onLoad={onLoad}
+        className="image__loading"
       />
 
-      <img className="w-100  image" style={dimensions} alt={alt} src={src} />
+      <img
+        ref={highResRef}
+        alt={alt}
+        src={src}
+        onLoad={highResOnLoad}
+        style={dimensions}
+        className="image  w-100"
+      />
     </React.Fragment>
   );
 };

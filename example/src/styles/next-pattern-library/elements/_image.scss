@@ -29,6 +29,7 @@
 
 .image__loading {
   transition: opacity ease-in 0.5s;
+  transition-delay: 0.3s;
   top: 0;
   left: 0;
   width: 100%;
