@@ -1,33 +1,45 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 /**
  * ProgressiveImage.
  */
 
-export default function ProgressiveImage(props) {
-  const [highResImageLoaded, setHighResImageLoaded] = useState(false);
+const useImageLoaded = () => {
+  const [loaded, setLoaded] = useState(false);
+  const ref = useRef();
+
+  const onLoad = () => setLoaded(true);
+
+  useEffect(() => {
+    if (ref.current && ref.current.complete) {
+      onLoad();
+    }
+  });
+
+  return [ref, loaded, onLoad];
+};
+
+const ProgressiveImage = props => {
   const { placeholder, dimensions, alt, src } = props;
-  const handleImageLoaded = () => setHighResImageLoaded(true);
+  const [ref, loaded, onLoad] = useImageLoaded();
 
   return (
     <React.Fragment>
       <img
-        className={`image__loading ${highResImageLoaded && 'is-loaded'}`}
+        ref={ref}
+        className="image__loading"
         alt="loading..."
         src={placeholder}
         style={{
           ...dimensions,
-          opacity: highResImageLoaded ? '0' : '1'
+          opacity: !loaded ? '1' : '0'
         }}
+        onLoad={onLoad}
       />
 
-      <img
-        className="w-100  image"
-        style={dimensions}
-        alt={alt}
-        src={src}
-        onLoad={handleImageLoaded}
-      />
+      <img className="w-100  image" style={dimensions} alt={alt} src={src} />
     </React.Fragment>
   );
-}
+};
+
+export default ProgressiveImage;
