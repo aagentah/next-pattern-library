@@ -6,10 +6,10 @@
   "private": true,
   "dependencies": {
     "next-pattern-library": "file:..",
-    "prop-types": "^15.6.2",
+    "prop-types": "15.6.2",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
-    "react-router-dom": "^5.0.1",
+    "react-router-dom": "5.0.1",
     "react-scripts": "3.0.1"
   },
   "scripts": {
@@ -19,7 +19,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "4.12.0"
   },
   "browserslist": {
     "production": [
