@@ -17,7 +17,7 @@ export default function CardThumbnail(props) {
     button
   } = props;
 
-  const hasOnClick = onClick ? { onClick } : '';
+  const hasOnClick = onClick && { onClick };
 
   const renderContents = () => {
     const renderLabels = () => {

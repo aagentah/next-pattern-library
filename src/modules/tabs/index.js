@@ -33,9 +33,8 @@ export default function Tabs(props) {
       role="button"
       key={item.id}
       onClick={() => handleToggle(item.id, i)}
-      className={`tabs__desktop-nav__item ${
-        visibleTab === item.id ? 'active' : ''
-      }`}
+      className={`tabs__desktop-nav__item ${visibleTab === item.id &&
+        'active'}`}
     >
       {item.tabTitle}
     </li>
@@ -45,7 +44,7 @@ export default function Tabs(props) {
     <div
       key={item.id}
       ref={el => (itemsRef.current[i] = el)}
-      className={`tabs__body__item ${visibleTab === item.id ? 'active' : ''}`}
+      className={`tabs__body__item ${visibleTab === item.id && 'active'}`}
     >
       <div
         role="button"

@@ -23,10 +23,10 @@ export default function Button(props) {
     withLinkProps
   } = props;
 
-  const isFluid = fluid ? 'fluid' : '';
-  const isInverted = inverted ? 'inverted' : '';
-  const isLoading = loading ? 'loading' : '';
-  const isDisabled = disabled ? 'disabled' : '';
+  const isFluid = fluid && 'fluid';
+  const isInverted = inverted && 'inverted';
+  const isLoading = loading && 'loading';
+  const isDisabled = disabled && 'disabled';
 
   const contents = () => {
     if (loading) {
