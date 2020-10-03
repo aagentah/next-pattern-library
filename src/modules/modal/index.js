@@ -14,7 +14,7 @@ export default function Modal(props) {
   } = props;
 
   return (
-    <section className={`modal  modal--${size}  ${active ? 'active' : ''}`}>
+    <section className={`modal  modal--${size}  ${active && 'active'}`}>
       <div className="modal__dialog">{children}</div>
     </section>
   );
