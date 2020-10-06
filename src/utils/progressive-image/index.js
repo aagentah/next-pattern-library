@@ -18,22 +18,22 @@ const useImageLoaded = () => {
 };
 
 const ProgressiveImage = props => {
-  const { placeholder, dimensions, alt, src } = props;
+  const { src, placeholder, dimensions, alt } = props;
   const [highResRef, highResLoaded, highResOnLoad] = useImageLoaded();
   const [lowResRef, lowResLoaded, lowResOnLoad] = useImageLoaded();
 
   return (
     <React.Fragment>
-      <img
-        ref={lowResRef}
-        alt="loading..."
-        src={placeholder}
-        onLoad={lowResOnLoad}
-        style={{
-          ...dimensions
-        }}
-        className={`image__loading ${lowResLoaded && 'image__loading--done'}`}
-      />
+      {placeholder && (
+        <img
+          ref={lowResRef}
+          alt="loading..."
+          src={placeholder}
+          onLoad={lowResOnLoad}
+          style={dimensions}
+          className={`image__loading ${lowResLoaded && 'image__loading--done'}`}
+        />
+      )}
 
       <img
         ref={highResRef}

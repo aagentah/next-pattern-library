@@ -21,7 +21,6 @@ export default function Image(props) {
     withLinkProps
   } = props;
 
-  const ElementType = placeholder ? ProgressiveImage : 'img';
   const heightVal = height ? `${height}px` : 'auto';
   const widthVal = width ? `${width}px` : '100%';
 
@@ -32,22 +31,22 @@ export default function Image(props) {
   };
 
   return (
-    <figure style={dimensions}>
-      <WithLink
-        style={dimensions}
-        className={`image__wrapper  ${customClass && customClass}`}
-        {...(withLinkProps && { withLinkProps })}
-        {...(onClick && { onClick })}
-      >
-        <ElementType
+    <figure className="image__figure">
+      <div style={dimensions}>
+        <WithLink
           style={dimensions}
-          className="image"
-          src={src}
-          placeholder={placeholder}
-          dimensions={dimensions}
-          alt={alt}
-        />
-      </WithLink>
+          className={`image__wrapper  ${customClass ? customClass : ''}`}
+          {...(withLinkProps && { withLinkProps })}
+          {...(onClick && { onClick })}
+        >
+          <ProgressiveImage
+            src={src}
+            placeholder={placeholder}
+            dimensions={dimensions}
+            alt={alt}
+          />
+        </WithLink>
+      </div>
 
       {figcaption && (
         <figcaption className="image__figcaption">{figcaption}</figcaption>
