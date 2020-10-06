@@ -30,10 +30,9 @@ const ProgressiveImage = props => {
         src={placeholder}
         onLoad={lowResOnLoad}
         style={{
-          ...dimensions,
-          opacity: !lowResLoaded && !highResLoaded ? '1' : '0'
+          ...dimensions
         }}
-        className="image__loading"
+        className={`image__loading ${lowResLoaded && 'image__loading--done'}`}
       />
 
       <img
@@ -42,7 +41,7 @@ const ProgressiveImage = props => {
         src={src}
         onLoad={highResOnLoad}
         style={dimensions}
-        className="image  w-100"
+        className={`image ${highResLoaded && 'image--loaded'}`}
       />
     </React.Fragment>
   );
