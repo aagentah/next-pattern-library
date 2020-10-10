@@ -35,14 +35,16 @@ const ProgressiveImage = props => {
         />
       )}
 
-      <img
-        ref={highResRef}
-        alt={alt}
-        src={src}
-        onLoad={highResOnLoad}
-        style={dimensions}
-        className={`image ${highResLoaded && 'image--loaded'}`}
-      />
+      {src && lowResLoaded && (
+        <img
+          ref={highResRef}
+          alt={alt}
+          src={src}
+          onLoad={highResOnLoad}
+          style={dimensions}
+          className={`image ${highResLoaded && 'image--loaded'}`}
+        />
+      )}
     </React.Fragment>
   );
 };
