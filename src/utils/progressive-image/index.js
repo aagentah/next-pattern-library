@@ -35,7 +35,7 @@ const ProgressiveImage = props => {
         />
       )}
 
-      {src && lowResLoaded && (
+      {src && (
         <img
           ref={highResRef}
           alt={alt}
