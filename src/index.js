@@ -1,4 +1,4 @@
-// import "./styles/_index.scss";
+import '../example/src/index.scss';
 
 // modules
 export Card from './modules/card';
