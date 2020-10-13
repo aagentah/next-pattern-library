@@ -22,7 +22,7 @@
     );
     background-size: 400% 400%;
     animation: pulse 1.5s ease-in infinite;
-    @extend .z9;
+    z-index: 1090;
 
     @keyframes pulse {
       0% {
