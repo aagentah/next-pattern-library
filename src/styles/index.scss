@@ -1,4 +1,7 @@
-// front-scss
+// vendor
+@import 'vendor/normalize';
+
+// vars, functions, mixins
 @import 'vars';
 @import 'functions';
 @import 'mixins';
