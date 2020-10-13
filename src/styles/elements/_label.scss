@@ -6,8 +6,8 @@
 
   .label {
     transition: all 0.3s ease-in-out;
+    display: inline-block;
     padding: 5px;
-    display: block;
     text-align: center;
     font-size: $npl-f6;
   }
