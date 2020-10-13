@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import CardBlock from "./block";
-import CardThumbnail from "./thumbnail";
+import CardBlock from './block';
+import CardThumbnail from './thumbnail';
 
 /**
  * A card displays site content in a manner similar to a playing card.
@@ -10,12 +10,13 @@ import CardThumbnail from "./thumbnail";
 export default function Card(props) {
   const { type } = props;
 
-  if (type === "block") {
+  if (type === 'block') {
     return <CardBlock {...props} />;
   }
 
-  if (type === "thumbnail") {
-    return <CardThumbnail {...props} />;
+  if (type === 'thumbnail') {
+    return null;
+    // return <CardThumbnail {...props} />;
   }
 
   return false;

@@ -1,0 +1,41 @@
+.hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .image__wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+  }
+}
+
+.hero__dialog {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  padding: 30px;
+}
+
+.hero__title {
+  font-family: $npl-t-primary;
+  font-size: $npl-f2;
+  margin-bottom: 15px;
+}
+
+.hero__description {
+  font-size: $npl-f5;
+  margin-bottom: 15px;
+}
+
+.hero__button {
+  //
+}
+
+.hero__image {
+  width: 100%;
+}

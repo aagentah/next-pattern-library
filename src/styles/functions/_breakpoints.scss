@@ -1,0 +1,8 @@
+@function breakpoint-min($name, $breakpoints: $npl-grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+@function breakpoint-infix($name, $breakpoints: $npl-grid-breakpoints) {
+  @return '#{$name}';
+}

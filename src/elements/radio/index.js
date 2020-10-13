@@ -30,7 +30,7 @@ export default function Radio(props) {
   return (
     <div className="radio__wrapper">
       <label
-        className="radio__control  flex  align-center"
+        className="radio__control"
         {...(onClick && { onClick: onClick(checkedValue) })}
       >
         <input

@@ -1,0 +1,47 @@
+.heading {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  // opacity: 0;
+  // animation: fade-in 0.3s forwards;
+
+  @each $color, $hex in $npl-colors {
+    &.#{$color} {
+      color: $hex;
+    }
+  }
+
+  &.small {
+    font-size: $npl-f5;
+  }
+
+  &.medium {
+    font-size: $npl-f4;
+  }
+
+  &.large {
+    font-size: $npl-f3;
+  }
+
+  &.x-large {
+    font-size: $npl-f3;
+  }
+
+  @include breakpoint-up(md) {
+    &.small {
+      font-size: $npl-f5;
+    }
+
+    &.medium {
+      font-size: $npl-f4;
+    }
+
+    &.large {
+      font-size: $npl-f3;
+    }
+
+    &.x-large {
+      font-size: $npl-f2;
+    }
+  }
+}

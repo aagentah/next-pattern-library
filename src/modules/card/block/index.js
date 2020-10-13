@@ -30,33 +30,23 @@ export default function CardBlock(props) {
         </span>
       ));
 
-      return (
-        <div className="flex  flex-wrap  card__label-block">{listItems}</div>
-      );
+      return <div className="card__label-block">{listItems}</div>;
     };
 
     return (
-      <div className="flex  flex-wrap  align-start  pt2  card__contents-wrapper">
+      <div className="card__contents-wrapper">
         {labelBlock && renderLabels()}
-        <div className="col-24">
-          {title && <div className="card__title">{title}</div>}
-          {description && (
-            <div className="card__description">{description}</div>
-          )}
-        </div>
+        {title && <div className="card__title">{title}</div>}
+        {description && <div className="card__description">{description}</div>}
       </div>
     );
   };
 
   return (
     <div className="card  card--small">
-      {image && <div className="col-24  card__image">{image}</div>}
-      <div className="col-24  pt2">
-        {renderContents()}
-        <div className="flex  flex-wrap  align-start  card__button-wrapper">
-          {button}
-        </div>
-      </div>
+      {image && <div className="card__image">{image}</div>}
+      {renderContents()}
+      <div className="card__button-wrapper">{button}</div>
     </div>
   );
 }

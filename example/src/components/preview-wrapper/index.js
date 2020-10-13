@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import Accordion from "../accordion";
+import Accordion from '../accordion';
 
 export default function PreviewWrapper({ ...props }) {
   const { title, description, propDocs, exampleCode } = props;

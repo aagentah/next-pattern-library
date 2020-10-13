@@ -1,6 +1,4 @@
 .button {
-  opacity: 0;
-  animation: fade-in 0.3s forwards;
   transition: all 0.3s ease-in-out;
   background: transparent;
   box-shadow: none;
@@ -8,18 +6,26 @@
   cursor: pointer;
   position: relative;
   text-decoration: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: flex;
+  align-items: center;
 
-  @extend .ph3;
-  @extend .flex;
-  @extend .align-center;
+  // opacity: 0;
+  // animation: fade-in 0.3s forwards;
 
   &::after {
     transition: opacity 0.3s ease-in-out;
     opacity: 0;
   }
 
+  .button__icon__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
   &.small {
-    @extend .f6;
+    font-size: $npl-f6;
 
     .button__icon {
       width: 14px;
@@ -27,7 +33,7 @@
   }
 
   &.medium {
-    @extend .f5;
+    font-size: $npl-f5;
 
     .button__icon {
       width: 16px;
@@ -35,7 +41,7 @@
   }
 
   &.large {
-    @extend .f4;
+    font-size: $npl-f4;
 
     .button__icon {
       width: 18px;
@@ -43,7 +49,7 @@
   }
 
   &.x-large {
-    @extend .f3;
+    font-size: $npl-f3;
 
     .button__icon {
       width: 20px;
@@ -65,7 +71,7 @@
 }
 
 .button.primary {
-  border: 2px solid var(--black);
+  border: 2px solid $npl-base-black;
   text-align: center;
   display: inline-block;
   border-radius: 3px;
@@ -102,7 +108,8 @@
   text-align: left;
   display: inline-block;
   border-radius: 0px;
-  @extend .ph0;
+  padding-left: 0;
+  padding-right: 0;
 
   &:hover:not(.loading):not(.disabled) {
     .button__icon--right,
@@ -123,7 +130,7 @@
     left: 0;
     height: 2px;
     width: 0%;
-    background-color: var(--black);
+    background-color: $npl-base-black;
   }
 }
 
@@ -148,13 +155,11 @@
   }
 
   &.primary {
-    @extend .flex;
-    @extend .justify-center;
+    justify-content: center;
   }
 
   &.secondary {
-    @extend .flex;
-    @extend .justify-start;
+    justify-content: center;
   }
 }
 
@@ -163,35 +168,35 @@
   cursor: not-allowed;
 }
 
-@each $color, $hex in $colors {
+@each $color, $hex in $npl-colors {
   .button.primary.#{$color} {
-    background-color: var($hex);
-    color: var(--white);
-    fill: var(--white);
-    border-color: var($hex);
+    background-color: $hex;
+    color: $npl-base-white;
+    fill: $npl-base-white;
+    border-color: $hex;
 
     &:hover:not(.loading):not(.disabled) {
       background-color: transparent;
-      color: var($hex);
-      fill: var($hex);
+      color: $hex;
+      fill: $hex;
     }
   }
 
   .button.primary.#{$color}.inverted {
-    color: var($hex);
-    fill: var($hex);
-    border-color: var($hex);
+    color: $hex;
+    fill: $hex;
+    border-color: $hex;
 
     &:hover:not(.loading):not(.disabled) {
-      background-color: var($hex);
-      color: var(--white);
-      fill: var(--white);
+      background-color: $hex;
+      color: $npl-base-white;
+      fill: $npl-base-white;
     }
   }
 
   .button.secondary.#{$color} {
     &:after {
-      background-color: var($hex);
+      background-color: $hex;
     }
   }
 }

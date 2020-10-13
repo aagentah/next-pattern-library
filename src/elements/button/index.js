@@ -52,14 +52,14 @@ export default function Button(props) {
     if (icon) {
       if (iconFloat === 'left') {
         return (
-          <div className="flex  align-center">
+          <div className="button__icon__wrapper">
             <div className="button__icon  button__icon--left">{icon}</div>
             <span>{text}</span>
           </div>
         );
       }
       return (
-        <div className="flex  align-center">
+        <div className="button__icon__wrapper">
           <span>{text}</span>
           <div className="button__icon  button__icon--right">{icon}</div>
         </div>

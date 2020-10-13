@@ -1,10 +1,10 @@
-@import 'vendor/normalize';
-
 // front-scss
 @import 'vars';
 @import 'functions';
 @import 'mixins';
-@import 'utilities';
+
+// utils
+@import 'utils/skeleton';
 
 // elements
 @import 'elements/heading';
@@ -22,4 +22,3 @@
 @import 'modules/avatar';
 @import 'modules/modal';
 @import 'modules/tabs';
-@import 'modules/page-theme-parallax';
