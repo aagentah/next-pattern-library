@@ -1,10 +1,12 @@
-import React from 'react';
-import { Button, Icon } from 'next-pattern-library';
+import React, { useState } from 'react';
+import { Button, Icon, Checkbox } from 'next-pattern-library';
 
 import PreviewWrapper from '../../../components/preview-wrapper';
 import propDocs from './propDocs';
 
 export default function ButtonPreview({ ...props }) {
+  const [skeleton, setSkeleton] = useState(null);
+
   const exampleCode = () => {
     return (
       <pre>
@@ -23,6 +25,7 @@ export default function ButtonPreview({ ...props }) {
     inverted={false}
     loading={false}
     disabled={false}
+    skeleton={false}
     onClick={null}
     /* Children */
     withLinkProps={null}
@@ -44,6 +47,18 @@ export default function ButtonPreview({ ...props }) {
       />
 
       <div className="container  mla  mra">
+        <div className="bg-almost-white  dib  pa3  mb4">
+          <Checkbox
+            /* Options */
+            label="Toggle Skeleton"
+            name="1"
+            checked={false}
+            required
+            disabled={false}
+            onClick={checked => setSkeleton(!checked)}
+          />
+        </div>
+
         <div className="flex  flex-wrap  justify-center">
           <div className="col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4">
             <Button
@@ -58,6 +73,7 @@ export default function ButtonPreview({ ...props }) {
               inverted={false}
               loading={false}
               disabled={false}
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -77,6 +93,7 @@ export default function ButtonPreview({ ...props }) {
               inverted
               loading={false}
               disabled={false}
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -96,6 +113,7 @@ export default function ButtonPreview({ ...props }) {
               loading
               disabled={false}
               inverted={false}
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -115,6 +133,7 @@ export default function ButtonPreview({ ...props }) {
               inverted
               loading={false}
               disabled
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -136,6 +155,7 @@ export default function ButtonPreview({ ...props }) {
               inverted={false}
               loading={false}
               disabled={false}
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -155,6 +175,7 @@ export default function ButtonPreview({ ...props }) {
               inverted={false}
               loading={false}
               disabled={false}
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -174,6 +195,7 @@ export default function ButtonPreview({ ...props }) {
               inverted={false}
               loading={false}
               disabled={false}
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -193,6 +215,7 @@ export default function ButtonPreview({ ...props }) {
               inverted={false}
               loading={false}
               disabled={false}
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -214,6 +237,7 @@ export default function ButtonPreview({ ...props }) {
               inverted={false}
               loading={false}
               disabled={false}
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -233,6 +257,7 @@ export default function ButtonPreview({ ...props }) {
               inverted
               loading={false}
               disabled={false}
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -252,6 +277,7 @@ export default function ButtonPreview({ ...props }) {
               inverted={false}
               loading
               disabled={false}
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -271,6 +297,7 @@ export default function ButtonPreview({ ...props }) {
               inverted
               loading={false}
               disabled
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -292,6 +319,7 @@ export default function ButtonPreview({ ...props }) {
               inverted={false}
               loading={false}
               disabled={false}
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -311,6 +339,7 @@ export default function ButtonPreview({ ...props }) {
               inverted={false}
               loading={false}
               disabled={false}
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -330,6 +359,7 @@ export default function ButtonPreview({ ...props }) {
               inverted={false}
               loading={false}
               disabled={false}
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -349,6 +379,7 @@ export default function ButtonPreview({ ...props }) {
               inverted={false}
               loading={false}
               disabled={false}
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}

@@ -13,6 +13,11 @@
   @extend .flex;
   @extend .align-center;
 
+  &::after {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+
   &.small {
     @extend .f6;
 

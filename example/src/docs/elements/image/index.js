@@ -1,10 +1,12 @@
-import React from 'react';
-import { Image } from 'next-pattern-library';
+import React, { useState } from 'react';
+import { Image, Checkbox } from 'next-pattern-library';
 
 import PreviewWrapper from '../../../components/preview-wrapper';
 import propDocs from './propDocs';
 
 export default function ImagePreview(props) {
+  const [skeleton, setSkeleton] = useState(false);
+
   const exampleCode = () => {
     return (
       <pre>
@@ -20,6 +22,7 @@ export default function ImagePreview(props) {
     height={400}
     width={200}
     customClass={null}
+    skeleton={false}
     onClick={null}
   />
           `}
@@ -37,6 +40,18 @@ export default function ImagePreview(props) {
       />
 
       <div className="container  mla  mra">
+        <div className="bg-almost-white  dib  pa3  mb4">
+          <Checkbox
+            /* Options */
+            label="Toggle Skeleton"
+            name="1"
+            checked={false}
+            required
+            disabled={false}
+            onClick={checked => setSkeleton(!checked)}
+          />
+        </div>
+
         <div className="flex  flex-wrap  mb4">
           <div className="col-24  col-8-md  pa3">
             <Image
@@ -48,6 +63,7 @@ export default function ImagePreview(props) {
               alt={'This is the alt text.'}
               figcaption={'This is a figcaption.'}
               height={700}
+              skeleton={skeleton}
               onClick={null}
             />
           </div>

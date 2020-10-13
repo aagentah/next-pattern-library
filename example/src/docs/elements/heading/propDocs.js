@@ -1,45 +1,51 @@
 export default [
   {
-    name: "htmlEntity",
-    default: "",
-    type: "string",
-    description: ""
+    name: 'htmlEntity',
+    default: '',
+    type: 'string',
+    description: ''
   },
   {
-    name: "text",
-    default: "",
-    type: "string",
-    description: ""
+    name: 'text',
+    default: '',
+    type: 'string',
+    description: ''
   },
   {
-    name: "color",
-    default: "",
-    type: "string",
-    description: ""
+    name: 'color',
+    default: '',
+    type: 'string',
+    description: ''
   },
   {
-    name: "enum",
-    default: "",
-    type: "string",
+    name: 'enum',
+    default: '',
+    type: 'string',
     description:
-      "<code>small</code>, <code>medium</code>, <code>large</code>, <code>x-large</code>"
+      '<code>small</code>, <code>medium</code>, <code>large</code>, <code>x-large</code>'
   },
   {
-    name: "truncate",
-    default: "",
-    type: "integer",
-    description: ""
+    name: 'truncate',
+    default: '',
+    type: 'integer',
+    description: ''
   },
   {
-    name: "onClick",
-    default: "",
-    type: "func",
-    description: ""
+    name: 'skeleton',
+    default: '',
+    type: 'bool',
+    description: 'Adds a skeleton overlay to the element.'
   },
   {
-    name: "withLinkProps",
-    default: "",
-    type: "Util",
-    description: "Props per <code>withLinkProps</code> util"
+    name: 'onClick',
+    default: '',
+    type: 'func',
+    description: ''
+  },
+  {
+    name: 'withLinkProps',
+    default: '',
+    type: 'Util',
+    description: 'Props per <code>withLinkProps</code> util'
   }
 ];

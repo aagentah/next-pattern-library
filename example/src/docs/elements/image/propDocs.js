@@ -60,6 +60,12 @@ export default [
     description: ''
   },
   {
+    name: 'skeleton',
+    default: '',
+    type: 'bool',
+    description: 'Adds a skeleton overlay to the element.'
+  },
+  {
     name: 'onClick',
     default: '',
     type: 'func',

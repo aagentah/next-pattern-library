@@ -17,6 +17,7 @@ export default function Image(props) {
     width,
     customClass,
     onClick,
+    skeleton,
     /* Children */
     withLinkProps
   } = props;
@@ -30,12 +31,18 @@ export default function Image(props) {
     maxWidth: '100%'
   };
 
+  const skeletonClass = skeleton
+    ? 'skeleton  skeleton-active'
+    : 'skeleton  skeleton-disabled';
+
   return (
     <figure className="image__figure">
       <div style={dimensions}>
         <WithLink
           style={dimensions}
-          className={`image__wrapper  ${customClass ? customClass : ''}`}
+          className={`image__wrapper ${skeletonClass}  ${
+            customClass ? customClass : ''
+          } `}
           {...(withLinkProps && { withLinkProps })}
           {...(onClick && { onClick })}
         >
@@ -49,7 +56,9 @@ export default function Image(props) {
       </div>
 
       {figcaption && (
-        <figcaption className="image__figcaption">{figcaption}</figcaption>
+        <figcaption className={`image__figcaption ${skeletonClass}`}>
+          {figcaption}
+        </figcaption>
       )}
     </figure>
   );

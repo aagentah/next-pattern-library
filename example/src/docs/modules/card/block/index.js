@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Card,
   Image,
@@ -7,13 +7,13 @@ import {
   Copy,
   Button,
   Icon
-} from "next-pattern-library";
+} from 'next-pattern-library';
 
-import PreviewWrapper from "../../../../components/preview-wrapper";
-import propDocs from "../propDocs";
+import PreviewWrapper from '../../../../components/preview-wrapper';
+import propDocs from '../propDocs';
 
 export default function CardBlockPreview({ ...props }) {
-  const buttonIcon = <Icon icon={["fas", "arrow-right"]} />;
+  const buttonIcon = <Icon icon={['fas', 'arrow-right']} />;
 
   const cardImage = (
     <Image
@@ -91,9 +91,7 @@ export default function CardBlockPreview({ ...props }) {
 
       <div className="container  mla  mra">
         <div className="flex  flex-wrap">
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="block"
@@ -107,9 +105,7 @@ export default function CardBlockPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="block"
@@ -123,9 +119,7 @@ export default function CardBlockPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="block"
@@ -139,9 +133,7 @@ export default function CardBlockPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="block"
@@ -157,9 +149,7 @@ export default function CardBlockPreview({ ...props }) {
         </div>
 
         <div className="flex  flex-wrap">
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="block"
@@ -173,9 +163,7 @@ export default function CardBlockPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="block"
@@ -189,9 +177,7 @@ export default function CardBlockPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="block"
@@ -205,9 +191,7 @@ export default function CardBlockPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="block"

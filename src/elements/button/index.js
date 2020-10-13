@@ -19,6 +19,7 @@ export default function Button(props) {
     loading,
     disabled,
     onClick,
+    skeleton,
     /* Children */
     withLinkProps
   } = props;
@@ -27,6 +28,10 @@ export default function Button(props) {
   const isInverted = inverted && 'inverted';
   const isLoading = loading && 'loading';
   const isDisabled = disabled && 'disabled';
+
+  const skeletonClass = skeleton
+    ? 'skeleton  skeleton-active'
+    : 'skeleton  skeleton-disabled';
 
   const contents = () => {
     if (loading) {
@@ -70,7 +75,7 @@ export default function Button(props) {
       {...(disabled && { disabled, 'aria-label': 'Disabled' })}
       {...(onClick && { onClick })}
       {...(withLinkProps && { withLinkProps })}
-      className={`button ${color} ${type} ${isFluid} ${isInverted} ${isLoading} ${isDisabled} ${size}`}
+      className={`button ${color} ${type} ${isFluid} ${isInverted} ${isLoading} ${isDisabled} ${size} ${skeletonClass}`}
     >
       {contents()}
     </WithLink>

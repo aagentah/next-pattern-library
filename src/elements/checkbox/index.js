@@ -31,7 +31,7 @@ export default function Checkbox(props) {
     <div className="checkbox__wrapper">
       <label
         className="checkbox__control  flex  align-center"
-        {...(onClick && { onClick: onClick(checkedValue) })}
+        {...(onClick && { onClick: () => onClick(checkedValue) })}
       >
         <input
           type="checkbox"

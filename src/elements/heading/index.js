@@ -15,6 +15,7 @@ export default function Heading(props) {
     size,
     truncate,
     onClick,
+    skeleton,
     /* Children */
     withLinkProps
   } = props;
@@ -25,7 +26,7 @@ export default function Heading(props) {
   const heightSmall = 22;
   const heightMedium = 24;
   const heightLarge = 26;
-  const heightXLarge = 38;
+  const heightXLarge = 42;
 
   let lineHeight;
 
@@ -51,10 +52,14 @@ export default function Heading(props) {
     height: truncate ? `${lineHeight * (truncate || 1)}px` : 'auto'
   };
 
+  const skeletonClass = skeleton
+    ? 'skeleton  skeleton-active'
+    : 'skeleton  skeleton-disabled';
+
   return (
     <WithLink {...(withLinkProps && { withLinkProps })}>
       <ElementType
-        className={`heading ${size} ${color}`}
+        className={`heading ${size} ${color} ${skeletonClass}`}
         style={styles}
         {...(onClick && { onClick })}
       >

@@ -1,10 +1,12 @@
-import React from 'react';
-import { Heading } from 'next-pattern-library';
+import React, { useState } from 'react';
+import { Heading, Checkbox } from 'next-pattern-library';
 
 import PreviewWrapper from '../../../components/preview-wrapper';
 import propDocs from './propDocs';
 
 export default function HeadingPreview(props) {
+  const [skeleton, setSkeleton] = useState(false);
+
   const exampleCode = () => {
     return (
       <pre>
@@ -18,6 +20,7 @@ export default function HeadingPreview(props) {
     color={"black"}
     size={"x-large"}
     truncate={null}
+    skeleton={false}
     onClick={null}
     /* Children */
     withLinkProps={null}
@@ -37,6 +40,18 @@ export default function HeadingPreview(props) {
       />
 
       <div className="container  mla  mra  relative">
+        <div className="bg-almost-white  dib  pa3  mb4">
+          <Checkbox
+            /* Options */
+            label="Toggle Skeleton"
+            name="1"
+            checked={false}
+            required
+            disabled={false}
+            onClick={checked => setSkeleton(!checked)}
+          />
+        </div>
+
         <div className="flex  flex-wrap  mb4">
           <Heading
             /* Options */
@@ -46,6 +61,7 @@ export default function HeadingPreview(props) {
             size="x-large"
             truncate={null}
             onClick={null}
+            skeleton={skeleton}
             /* Children */
             withLinkProps={null}
           />
@@ -59,6 +75,7 @@ export default function HeadingPreview(props) {
             size="large"
             truncate={null}
             onClick={null}
+            skeleton={skeleton}
             /* Children */
             withLinkProps={null}
           />
@@ -72,6 +89,7 @@ export default function HeadingPreview(props) {
             size="medium"
             truncate={null}
             onClick={null}
+            skeleton={skeleton}
             /* Children */
             withLinkProps={null}
           />
@@ -85,6 +103,7 @@ export default function HeadingPreview(props) {
             size="small"
             truncate={null}
             onClick={null}
+            skeleton={skeleton}
             /* Children */
             withLinkProps={null}
           />
@@ -98,6 +117,7 @@ export default function HeadingPreview(props) {
             size="x-large"
             truncate={2}
             onClick={null}
+            skeleton={skeleton}
             /* Children */
             withLinkProps={null}
           />
@@ -111,6 +131,7 @@ export default function HeadingPreview(props) {
             size="large"
             truncate={2}
             onClick={null}
+            skeleton={skeleton}
             /* Children */
             withLinkProps={null}
           />
@@ -124,6 +145,7 @@ export default function HeadingPreview(props) {
             size="medium"
             truncate={2}
             onClick={null}
+            skeleton={skeleton}
             /* Children */
             withLinkProps={null}
           />
@@ -137,6 +159,7 @@ export default function HeadingPreview(props) {
             size="small"
             truncate={2}
             onClick={null}
+            skeleton={skeleton}
             /* Children */
             withLinkProps={null}
           />
