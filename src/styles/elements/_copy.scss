@@ -1,8 +1,8 @@
 .copy {
+  opacity: 0;
+  animation: npl-fade-in 0.3s forwards;
   position: relative;
   display: block;
-  // opacity: 0;
-  // animation: fade-in 0.3s forwards;
 
   @each $color, $hex in $npl-colors {
     &.#{$color} {

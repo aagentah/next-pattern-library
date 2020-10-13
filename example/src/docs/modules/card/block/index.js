@@ -33,9 +33,9 @@ export default function CardBlockPreview({ ...props }) {
     <Label
       /* Options */
       type=""
-      text="label"
-      color="black"
-      backgroundColor="white"
+      text="Label"
+      color="white"
+      backgroundColor="black"
       onClick={null}
       /* Children */
       withLinkProps={null}
@@ -50,7 +50,6 @@ export default function CardBlockPreview({ ...props }) {
       color="black"
       size="small"
       truncate={2}
-      reveal={null}
       /* Children */
       withLinkProps={null}
     />

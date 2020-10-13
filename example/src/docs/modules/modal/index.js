@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Modal, Heading, Copy, Button } from "next-pattern-library";
+import React, { useState } from 'react';
+import { Modal, Heading, Copy, Button } from 'next-pattern-library';
 
-import PreviewWrapper from "../../../components/preview-wrapper";
-import propDocs from "./propDocs";
+import PreviewWrapper from '../../../components/preview-wrapper';
+import propDocs from './propDocs';
 
 export default function ModalPreview({ ...props }) {
   const [modalActive, setModalActive] = useState(false);
@@ -15,7 +15,6 @@ export default function ModalPreview({ ...props }) {
       color="black"
       size="large"
       truncate={1}
-      reveal={null}
       /* Children */
       withLinkProps={null}
     />

@@ -1,4 +1,6 @@
 .button {
+  opacity: 0;
+  animation: npl-fade-in 0.3s forwards;
   transition: all 0.3s ease-in-out;
   background: transparent;
   box-shadow: none;
@@ -10,9 +12,6 @@
   padding-right: 8px;
   display: flex;
   align-items: center;
-
-  // opacity: 0;
-  // animation: fade-in 0.3s forwards;
 
   &::after {
     transition: opacity 0.3s ease-in-out;

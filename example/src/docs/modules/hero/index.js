@@ -1,11 +1,11 @@
-import React from "react";
-import { Hero, Image, Heading, Copy, Button, Icon } from "next-pattern-library";
+import React from 'react';
+import { Hero, Image, Heading, Copy, Button, Icon } from 'next-pattern-library';
 
-import PreviewWrapper from "../../../components/preview-wrapper";
-import propDocs from "./propDocs";
+import PreviewWrapper from '../../../components/preview-wrapper';
+import propDocs from './propDocs';
 
 export default function HeroPreview({ ...props }) {
-  const buttonIcon = <Icon icon={["fas", "arrow-right"]} />;
+  const buttonIcon = <Icon icon={['fas', 'arrow-right']} />;
 
   const heroImage = (
     <Image
@@ -29,7 +29,6 @@ export default function HeroPreview({ ...props }) {
       color="black"
       size="large"
       truncate={1}
-      reveal={null}
       /* Children */
       withLinkProps={null}
     />

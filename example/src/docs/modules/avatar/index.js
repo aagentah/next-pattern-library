@@ -1,8 +1,8 @@
-import React from "react";
-import { Avatar, Image, Heading, Copy } from "next-pattern-library";
+import React from 'react';
+import { Avatar, Image, Heading, Copy } from 'next-pattern-library';
 
-import PreviewWrapper from "../../../components/preview-wrapper";
-import propDocs from "./propDocs";
+import PreviewWrapper from '../../../components/preview-wrapper';
+import propDocs from './propDocs';
 
 export default function AvatarPreview({ ...props }) {
   const heroImage = (
@@ -27,7 +27,6 @@ export default function AvatarPreview({ ...props }) {
       color="black"
       size="medium"
       truncate={1}
-      reveal={null}
       /* Children */
       withLinkProps={null}
     />

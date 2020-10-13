@@ -1,8 +1,8 @@
-import React from "react";
-import { Card, Image, Label, Heading, Copy } from "next-pattern-library";
+import React from 'react';
+import { Card, Image, Label, Heading, Copy } from 'next-pattern-library';
 
-import PreviewWrapper from "../../../../components/preview-wrapper";
-import propDocs from "../propDocs";
+import PreviewWrapper from '../../../../components/preview-wrapper';
+import propDocs from '../propDocs';
 
 export default function CardThumbnailPreview({ ...props }) {
   const cardImage = (
@@ -40,7 +40,6 @@ export default function CardThumbnailPreview({ ...props }) {
       color="black"
       size="small"
       truncate={1}
-      reveal={null}
       /* Children */
       withLinkProps={null}
     />
@@ -62,9 +61,7 @@ export default function CardThumbnailPreview({ ...props }) {
 
       <div className="container  mla  mra">
         <div className="flex  flex-wrap">
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="thumbnail"
@@ -80,9 +77,7 @@ export default function CardThumbnailPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="thumbnail"
@@ -96,9 +91,7 @@ export default function CardThumbnailPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="thumbnail"
@@ -112,9 +105,7 @@ export default function CardThumbnailPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="thumbnail"
@@ -130,9 +121,7 @@ export default function CardThumbnailPreview({ ...props }) {
         </div>
 
         <div className="flex  flex-wrap">
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="thumbnail"
@@ -146,9 +135,7 @@ export default function CardThumbnailPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="thumbnail"
@@ -162,9 +149,7 @@ export default function CardThumbnailPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="thumbnail"
@@ -178,9 +163,7 @@ export default function CardThumbnailPreview({ ...props }) {
             />
           </div>
 
-          <div
-            className="col-24  col-6-md  flex  justify-start  align-start  pa3"
-          >
+          <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card
               /* Options */
               type="thumbnail"
