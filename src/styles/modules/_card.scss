@@ -15,15 +15,11 @@
   align-items: flex-start;
 }
 
-.card__label-block {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 0 0 100%;
-  max-width: 100%;
+.card__labels {
   margin-bottom: 15px;
 }
 
-.card__label {
+.card__labels .label__wrapper {
   padding-right: 10px;
 }
 
