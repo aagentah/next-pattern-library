@@ -5,12 +5,6 @@
   display: inline-block;
   font-weight: bold;
 
-  @each $color, $hex in $npl-colors {
-    &.#{$color} {
-      color: $hex;
-    }
-  }
-
   &.small {
     font-size: $npl-f5;
   }
@@ -43,5 +37,12 @@
     &.x-large {
       font-size: $npl-f2;
     }
+  }
+}
+
+@each $color, $hex in $npl-colors {
+  &.heading--#{$color} {
+    transition: all 0.3s ease-in-out;
+    color: $hex;
   }
 }

@@ -1,10 +1,12 @@
-import React from "react";
-import { Label } from "next-pattern-library";
+import React, { useState } from 'react';
+import { Label, Checkbox } from 'next-pattern-library';
 
-import PreviewWrapper from "../../../components/preview-wrapper";
-import propDocs from "./propDocs";
+import PreviewWrapper from '../../../components/preview-wrapper';
+import propDocs from './propDocs';
 
 export default function LabelPreview(props) {
+  const [skeleton, setSkeleton] = useState(null);
+
   const exampleCode = () => {
     return (
       <pre>
@@ -36,6 +38,18 @@ export default function LabelPreview(props) {
       />
 
       <div className="container  mla  mra">
+        <div className="bg-almost-white  dib  pa3  mb4">
+          <Checkbox
+            /* Options */
+            label="Toggle Skeleton"
+            name="1"
+            checked={false}
+            required
+            disabled={false}
+            onClick={checked => setSkeleton(!checked)}
+          />
+        </div>
+
         <div className="flex  flex-wrap  mb4">
           <div className="col-12  col-4-md">
             <Label
@@ -44,6 +58,7 @@ export default function LabelPreview(props) {
               text="17/08/1996"
               color="black"
               backgroundColor="white"
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -56,6 +71,7 @@ export default function LabelPreview(props) {
               text="Dan Jones"
               color="black"
               backgroundColor="white"
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -68,6 +84,7 @@ export default function LabelPreview(props) {
               text="£9.99"
               color="black"
               backgroundColor="white"
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -80,6 +97,7 @@ export default function LabelPreview(props) {
               text="£4.99"
               color="secondary-color"
               backgroundColor="white"
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}
@@ -92,6 +110,7 @@ export default function LabelPreview(props) {
               text="Interview"
               color="white"
               backgroundColor="secondary-color"
+              skeleton={skeleton}
               onClick={null}
               /* Children */
               withLinkProps={null}

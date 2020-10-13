@@ -1,10 +1,12 @@
-import React from 'react';
-import { Avatar, Image, Heading, Copy } from 'next-pattern-library';
+import React, { useState } from 'react';
+import { Avatar, Image, Heading, Copy, Checkbox } from 'next-pattern-library';
 
 import PreviewWrapper from '../../../components/preview-wrapper';
 import propDocs from './propDocs';
 
 export default function AvatarPreview({ ...props }) {
+  const [skeleton, setSkeleton] = useState(null);
+
   const heroImage = (
     <Image
       /* Options */
@@ -13,6 +15,7 @@ export default function AvatarPreview({ ...props }) {
       alt="This is the alt text."
       figcaption={null}
       height={100}
+      skeleton={skeleton}
       onClick={null}
       /* Children */
       withLinkProps={null}
@@ -27,6 +30,7 @@ export default function AvatarPreview({ ...props }) {
       color="black"
       size="medium"
       truncate={1}
+      skeleton={skeleton}
       /* Children */
       withLinkProps={null}
     />
@@ -39,6 +43,7 @@ export default function AvatarPreview({ ...props }) {
       color="black"
       size="medium"
       truncate={1}
+      skeleton={skeleton}
     />
   );
 
@@ -47,6 +52,18 @@ export default function AvatarPreview({ ...props }) {
       <PreviewWrapper title="Avatar" description="" propDocs={propDocs} />
 
       <div className="container  mla  mra">
+        <div className="bg-almost-white  dib  pa3  mb4">
+          <Checkbox
+            /* Options */
+            label="Toggle Skeleton"
+            name="1"
+            checked={false}
+            required
+            disabled={false}
+            onClick={checked => setSkeleton(!checked)}
+          />
+        </div>
+
         <div className="flex  flex-wrap  mb4">
           <Avatar
             /* Options */

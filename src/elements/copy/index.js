@@ -45,7 +45,10 @@ export default function Copy(props) {
     : 'skeleton  skeleton-disabled';
 
   return (
-    <span className={`copy ${size} ${color} ${skeletonClass}`} style={styles}>
+    <span
+      className={`copy ${size} copy--${color} ${skeletonClass}`}
+      style={styles}
+    >
       <ElementType {...(truncate && { lines: truncate })}>
         <span>{text}</span>
       </ElementType>

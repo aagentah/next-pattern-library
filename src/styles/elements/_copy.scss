@@ -4,12 +4,6 @@
   position: relative;
   display: block;
 
-  @each $color, $hex in $npl-colors {
-    &.#{$color} {
-      color: $hex;
-    }
-  }
-
   &.small {
     font-size: $npl-f7;
   }
@@ -24,5 +18,12 @@
 
   &.x-large {
     font-size: $npl-f4;
+  }
+}
+
+@each $color, $hex in $npl-colors {
+  &.copy--#{$color} {
+    transition: all 0.3s ease-in-out;
+    color: $hex;
   }
 }

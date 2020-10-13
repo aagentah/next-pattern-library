@@ -1,10 +1,20 @@
-import React from 'react';
-import { Hero, Image, Heading, Copy, Button, Icon } from 'next-pattern-library';
+import React, { useState } from 'react';
+import {
+  Hero,
+  Image,
+  Heading,
+  Copy,
+  Button,
+  Icon,
+  Checkbox
+} from 'next-pattern-library';
 
 import PreviewWrapper from '../../../components/preview-wrapper';
 import propDocs from './propDocs';
 
 export default function HeroPreview({ ...props }) {
+  const [skeleton, setSkeleton] = useState(null);
+
   const buttonIcon = <Icon icon={['fas', 'arrow-right']} />;
 
   const heroImage = (
@@ -15,6 +25,7 @@ export default function HeroPreview({ ...props }) {
       alt="This is the alt text."
       figcaption={null}
       height={250}
+      skeleton={skeleton}
       onClick={null}
       /* Children */
       withLinkProps={null}
@@ -29,6 +40,7 @@ export default function HeroPreview({ ...props }) {
       color="black"
       size="large"
       truncate={1}
+      skeleton={skeleton}
       /* Children */
       withLinkProps={null}
     />
@@ -41,6 +53,7 @@ export default function HeroPreview({ ...props }) {
       color="black"
       size="medium"
       truncate={1}
+      skeleton={skeleton}
     />
   );
 
@@ -57,6 +70,7 @@ export default function HeroPreview({ ...props }) {
       inverted={false}
       loading={false}
       disabled={false}
+      skeleton={skeleton}
       onClick={null}
       /* Children */
       withLinkProps={null}
@@ -68,6 +82,18 @@ export default function HeroPreview({ ...props }) {
       <PreviewWrapper title="Hero" description="" propDocs={propDocs} />
 
       <div className="container  mla  mra">
+        <div className="bg-almost-white  dib  pa3  mb4">
+          <Checkbox
+            /* Options */
+            label="Toggle Skeleton"
+            name="1"
+            checked={false}
+            required
+            disabled={false}
+            onClick={checked => setSkeleton(!checked)}
+          />
+        </div>
+
         <div className="flex  flex-wrap  mb4">
           <Hero
             /* Options */

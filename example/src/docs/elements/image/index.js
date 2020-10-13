@@ -62,7 +62,7 @@ export default function ImagePreview(props) {
               placeholder={null}
               alt={'This is the alt text.'}
               figcaption={'This is a figcaption.'}
-              height={700}
+              height={300}
               skeleton={skeleton}
               onClick={null}
             />

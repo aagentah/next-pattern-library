@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Card,
   Image,
@@ -6,13 +6,16 @@ import {
   Heading,
   Copy,
   Button,
-  Icon
+  Icon,
+  Checkbox
 } from 'next-pattern-library';
 
 import PreviewWrapper from '../../../../components/preview-wrapper';
 import propDocs from '../propDocs';
 
 export default function CardBlockPreview({ ...props }) {
+  const [skeleton, setSkeleton] = useState(null);
+
   const buttonIcon = <Icon icon={['fas', 'arrow-right']} />;
 
   const cardImage = (
@@ -23,6 +26,7 @@ export default function CardBlockPreview({ ...props }) {
       alt="This is the alt text."
       figcaption={null}
       height={250}
+      skeleton={skeleton}
       onClick={null}
       /* Children */
       withLinkProps={null}
@@ -36,6 +40,7 @@ export default function CardBlockPreview({ ...props }) {
       text="Label"
       color="white"
       backgroundColor="black"
+      skeleton={skeleton}
       onClick={null}
       /* Children */
       withLinkProps={null}
@@ -50,6 +55,7 @@ export default function CardBlockPreview({ ...props }) {
       color="black"
       size="small"
       truncate={2}
+      skeleton={skeleton}
       /* Children */
       withLinkProps={null}
     />
@@ -62,6 +68,7 @@ export default function CardBlockPreview({ ...props }) {
       color="black"
       size="medium"
       truncate={2}
+      skeleton={skeleton}
     />
   );
 
@@ -78,6 +85,7 @@ export default function CardBlockPreview({ ...props }) {
       inverted={false}
       loading={false}
       disabled={false}
+      skeleton={skeleton}
       onClick={null}
       /* Children */
       withLinkProps={null}
@@ -89,6 +97,18 @@ export default function CardBlockPreview({ ...props }) {
       <PreviewWrapper title="Card" description="" propDocs={propDocs} />
 
       <div className="container  mla  mra">
+        <div className="bg-almost-white  dib  pa3  mb4">
+          <Checkbox
+            /* Options */
+            label="Toggle Skeleton"
+            name="1"
+            checked={false}
+            required
+            disabled={false}
+            onClick={checked => setSkeleton(!checked)}
+          />
+        </div>
+
         <div className="flex  flex-wrap">
           <div className="col-24  col-6-md  flex  justify-start  align-start  pa3">
             <Card

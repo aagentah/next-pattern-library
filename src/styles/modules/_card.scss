@@ -18,6 +18,8 @@
 .card__label-block {
   display: flex;
   flex-wrap: wrap;
+  flex: 0 0 100%;
+  max-width: 100%;
   margin-bottom: 10px;
 }
 
@@ -26,14 +28,20 @@
 }
 
 .card__title {
+  flex: 0 0 100%;
+  max-width: 100%;
   margin-bottom: 10px;
 }
 
 .card__description {
+  flex: 0 0 100%;
+  max-width: 100%;
   margin-bottom: 15px;
 }
 
 .card__button-wrapper {
+  flex: 0 0 100%;
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;

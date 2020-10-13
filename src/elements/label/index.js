@@ -13,21 +13,27 @@ export default function Label(props) {
     text,
     color,
     backgroundColor,
+    skeleton,
     onClick,
     /* Children */
     withLinkProps
   } = props;
 
+  const skeletonClass = skeleton
+    ? 'skeleton  skeleton-active'
+    : 'skeleton  skeleton-disabled';
+
   return (
-    <span className="label__wrapper">
-      <WithLink {...(withLinkProps && { withLinkProps })}>
-        <span
-          {...(onClick && { onClick })}
-          className={`label ${customClass} ${color} bg-${backgroundColor}`}
-        >
-          {text}
-        </span>
-      </WithLink>
-    </span>
+    <WithLink
+      className={`label__wrapper  ${skeletonClass}`}
+      {...(withLinkProps && { withLinkProps })}
+    >
+      <span
+        {...(onClick && { onClick })}
+        className={`label ${customClass} ${color} bg-${backgroundColor}`}
+      >
+        {text}
+      </span>
+    </WithLink>
   );
 }

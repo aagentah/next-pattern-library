@@ -138,6 +138,7 @@
 }
 
 .button.loading {
+  display: flex;
   cursor: default;
 
   @keyframes loading {
@@ -168,7 +169,7 @@
 }
 
 @each $color, $hex in $npl-colors {
-  .button.primary.#{$color} {
+  .button.primary.button--#{$color} {
     background-color: $hex;
     color: $npl-base-white;
     fill: $npl-base-white;
@@ -181,7 +182,7 @@
     }
   }
 
-  .button.primary.#{$color}.inverted {
+  .button.primary.button--#{$color}.inverted {
     color: $hex;
     fill: $hex;
     border-color: $hex;
@@ -193,7 +194,7 @@
     }
   }
 
-  .button.secondary.#{$color} {
+  .button.secondary.button--#{$color} {
     &:after {
       background-color: $hex;
     }

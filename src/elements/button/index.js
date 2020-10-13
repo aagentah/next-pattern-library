@@ -75,7 +75,7 @@ export default function Button(props) {
       {...(disabled && { disabled, 'aria-label': 'Disabled' })}
       {...(onClick && { onClick })}
       {...(withLinkProps && { withLinkProps })}
-      className={`button ${color} ${type} ${isFluid} ${isInverted} ${isLoading} ${isDisabled} ${size} ${skeletonClass}`}
+      className={`button button--${color} ${type} ${isFluid} ${isInverted} ${isLoading} ${isDisabled} ${size} ${skeletonClass}`}
     >
       {contents()}
     </WithLink>

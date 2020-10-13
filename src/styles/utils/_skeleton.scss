@@ -1,6 +1,7 @@
 .button,
 .heading,
 .copy,
+.label__wrapper,
 .image__wrapper,
 .image__figcaption {
   &::before {
@@ -13,7 +14,9 @@
     display: block;
     width: calc(100% + 8px);
     height: calc(100% + 8px);
-    border-radius: 8px;
+    border-radius: 6px;
+    z-index: 1090;
+    pointer-events: none;
     background: linear-gradient(
       -90deg,
       var(--light-grey) 0%,
@@ -22,7 +25,6 @@
     );
     background-size: 400% 400%;
     animation: pulse 1.5s ease-in infinite;
-    z-index: 1090;
 
     @keyframes pulse {
       0% {
@@ -35,23 +37,16 @@
   }
 }
 
-.button.skeleton-active,
-.heading.skeleton-active,
-.copy.skeleton-active,
-.image__wrapper.skeleton-active,
-.image__figcaption.skeleton-active {
+.skeleton-active {
   box-shadow: 0;
 
   &::before {
     opacity: 1;
+    pointer-events: auto;
   }
 }
 
-.button.skeleton-disabled,
-.heading.skeleton-disabled,
-.copy.skeleton-disabled,
-.image__wrapper.skeleton-disabled,
-.image__figcaption.skeleton-disabled {
+.skeleton-disabled {
   &::before {
     content: '';
     opacity: 0;

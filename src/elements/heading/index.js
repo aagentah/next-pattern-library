@@ -14,8 +14,8 @@ export default function Heading(props) {
     color,
     size,
     truncate,
-    onClick,
     skeleton,
+    onClick,
     /* Children */
     withLinkProps
   } = props;
@@ -59,7 +59,7 @@ export default function Heading(props) {
   return (
     <WithLink {...(withLinkProps && { withLinkProps })}>
       <ElementType
-        className={`heading ${size} ${color} ${skeletonClass}`}
+        className={`heading ${size} heading--${color} ${skeletonClass}`}
         style={styles}
         {...(onClick && { onClick })}
       >
