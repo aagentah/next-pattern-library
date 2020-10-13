@@ -1,10 +1,17 @@
 .docs-nav {
   display: none;
   width: 100%;
-  max-width: 200px;
+  max-width: 280px;
   min-height: 100vh;
-  @extend .br;
-  @extend .bc-black;
+
+  a {
+    color: var(--black);
+    text-decoration: none;
+  }
+}
+
+.docs-nav__inner {
+  min-height: 100%;
 }
 
 @include breakpoint-up(md) {
@@ -19,6 +26,6 @@
 
 @include breakpoint-up(md) {
   .docs-main {
-    width: calc(100% - 200px);
+    width: calc(100% - 280px);
   }
 }

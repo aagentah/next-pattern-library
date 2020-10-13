@@ -27,8 +27,33 @@ export default function App() {
   return (
     <Router>
       <div className="flex  flex-wrap">
-        <nav className="docs-nav">
-          <div className="pa3">
+        <main className="docs-main">
+          <div className="container  mla  mra">
+            <Route exact path="/" component={null} />
+            {/* Modules */}
+            <Route exact path="/hero" component={HeroPreview} />
+            <Route path="/card/block" component={CardBlockPreview} />
+            <Route path="/card/thumbnail" component={CardThumbnailPreview} />
+            <Route path="/avatar" component={AvatarPreview} />
+            <Route path="/modal" component={ModalPreview} />
+            <Route path="/tabs" component={TabsPreview} />
+            {/* Elements */}
+            <Route path="/button" component={ButtonPreview} />
+            <Route path="/heading" component={HeadingPreview} />
+            <Route path="/copy" component={CopyPreview} />
+            <Route path="/image" component={ImagePreview} />
+            <Route path="/label" component={LabelPreview} />
+            <Route path="/icon" component={IconPreview} />
+            <Route path="/input" component={InputPreview} />
+            <Route path="/checkbox" component={CheckboxPreview} />
+            <Route path="/radio" component={RadioPreview} />
+
+            {/* Utils */}
+            <Route path="/with-link" component={WithLink} />
+          </div>
+        </main>
+        <nav className="docs-nav  pv4  pr4  pl2">
+          <div className="docs-nav__inner  pa4  bg-almost-white  shadow2  br4">
             <h1 className="t-title  f5  bold  mb2">Modules</h1>
             <ul className="pa0  ma0  mb3  ls-none">
               <li className="mb1">
@@ -90,30 +115,6 @@ export default function App() {
             </ul>
           </div>
         </nav>
-
-        <main className="docs-main">
-          <Route exact path="/" component={null} />
-          {/* Modules */}
-          <Route exact path="/hero" component={HeroPreview} />
-          <Route path="/card/block" component={CardBlockPreview} />
-          <Route path="/card/thumbnail" component={CardThumbnailPreview} />
-          <Route path="/avatar" component={AvatarPreview} />
-          <Route path="/modal" component={ModalPreview} />
-          <Route path="/tabs" component={TabsPreview} />
-          {/* Elements */}
-          <Route path="/button" component={ButtonPreview} />
-          <Route path="/heading" component={HeadingPreview} />
-          <Route path="/copy" component={CopyPreview} />
-          <Route path="/image" component={ImagePreview} />
-          <Route path="/label" component={LabelPreview} />
-          <Route path="/icon" component={IconPreview} />
-          <Route path="/input" component={InputPreview} />
-          <Route path="/checkbox" component={CheckboxPreview} />
-          <Route path="/radio" component={RadioPreview} />
-
-          {/* Utils */}
-          <Route path="/with-link" component={WithLink} />
-        </main>
       </div>
     </Router>
   );

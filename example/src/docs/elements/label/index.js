@@ -19,6 +19,7 @@ export default function LabelPreview(props) {
     text={"17/08/1996"}
     color={"black"}
     backgroundColor={"white"}
+    skeleton={false}
     onClick={null}
     /* Children */
     withLinkProps={null}

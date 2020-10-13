@@ -163,7 +163,7 @@
   cursor: not-allowed;
 }
 
-@each $color, $hex in $npl-colors {
+@each $color, $hex in $colors {
   .button.primary.#{$color} {
     background-color: var($hex);
     color: var(--white);

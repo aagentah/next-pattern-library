@@ -1,19 +1,19 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef } from 'react';
 // import Chevron from './Chevron'
 export default function Accordion(props) {
-  const [setActive, setActiveState] = useState("");
-  const [setHeight, setHeightState] = useState("0px");
-  const [setRotate, setRotateState] = useState("accordion__icon");
+  const [setActive, setActiveState] = useState('');
+  const [setHeight, setHeightState] = useState('0px');
+  const [setRotate, setRotateState] = useState('accordion__icon');
 
   const content = useRef(null);
 
   function toggleAccordion() {
-    setActiveState(setActive === "" ? "active" : "");
+    setActiveState(setActive === '' ? 'active' : '');
     setHeightState(
-      setActive === "active" ? "0px" : `${content.current.scrollHeight}px`
+      setActive === 'active' ? '0px' : `${content.current.scrollHeight}px`
     );
     setRotateState(
-      setActive === "active" ? "accordion__icon" : "accordion__icon rotate"
+      setActive === 'active' ? 'accordion__icon' : 'accordion__icon rotate'
     );
   }
 
@@ -51,21 +51,21 @@ export default function Accordion(props) {
               className="flex  flex-wrap  pv1  ph3  mb1  bb  bc-light-grey"
             >
               <div className="col-4  t-primary">
-                <code>{row.name || "-"}</code>
+                <code>{row.name || '-'}</code>
               </div>
               <div className="col-4  t-primary">
-                <span className="f6  black">{row.default || "-"}</span>
+                <span className="f6  black">{row.default || '-'}</span>
               </div>
               <div className="col-4  t-primary">
                 <span className="f6  black">
                   &#123;
-                  {row.type || "-"}
+                  {row.type || '-'}
                   &#125;
                 </span>
               </div>
               <div className="col-12  t-primary">
                 <span
-                  dangerouslySetInnerHTML={{ __html: row.description || "-" }}
+                  dangerouslySetInnerHTML={{ __html: row.description || '-' }}
                 />
               </div>
             </div>

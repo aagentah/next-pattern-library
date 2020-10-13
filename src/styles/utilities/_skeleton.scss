@@ -1,9 +1,4 @@
-.button,
-.heading,
-.copy,
-.label__wrapper,
-.image__wrapper,
-.image__figcaption {
+.skeleton {
   &::before {
     content: '';
     transition: opacity 0.3s ease-in-out;
