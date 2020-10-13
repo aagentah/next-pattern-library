@@ -30,7 +30,7 @@ export default function Label(props) {
     >
       <span
         {...(onClick && { onClick })}
-        className={`label ${customClass} ${color} bg-${backgroundColor}`}
+        className={`label ${customClass} rpl-${color} rpl-bg-${backgroundColor}`}
       >
         {text}
       </span>

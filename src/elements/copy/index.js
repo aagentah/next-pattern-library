@@ -46,7 +46,7 @@ export default function Copy(props) {
 
   return (
     <span
-      className={`copy ${size} copy--${color} ${skeletonClass}`}
+      className={`copy ${size} rpl-${color} ${skeletonClass}`}
       style={styles}
     >
       <ElementType {...(truncate && { lines: truncate })}>

@@ -38,11 +38,8 @@
       font-size: $npl-f2;
     }
   }
-}
 
-@each $color, $hex in $npl-colors {
-  &.heading--#{$color} {
-    transition: all 0.3s ease-in-out;
-    color: $hex;
+  &.skeleton-active {
+    min-width: 80px;
   }
 }

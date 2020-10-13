@@ -1,0 +1,13 @@
+@each $color, $hex in $npl-colors {
+  .rpl-#{$color} {
+    transition: all 0.3s ease-in-out;
+    color: $hex;
+  }
+}
+
+@each $color, $hex in $npl-colors {
+  .rpl-bg-#{$color} {
+    transition: all 0.3s ease-in-out;
+    background-color: $hex;
+  }
+}

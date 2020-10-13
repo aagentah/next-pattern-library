@@ -195,6 +195,10 @@
   }
 
   .button.secondary.button--#{$color} {
+    color: $hex;
+    fill: $hex;
+    border-color: $hex;
+
     &:after {
       background-color: $hex;
     }
