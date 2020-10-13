@@ -45,5 +45,6 @@
   &::before {
     content: '';
     opacity: 0;
+    transition-delay: 1s;
   }
 }
