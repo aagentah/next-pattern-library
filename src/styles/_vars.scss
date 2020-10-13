@@ -1,4 +1,4 @@
-// typography
+// Typography
 
 $npl-t-primary: Arial, Helvetica, sans-serif !default;
 $npl-t-secondary: Arial, Helvetica, sans-serif !default;
@@ -13,17 +13,7 @@ $npl-f7: 0.75rem !default;
 
 $npl-lh-copy: 1.5 !default;
 
-// $type-scale: (
-//   f1: 3rem,
-//   f2: 2.25rem,
-//   f3: 1.5rem,
-//   f4: 1.25rem,
-//   f5: 1rem,
-//   f6: 0.875rem,
-//   f7: 0.75rem
-// ) !default;
-
-// colors
+// Colors
 
 $npl-base-white: #ffffff !default;
 $npl-base-black: #000000 !default;
@@ -41,13 +31,10 @@ $npl-colors: (
   moon-grey: #cccccc,
   light-grey: #eeeeee,
   almost-white: #f5f5f5,
-  white: #ffffff,
-  blue: #096dff,
-  red: #ff0000,
-  green: #1c9c08
+  white: #ffffff
 ) !default;
 
-// grid
+// Grid
 
 $npl-grid-breakpoints: (
   sm: 650px,
@@ -55,16 +42,3 @@ $npl-grid-breakpoints: (
   lg: 1250px,
   xl: 1550px
 ) !default;
-
-// spacing
-
-// $spacings: (
-//   0: 0,
-//   1: 0.25rem,
-//   2: 0.5rem,
-//   3: 1rem,
-//   4: 2rem,
-//   5: 4rem,
-//   6: 8rem,
-//   7: 16rem
-// ) !default;
