@@ -1,4 +1,4 @@
-// Typography
+//== Typography
 
 $npl-t-primary: Arial, Helvetica, sans-serif !default;
 $npl-t-secondary: Arial, Helvetica, sans-serif !default;
@@ -13,7 +13,7 @@ $npl-f7: 0.75rem !default;
 
 $npl-lh-copy: 1.5 !default;
 
-// Colors
+//== Colors
 
 $npl-base-black: #000000 !default;
 $npl-base-almost-black: #111111 !default;
@@ -43,7 +43,7 @@ $npl-colors: (
   secondary-color: blue
 ) !default;
 
-// Grid
+//== Grid
 
 $npl-grid-breakpoints: (
   sm: 650px,
@@ -52,32 +52,28 @@ $npl-grid-breakpoints: (
   xl: 1550px
 ) !default;
 
-// ** Elements **
-
-// Button
+//== Button
 
 $npl-button-transition-ease: ease-in-out;
 $npl-button-transition-speed: 0.3s;
 $npl-button-primary-padding-horizontal: 8px;
 $npl-button-primary-border-radius: 3px;
 
-// Checkbox
-// Copy
-// Heading
-// Image
-// Input
-// Label
-// Radio
+//== Checkbox
+//== Copy
+//== Heading
+//== Image
+//== Input
+//== Label
+//== Radio
 
-// ** Modules **
+//== Avatar
+//== Card
+//== Hero
+//== Modal
+//== Tabs
 
-// Avatar
-// Card
-// Hero
-// Modal
-// Tabs
-
-// Utilities
+//== Utilities
 
 $npl-skeleton-bg-color: $npl-base-silver;
 $npl-skeleton-shimmer-color: $npl-base-moon-grey;
