@@ -40,9 +40,7 @@ export default function Copy(props) {
     height: truncate ? `${lineHeight * (truncate || 1)}px` : 'auto'
   };
 
-  const skeletonClass = skeleton
-    ? 'skeleton  skeleton-active'
-    : 'skeleton  skeleton-disabled';
+  const skeletonClass = skeleton ? 'skeleton  skeleton-active' : 'skeleton';
 
   return (
     <span

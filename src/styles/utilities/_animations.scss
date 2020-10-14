@@ -8,3 +8,14 @@
     opacity: 1;
   }
 }
+
+// skeleton
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -135% 0%;
+  }
+}

@@ -9,41 +9,23 @@
     display: block;
     width: calc(100% + 8px);
     height: calc(100% + 4px);
-    border-radius: 6px;
+    border-radius: $npl-skeleton-border-radius;
     z-index: 1090;
     pointer-events: none;
     background: linear-gradient(
       -90deg,
-      var(--light-grey) 0%,
-      var(--almost-white) 10%,
-      var(--light-grey) 100%
+      $npl-skeleton-bg-color 0%,
+      $npl-skeleton-shimmer-color 50%,
+      $npl-skeleton-bg-color 100%
     );
     background-size: 400% 400%;
-    animation: pulse 1.5s ease-in infinite;
-
-    @keyframes pulse {
-      0% {
-        background-position: 0% 0%;
-      }
-      100% {
-        background-position: -135% 0%;
-      }
-    }
+    animation: skeleton-shimmer $npl-skeleton-shimmer-speed ease-in-out infinite;
   }
 }
 
 .skeleton-active {
-  box-shadow: 0;
-
   &::before {
     opacity: 1;
     pointer-events: auto;
-  }
-}
-
-.skeleton-disabled {
-  &::before {
-    content: '';
-    opacity: 0;
   }
 }

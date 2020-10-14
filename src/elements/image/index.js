@@ -31,16 +31,14 @@ export default function Image(props) {
     maxWidth: '100%'
   };
 
-  const skeletonClass = skeleton
-    ? 'skeleton  skeleton-active'
-    : 'skeleton  skeleton-disabled';
+  const skeletonClass = skeleton ? 'skeleton  skeleton-active' : 'skeleton';
 
   return (
     <figure className="image__figure">
       <div style={dimensions}>
         <WithLink
           style={dimensions}
-          className={`image__wrapper ${skeletonClass}  ${
+          className={`image__wrapper  ${skeletonClass}  ${
             customClass ? customClass : ''
           } `}
           {...(withLinkProps && { withLinkProps })}

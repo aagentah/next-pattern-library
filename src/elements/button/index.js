@@ -29,9 +29,7 @@ export default function Button(props) {
   const isLoading = loading && 'loading';
   const isDisabled = disabled && 'disabled';
 
-  const skeletonClass = skeleton
-    ? 'skeleton  skeleton-active'
-    : 'skeleton  skeleton-disabled';
+  const skeletonClass = skeleton ? 'skeleton  skeleton-active' : 'skeleton';
 
   const contents = () => {
     if (loading) {
