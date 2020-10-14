@@ -64,7 +64,7 @@ export default function Heading(props) {
         {...(onClick && { onClick })}
       >
         <ElementTypeInner {...(truncate && { lines: truncate })}>
-          <span>{text}</span>
+          <span>{text || (skeleton ? '.... .... ....' : null)}</span>
         </ElementTypeInner>
       </ElementType>
     </WithLink>

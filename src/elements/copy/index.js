@@ -50,7 +50,9 @@ export default function Copy(props) {
       style={styles}
     >
       <ElementType {...(truncate && { lines: truncate })}>
-        <span>{text}</span>
+        <span>
+          {text || (skeleton ? '.... .... .... .... .... ....' : null)}
+        </span>
       </ElementType>
     </span>
   );

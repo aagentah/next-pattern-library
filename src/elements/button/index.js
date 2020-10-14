@@ -54,13 +54,13 @@ export default function Button(props) {
         return (
           <div className="button__icon__wrapper">
             <div className="button__icon  button__icon--left">{icon}</div>
-            <span>{text}</span>
+            <span>{text || (skeleton ? '....' : null)}</span>
           </div>
         );
       }
       return (
         <div className="button__icon__wrapper">
-          <span>{text}</span>
+          <span>{text || (skeleton ? '....' : null)}</span>
           <div className="button__icon  button__icon--right">{icon}</div>
         </div>
       );
