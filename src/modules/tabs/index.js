@@ -16,7 +16,9 @@ export default function Tabs(props) {
   const [visibleTab, setVisibleTab] = useState(defaultSelected);
 
   useEffect(() => {
-    itemsRef.current = itemsRef.current.slice(0, content.length);
+    if (content?.length) {
+      itemsRef.current = itemsRef.current.slice(0, content.length);
+    }
   }, [content]);
 
   const handleToggle = (id, i) => {
@@ -57,10 +59,14 @@ export default function Tabs(props) {
     </div>
   ));
 
-  return (
-    <div className="tabs">
-      <ul className="tabs__desktop-nav">{listTitles}</ul>
-      <div className="tabs__body">{listContent}</div>
-    </div>
-  );
+  if (!content?.length) {
+    return (
+      <div className="tabs">
+        <ul className="tabs__desktop-nav">{listTitles}</ul>
+        <div className="tabs__body">{listContent}</div>
+      </div>
+    );
+  }
+
+  return false;
 }

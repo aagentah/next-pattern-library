@@ -24,7 +24,7 @@ export default function CardBlock(props) {
     <div className="card  card--small">
       {image && <div className="card__image">{image}</div>}
       <div className="card__contents-wrapper">
-        {labelBlock.length && (
+        {labelBlock?.length && (
           <div className="card__labels">{[...labelBlock]}</div>
         )}
         {title && <div className="card__title">{title}</div>}
