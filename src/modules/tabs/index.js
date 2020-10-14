@@ -16,7 +16,7 @@ export default function Tabs(props) {
   const [visibleTab, setVisibleTab] = useState(defaultSelected);
 
   useEffect(() => {
-    if (content?.length) {
+    if (content && content.length) {
       itemsRef.current = itemsRef.current.slice(0, content.length);
     }
   }, [content]);
@@ -59,7 +59,7 @@ export default function Tabs(props) {
     </div>
   ));
 
-  if (!content?.length) {
+  if (content) {
     return (
       <div className="tabs">
         <ul className="tabs__desktop-nav">{listTitles}</ul>

@@ -21,7 +21,7 @@ export default function CardThumbnail(props) {
 
   const renderContents = () => {
     const renderLabels = () => {
-      if (!labelBlock?.length) return false;
+      if (!labelBlock) return false;
 
       const listItems = labelBlock.map(label => (
         <span key={label} className="card__label">
