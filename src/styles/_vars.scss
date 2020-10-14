@@ -54,10 +54,10 @@ $npl-grid-breakpoints: (
 
 //== Button
 
-$npl-button-transition-ease: ease-in-out;
-$npl-button-transition-speed: 0.3s;
-$npl-button-primary-padding-horizontal: 8px;
-$npl-button-primary-border-radius: 3px;
+$npl-button-transition-ease: ease-in-out !default;
+$npl-button-transition-speed: 0.3s !default;
+$npl-button-primary-padding-horizontal: 8px !default;
+$npl-button-primary-border-radius: 3px !default;
 
 //== Checkbox
 //== Copy
@@ -75,7 +75,7 @@ $npl-button-primary-border-radius: 3px;
 
 //== Utilities
 
-$npl-skeleton-bg-color: $npl-base-silver;
-$npl-skeleton-shimmer-color: $npl-base-moon-grey;
-$npl-skeleton-shimmer-speed: 1.5s;
-$npl-skeleton-border-radius: 5px;
+$npl-skeleton-bg-color: $npl-base-silver !default;
+$npl-skeleton-shimmer-color: $npl-base-moon-grey !default;
+$npl-skeleton-shimmer-speed: 1.5s !default;
+$npl-skeleton-border-radius: 5px !default;
