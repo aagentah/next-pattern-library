@@ -52,19 +52,27 @@ export default function Button(props) {
         return (
           <div className="button__icon__wrapper">
             <div className="button__icon  button__icon--left">{icon}</div>
-            <span>{text || (skeleton ? '....' : null)}</span>
+            <span>
+              {text || <div dangerouslySetInnerHTML={{ __html: '&nbsp;' }} />}
+            </span>
           </div>
         );
       }
       return (
         <div className="button__icon__wrapper">
-          <span>{text || (skeleton ? '....' : null)}</span>
+          <span>
+            {text || <div dangerouslySetInnerHTML={{ __html: '&nbsp;' }} />}
+          </span>
           <div className="button__icon  button__icon--right">{icon}</div>
         </div>
       );
     }
 
-    return text;
+    return (
+      <span>
+        {text || <div dangerouslySetInnerHTML={{ __html: '&nbsp;' }} />}
+      </span>
+    );
   };
 
   return (

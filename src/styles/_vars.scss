@@ -56,7 +56,8 @@ $npl-grid-breakpoints: (
 
 $npl-button-transition-ease: ease-in-out !default;
 $npl-button-transition-speed: 0.3s !default;
-$npl-button-primary-padding-horizontal: 8px !default;
+$npl-button-primary-padding-horizontal: 0.7em !default;
+$npl-button-primary-padding-vertical: 0.7em !default;
 $npl-button-primary-border-radius: 3px !default;
 
 //== Checkbox

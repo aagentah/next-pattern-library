@@ -32,7 +32,7 @@ export default function Label(props) {
         {...(onClick && { onClick })}
         className={`label ${customClass} rpl-${color} rpl-bg-${backgroundColor}`}
       >
-        {text}
+        {text || <div dangerouslySetInnerHTML={{ __html: '&nbsp;' }} />}
       </span>
     </WithLink>
   );

@@ -10,8 +10,9 @@
   text-decoration: none;
   padding-left: 8px;
   padding-right: 8px;
-  display: flex;
+  display: block;
   align-items: center;
+  min-width: 50px;
 
   &::after {
     transition: opacity $npl-button-transition-speed $npl-button-transition-ease;
@@ -73,42 +74,40 @@
 .button.primary {
   border: 2px solid $npl-base-black;
   text-align: center;
-  display: inline-block;
   border-radius: $npl-button-primary-border-radius;
   padding-left: $npl-button-primary-padding-horizontal;
   padding-right: $npl-button-primary-padding-horizontal;
+  padding-top: $npl-button-primary-padding-vertical;
+  padding-bottom: $npl-button-primary-padding-vertical;
 
-  &.small {
-    line-height: 32px;
-    height: 35px;
-    min-width: 0px;
-  }
-
-  &.medium {
-    line-height: 41px;
-    height: 45px;
-    min-width: 100px;
-  }
-
-  &.large {
-    line-height: 50px;
-    height: 55px;
-    min-width: 200px;
-  }
-
-  &.x-large {
-    line-height: 66px;
-    height: 70px;
-    min-width: 200px;
-  }
+  // &.small {
+  //   line-height: 32px;
+  //   height: 35px;
+  //   min-width: 0px;
+  // }
+  //
+  // &.medium {
+  //   line-height: 41px;
+  //   height: 45px;
+  //   min-width: 100px;
+  // }
+  //
+  // &.large {
+  //   line-height: 50px;
+  //   height: 55px;
+  //   min-width: 200px;
+  // }
+  //
+  // &.x-large {
+  //   line-height: 66px;
+  //   height: 70px;
+  //   min-width: 200px;
+  // }
 }
 
 .button.secondary {
   border: 0;
-  max-width: 100%;
-  min-width: 0;
   text-align: left;
-  display: inline-block;
   border-radius: 0px;
   padding-left: 0;
   padding-right: 0;

@@ -49,7 +49,7 @@ export default function Copy(props) {
     >
       <ElementType {...(truncate && { lines: truncate })}>
         <span>
-          {text || (skeleton ? '.... .... .... .... .... ....' : null)}
+          {text || <div dangerouslySetInnerHTML={{ __html: '&nbsp;' }} />}
         </span>
       </ElementType>
     </span>
