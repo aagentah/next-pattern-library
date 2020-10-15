@@ -18,6 +18,7 @@
   height: 35px;
   font-size: $npl-f6;
   font-family: $npl-t-secondary;
+  line-height: $npl-lh-copy;
 
   &:focus {
     outline: 0;
@@ -59,6 +60,7 @@
   left: 0;
   bottom: 9px;
   font-family: $npl-t-secondary;
+  line-height: $npl-lh-copy;
   color: $npl-base-grey;
   font-size: $npl-f6;
 }
