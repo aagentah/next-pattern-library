@@ -13,6 +13,7 @@
   display: block;
   align-items: center;
   min-width: 50px;
+  font-family: $npl-t-secondary;
 
   &::after {
     transition: opacity $npl-button-transition-speed $npl-button-transition-ease;
