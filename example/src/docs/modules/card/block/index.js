@@ -21,8 +21,8 @@ export default function CardBlockPreview({ ...props }) {
   const cardImage = (
     <Image
       /* Options */
-      src="https://via.placeholder.com/1000x1000"
-      placeholder="https://via.placeholder.com/500x500"
+      src={!skeleton && 'https://via.placeholder.com/1000x1000'}
+      placeholder={!skeleton && 'https://via.placeholder.com/500x500'}
       alt="This is the alt text."
       figcaption={null}
       height={250}
@@ -37,7 +37,7 @@ export default function CardBlockPreview({ ...props }) {
     <Label
       /* Options */
       type=""
-      text="Label"
+      text={!skeleton && 'Label'}
       color="white"
       backgroundColor="black"
       skeleton={skeleton}
@@ -51,7 +51,10 @@ export default function CardBlockPreview({ ...props }) {
     <Heading
       /* Options */
       htmlEntity="h2"
-      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet"
+      text={
+        !skeleton &&
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet'
+      }
       color="black"
       size="small"
       truncate={2}
@@ -64,7 +67,10 @@ export default function CardBlockPreview({ ...props }) {
   const cardCopy = (
     <Copy
       /* Options */
-      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
+      text={
+        !skeleton &&
+        '7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'
+      }
       color="black"
       size="medium"
       truncate={2}
@@ -72,7 +78,27 @@ export default function CardBlockPreview({ ...props }) {
     />
   );
 
-  const cardButton = (
+  const cardButtonPrimary = (
+    <Button
+      /* Options */
+      type="primary"
+      size="small"
+      text="Secondary"
+      color="black"
+      fluid={false}
+      icon={buttonIcon}
+      iconFloat={null}
+      inverted={false}
+      loading={false}
+      disabled={false}
+      skeleton={skeleton}
+      onClick={null}
+      /* Children */
+      withLinkProps={null}
+    />
+  );
+
+  const cardButtonSecondary = (
     <Button
       /* Options */
       type="secondary"
@@ -120,7 +146,7 @@ export default function CardBlockPreview({ ...props }) {
               labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
-              button={cardButton}
+              button={cardButtonPrimary}
             />
           </div>
 
@@ -134,7 +160,7 @@ export default function CardBlockPreview({ ...props }) {
               labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
-              button={cardButton}
+              button={cardButtonPrimary}
             />
           </div>
 
@@ -148,7 +174,7 @@ export default function CardBlockPreview({ ...props }) {
               labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
-              button={cardButton}
+              button={cardButtonPrimary}
             />
           </div>
 
@@ -162,7 +188,7 @@ export default function CardBlockPreview({ ...props }) {
               labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
-              button={cardButton}
+              button={cardButtonPrimary}
             />
           </div>
         </div>
@@ -178,7 +204,7 @@ export default function CardBlockPreview({ ...props }) {
               labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
-              button={cardButton}
+              button={cardButtonSecondary}
             />
           </div>
 
@@ -192,7 +218,7 @@ export default function CardBlockPreview({ ...props }) {
               labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
-              button={cardButton}
+              button={cardButtonSecondary}
             />
           </div>
 
@@ -206,7 +232,7 @@ export default function CardBlockPreview({ ...props }) {
               labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
-              button={cardButton}
+              button={cardButtonSecondary}
             />
           </div>
 
@@ -220,7 +246,7 @@ export default function CardBlockPreview({ ...props }) {
               labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
-              button={cardButton}
+              button={cardButtonSecondary}
             />
           </div>
         </div>
