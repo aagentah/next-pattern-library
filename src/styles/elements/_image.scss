@@ -44,6 +44,7 @@
 
 .image {
   transition: all ease-in-out 0.3s;
+  transition-delay: 0.3s;
   opacity: 0;
   object-fit: cover;
   width: 100%;
