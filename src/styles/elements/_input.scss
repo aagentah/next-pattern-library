@@ -22,10 +22,10 @@
   font-size: $npl-f6;
   font-family: $npl-t-secondary;
   line-height: $npl-lh-copy;
+}
 
-  &:focus {
-    outline: 0;
-  }
+.input:focus {
+  outline: 0;
 }
 
 .input__icon ~ .input {

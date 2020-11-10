@@ -18,10 +18,10 @@
   border-bottom: 1px solid var(--grey);
   height: 35px;
   @extend .f6;
+}
 
-  &:focus {
-    outline: 0;
-  }
+.input:focus {
+  outline: 0;
 }
 
 .input__icon ~ .input {
