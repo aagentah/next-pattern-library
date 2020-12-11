@@ -27,7 +27,6 @@
 
   &.small {
     font-size: $npl-f6;
-    min-width: 0px;
 
     .button__icon {
       width: 14px;
@@ -36,7 +35,6 @@
 
   &.medium {
     font-size: $npl-f5;
-    min-width: 100px;
 
     .button__icon {
       width: 16px;
@@ -45,7 +43,6 @@
 
   &.large {
     font-size: $npl-f4;
-    min-width: 200px;
 
     .button__icon {
       width: 18px;
@@ -54,7 +51,6 @@
 
   &.x-large {
     font-size: $npl-f3;
-    min-width: 200px;
 
     .button__icon {
       width: 20px;
@@ -85,29 +81,25 @@
   padding-top: $npl-button-primary-padding-vertical;
   padding-bottom: $npl-button-primary-padding-vertical;
 
-  // &.small {
-  //   line-height: 32px;
-  //   height: 35px;
-  //   min-width: 0px;
-  // }
-  //
-  // &.medium {
-  //   line-height: 41px;
-  //   height: 45px;
-  //   min-width: 100px;
-  // }
-  //
-  // &.large {
-  //   line-height: 50px;
-  //   height: 55px;
-  //   min-width: 200px;
-  // }
-  //
-  // &.x-large {
-  //   line-height: 66px;
-  //   height: 70px;
-  //   min-width: 200px;
-  // }
+  .button__icon__wrapper {
+    justify-content: center;
+  }
+
+  &.small {
+    min-width: 0px;
+  }
+
+  &.medium {
+    min-width: 100px;
+  }
+
+  &.large {
+    min-width: 200px;
+  }
+
+  &.x-large {
+    min-width: 200px;
+  }
 }
 
 .button.secondary {
