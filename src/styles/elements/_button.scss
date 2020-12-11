@@ -27,6 +27,7 @@
 
   &.small {
     font-size: $npl-f6;
+    min-width: 0px;
 
     .button__icon {
       width: 14px;
@@ -35,6 +36,7 @@
 
   &.medium {
     font-size: $npl-f5;
+    min-width: 100px;
 
     .button__icon {
       width: 16px;
@@ -43,6 +45,7 @@
 
   &.large {
     font-size: $npl-f4;
+    min-width: 200px;
 
     .button__icon {
       width: 18px;
@@ -51,6 +54,7 @@
 
   &.x-large {
     font-size: $npl-f3;
+    min-width: 200px;
 
     .button__icon {
       width: 20px;
