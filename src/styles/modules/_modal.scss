@@ -7,16 +7,14 @@
   left: 0;
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  height: 0;
+  z-index: 1080;
+  height: auto;
   pointer-events: none;
-  z-index: -1;
 }
 
 .modal.active {
   opacity: 1;
-  height: auto;
   pointer-events: auto;
-  z-index: 1080;
 }
 
 .modal--small .modal__dialog {
