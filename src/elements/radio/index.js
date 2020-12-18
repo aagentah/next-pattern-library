@@ -43,7 +43,7 @@ export default function Radio(props) {
           onChange={handleInput}
         />
 
-        <div className="radio__indicator"></div>
+        <div className="radio__indicator" />
         <span className="radio__label">{label}</span>
       </label>
     </div>

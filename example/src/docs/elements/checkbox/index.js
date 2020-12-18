@@ -41,7 +41,7 @@ export default function InputPreview({ ...props }) {
               /* Options */
               label="Lorem ipseum dolor sit amet."
               name="1"
-              checked={true}
+              checked
               required
               disabled={false}
               onClick={null}
@@ -54,7 +54,7 @@ export default function InputPreview({ ...props }) {
               name="2"
               checked={false}
               required
-              disabled={true}
+              disabled
               onClick={null}
             />
           </div>

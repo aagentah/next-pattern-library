@@ -43,7 +43,7 @@ export default function Checkbox(props) {
           onChange={handleInput}
         />
 
-        <div className="checkbox__indicator"></div>
+        <div className="checkbox__indicator" />
         <span className="checkbox__label">{label}</span>
       </label>
     </div>

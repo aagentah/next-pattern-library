@@ -56,12 +56,10 @@ export default function ImagePreview(props) {
           <div className="col-24  col-8-md  pa3">
             <Image
               /* Options */
-              src={
-                'https://cdn.pixabay.com/photo/2015/03/26/09/47/sky-690293__340.jpg'
-              }
+              src="https://cdn.pixabay.com/photo/2015/03/26/09/47/sky-690293__340.jpg"
               placeholder={null}
-              alt={'This is the alt text.'}
-              figcaption={'This is a figcaption.'}
+              alt="This is the alt text."
+              figcaption="This is a figcaption."
               height={300}
               skeleton={skeleton}
               onClick={null}

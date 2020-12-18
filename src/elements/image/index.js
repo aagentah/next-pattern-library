@@ -39,7 +39,7 @@ export default function Image(props) {
         <WithLink
           style={dimensions}
           className={`image__wrapper  ${skeletonClass}  ${
-            customClass ? customClass : ''
+            customClass || ''
           } `}
           {...(withLinkProps && { withLinkProps })}
           {...(onClick && { onClick })}
