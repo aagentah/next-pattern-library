@@ -96,7 +96,7 @@ export default function LabelPreview(props) {
               /* Options */
               customClass={null}
               text="£4.99"
-              color="secondary-color"
+              color="black"
               backgroundColor="white"
               skeleton={skeleton}
               onClick={null}
@@ -110,7 +110,7 @@ export default function LabelPreview(props) {
               customClass="ph2"
               text="Interview"
               color="white"
-              backgroundColor="secondary-color"
+              backgroundColor="black"
               skeleton={skeleton}
               onClick={null}
               /* Children */

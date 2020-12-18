@@ -83,7 +83,7 @@ export default function CardBlockPreview({ ...props }) {
       /* Options */
       type="primary"
       size="small"
-      text="Secondary"
+      text="Primary"
       color="black"
       fluid={false}
       icon={buttonIcon}
