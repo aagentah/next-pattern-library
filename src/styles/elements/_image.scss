@@ -13,7 +13,7 @@
   position: relative;
   height: 100%;
   overflow: hidden;
-  background: $npl-image-bg-color;
+  background: #aaaaaa;
 }
 
 .image__wrapper:after {
@@ -61,13 +61,5 @@
   position: relative;
   margin-top: 10px;
   font-family: $npl-t-secondary;
-  line-height: $npl-lh-copy;
-
-  // @extend .black;
-  // @extend .f6;
-  // @extend .t-secondary;
-  // @extend .tac;
-  // @extend .mla;
-  // @extend .mra;
-  // @extend .mt3;
+  line-height: 1.5;
 }

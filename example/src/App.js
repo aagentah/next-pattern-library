@@ -1,14 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-// modules
-import HeroPreview from './docs/modules/hero';
-import CardBlockPreview from './docs/modules/card/block';
-import CardThumbnailPreview from './docs/modules/card/thumbnail';
-import AvatarPreview from './docs/modules/avatar';
-import ModalPreview from './docs/modules/modal';
-import TabsPreview from './docs/modules/tabs';
-
 // elements
 import ButtonPreview from './docs/elements/button';
 import HeadingPreview from './docs/elements/heading';
@@ -30,13 +22,6 @@ export default function App() {
         <main className="docs-main">
           <div className="container  mla  mra">
             <Route exact path="/" component={null} />
-            {/* Modules */}
-            <Route exact path="/hero" component={HeroPreview} />
-            <Route path="/card/block" component={CardBlockPreview} />
-            <Route path="/card/thumbnail" component={CardThumbnailPreview} />
-            <Route path="/avatar" component={AvatarPreview} />
-            <Route path="/modal" component={ModalPreview} />
-            <Route path="/tabs" component={TabsPreview} />
             {/* Elements */}
             <Route path="/button" component={ButtonPreview} />
             <Route path="/heading" component={HeadingPreview} />
@@ -54,28 +39,6 @@ export default function App() {
         </main>
         <nav className="docs-nav  pv4  pr4  pl2">
           <div className="docs-nav__inner  pa4  bg-almost-white  shadow2  br4">
-            <h1 className="t-title  f5  bold  mb2">Modules</h1>
-            <ul className="pa0  ma0  mb3  ls-none">
-              <li className="mb1">
-                <Link to="/hero">Hero</Link>
-              </li>
-              <li className="mb1">
-                <Link to="/card/block">Card (Block)</Link>
-              </li>
-              <li className="mb1">
-                <Link to="/card/thumbnail">Card (Thumbnail)</Link>
-              </li>
-              <li className="mb1">
-                <Link to="/avatar">Avatar</Link>
-              </li>
-              <li className="mb1">
-                <Link to="/modal">Modal</Link>
-              </li>
-              <li className="mb1">
-                <Link to="/tabs">Tabs</Link>
-              </li>
-            </ul>
-
             <h1 className="t-title  f5  bold  mb2">Elements</h1>
             <ul className="pa0  ma0  mb3  ls-none">
               <li className="mb1">

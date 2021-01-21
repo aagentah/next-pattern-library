@@ -1,12 +1,5 @@
 import './styles/index.scss';
 
-// modules
-export Card from './modules/card';
-export Hero from './modules/hero';
-export Avatar from './modules/avatar';
-export Modal from './modules/modal';
-export Tabs from './modules/tabs';
-
 // elements
 export Button from './elements/button';
 export Icon from './elements/icon';
@@ -17,6 +10,3 @@ export Label from './elements/label';
 export Input from './elements/input';
 export Checkbox from './elements/checkbox';
 export Radio from './elements/radio';
-
-// utils
-//

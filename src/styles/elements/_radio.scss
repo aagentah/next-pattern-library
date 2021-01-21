@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   font-family: $npl-t-secondary;
-  line-height: $npl-lh-copy;
+  line-height: 1.5;
 }
 
 .radio__input {
@@ -13,7 +13,7 @@
   opacity: 0;
   display: none;
   font-family: $npl-t-secondary;
-  line-height: $npl-lh-copy;
+  line-height: 1.5;
   -webkit-appearance: none;
 }
 
@@ -25,11 +25,11 @@
   height: 20px;
   width: 20px;
   min-width: 20px;
-  background: $npl-base-white;
-  border: 1px solid $npl-base-black;
+  background: #ffffff;
+  border: 1px solid #000000;
   border-radius: 100%;
   font-family: $npl-t-secondary;
-  line-height: $npl-lh-copy;
+  line-height: 1.5;
 }
 
 .radio__label {
@@ -37,9 +37,9 @@
   padding-left: 12px;
   display: inline-block;
   font-family: $npl-t-secondary;
-  line-height: $npl-lh-copy;
+  line-height: 1.5;
   font-size: $npl-f6;
-  color: $npl-base-black;
+  color: #000000;
 }
 
 .radio__indicator:after {
@@ -52,7 +52,7 @@
   top: 5px;
   width: 3px;
   height: 8px;
-  border: solid $npl-base-white;
+  border: solid #ffffff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
@@ -66,17 +66,17 @@
   .radio__input:not(:checked):not(:disabled)
   ~ .radio__indicator:after {
   opacity: 1;
-  border-color: $npl-base-grey;
+  border-color: #777777;
 }
 
 // Checked
 .radio__control .radio__input:checked ~ .radio__indicator {
-  background: $npl-base-black;
+  background: #000000;
 }
 
 // Disabled
 .radio__control .radio__input:disabled ~ .radio__indicator {
-  background: $npl-base-almost-white;
+  background: #ffffff;
   opacity: 0.4;
   cursor: not-allowed;
 }

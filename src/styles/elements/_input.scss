@@ -13,15 +13,15 @@
 .input {
   width: 100%;
   border: 0;
-  padding-left: $npl-input-padding-horizontal;
-  padding-right: $npl-input-padding-horizontal;
-  padding-top: $npl-input-padding-vertical;
-  padding-bottom: $npl-input-padding-vertical;
-  border-bottom: 1px solid $npl-base-grey;
-  height: $npl-input-height;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  border-bottom: 1px solid #777777;
+  height: 35px;
   font-size: $npl-f6;
   font-family: $npl-t-secondary;
-  line-height: $npl-lh-copy;
+  line-height: 1.5;
   -webkit-appearance: none;
 }
 
@@ -46,7 +46,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: $npl-base-grey;
+  background-color: #777777;
   transition: 0.4s;
 }
 
@@ -64,8 +64,8 @@
   left: 0;
   bottom: 9px;
   font-family: $npl-t-secondary;
-  line-height: $npl-lh-copy;
-  color: $npl-base-grey;
+  line-height: 1.5;
+  color: #777777;
   font-size: $npl-f6;
 }
 
@@ -85,5 +85,5 @@
   position: absolute;
   bottom: 8px;
   left: 2px;
-  color: $npl-base-grey;
+  color: #777777;
 }

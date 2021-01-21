@@ -4,21 +4,21 @@
   position: relative;
   display: block;
   font-family: $npl-t-secondary;
-  line-height: $npl-lh-copy;
+  line-height: 1.5;
 
   &.small {
-    font-size: $npl-f7;
+    font-size: 0.75rem;
   }
 
   &.medium {
-    font-size: $npl-f6;
+    font-size: 0.875rem;
   }
 
   &.large {
-    font-size: $npl-f5;
+    font-size: 1rem;
   }
 
   &.x-large {
-    font-size: $npl-f4;
+    font-size: 1.25rem;
   }
 }

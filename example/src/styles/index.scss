@@ -1,3 +1,13 @@
-@import 'base/index';
-@import 'docs/layout';
-@import 'docs/accordion';
+@import 'vendor/normalize';
+@import 'vendor/next-pattern-library';
+
+// front-scss
+@import 'vars';
+@import 'functions';
+@import 'mixins';
+@import 'utilities';
+
+// modules
+
+@import 'modules/layout';
+@import 'modules/accordion';

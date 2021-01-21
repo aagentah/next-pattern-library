@@ -9,17 +9,17 @@
     display: block;
     width: calc(100% + 8px);
     height: calc(100% + 4px);
-    border-radius: $npl-skeleton-border-radius;
+    border-radius: 5px;
     z-index: 1090;
     pointer-events: none;
     background: linear-gradient(
       -90deg,
-      $npl-skeleton-bg-color 0%,
-      $npl-skeleton-shimmer-color 50%,
-      $npl-skeleton-bg-color 100%
+      #aaaaaa 0%,
+      #cccccc 50%,
+      #aaaaaa 100%
     );
     background-size: 400% 400%;
-    animation: skeleton-shimmer $npl-skeleton-shimmer-speed ease-in-out infinite;
+    animation: skeleton-shimmer 1.5s ease-in-out infinite;
   }
 }
 
