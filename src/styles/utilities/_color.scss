@@ -1,14 +1,14 @@
 @each $color, $hex in $npl-colors {
   .rpl-#{$color} {
     transition: all 0.3s ease-in-out;
-    color: $hex;
-    fill: $hex;
+    color: var($hex);
+    fill: var($hex);
   }
 }
 
 @each $color, $hex in $npl-colors {
   .rpl-bg-#{$color} {
     transition: all 0.3s ease-in-out;
-    background-color: $hex;
+    background-color: var($hex);
   }
 }

@@ -155,34 +155,34 @@
 
 @each $color, $hex in $npl-colors {
   .button.primary.button--#{$color} {
-    background-color: $hex;
+    background-color: var($hex);
     color: #ffffff;
     fill: #ffffff;
-    border-color: $hex;
+    border-color: var($hex);
 
     &:hover:not(.loading):not(.disabled) {
       background-color: transparent;
-      color: $hex;
-      fill: $hex;
+      color: var($hex);
+      fill: var($hex);
     }
   }
 
   .button.primary.button--#{$color}.inverted {
-    color: $hex;
-    fill: $hex;
-    border-color: $hex;
+    color: var($hex);
+    fill: var($hex);
+    border-color: var($hex);
 
     &:hover:not(.loading):not(.disabled) {
-      background-color: $hex;
+      background-color: var($hex);
       color: #ffffff;
       fill: #ffffff;
     }
   }
 
   .button.secondary.button--#{$color} {
-    color: $hex;
-    fill: $hex;
-    border-color: $hex;
+    color: var($hex);
+    fill: var($hex);
+    border-color: var($hex);
   }
 }
 
