@@ -1,4 +1,8 @@
 .icon-wrapper {
   display: flex;
   align-items: center;
+
+  svg {
+    height: auto;
+  }
 }
