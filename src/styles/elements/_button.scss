@@ -154,7 +154,7 @@
 // Colors
 
 @each $color, $hex in $npl-colors {
-  .button.primary.button--#{$color} {
+  .button.primary.button--#{'' + $color} {
     background-color: var($hex);
     color: #ffffff;
     fill: #ffffff;
@@ -167,7 +167,7 @@
     }
   }
 
-  .button.primary.button--#{$color}.inverted {
+  .button.primary.button--#{'' + $color}.inverted {
     color: var($hex);
     fill: var($hex);
     border-color: var($hex);
@@ -179,7 +179,7 @@
     }
   }
 
-  .button.secondary.button--#{$color} {
+  .button.secondary.button--#{'' + $color} {
     color: var($hex);
     fill: var($hex);
     border-color: var($hex);

@@ -1,5 +1,5 @@
 @each $color, $hex in $npl-colors {
-  .rpl-#{$color} {
+  .rpl-#{'' + $color} {
     transition: all 0.3s ease-in-out;
     color: var($hex);
     fill: var($hex);
@@ -7,7 +7,7 @@
 }
 
 @each $color, $hex in $npl-colors {
-  .rpl-bg-#{$color} {
+  .rpl-bg-#{'' + $color} {
     transition: all 0.3s ease-in-out;
     background-color: var($hex);
   }

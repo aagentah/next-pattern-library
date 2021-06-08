@@ -1,17 +1,17 @@
 @each $color, $hex in $colors {
-  .#{$color} {
+  .#{'' + $color} {
     color: var($hex);
     transition: background-color ease-in 0.3s;
   }
 
-  .fill-#{$color},
-  .fill-#{$color} svg,
-  .fill-#{$color} svg * {
+  .fill-#{'' + $color},
+  .fill-#{'' + $color} svg,
+  .fill-#{'' + $color} svg * {
     fill: var($hex);
     transition: fill ease-in 0.3s;
   }
 
-  .bg-#{$color} {
+  .bg-#{'' + $color} {
     background-color: var($hex);
     transition: background-color ease-in 0.3s;
   }
@@ -26,12 +26,12 @@
   $infix: breakpoint-infix($modifier, $grid-breakpoints);
   @include breakpoint-up($modifier, $grid-breakpoints) {
     @each $color, $hex in $colors {
-      .#{$color}-#{$infix} {
+      .#{'' + $color}-#{$infix} {
         color: var($hex);
         transition: background-color ease-in 0.3s;
       }
 
-      .bg-#{$color}-#{$infix} {
+      .bg-#{'' + $color}-#{$infix} {
         background-color: var($hex);
         transition: background-color ease-in 0.3s;
       }
