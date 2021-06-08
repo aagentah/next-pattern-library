@@ -1,12 +1,14 @@
-@import 'vars';
-
+// Vendor before config
 @import 'vendor/normalize';
-@import 'vendor/next-pattern-library';
 
-// front-scss
+// Config
+@import 'vars';
 @import 'functions';
 @import 'mixins';
 @import 'utilities';
+
+// Vendor after config
+@import 'vendor/next-pattern-library';
 
 // modules
 
