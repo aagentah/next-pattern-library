@@ -1,6 +1,6 @@
 {
   "name": "next-pattern-library",
-  "version": "2.1.8",
+  "version": "2.1.2",
   "description": ">",
   "author": "danjonesdev",
   "license": "MIT",
@@ -37,7 +37,6 @@
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-0": "6.24.1",
-    "babel-polyfill": "^6.0.16",
     "cross-env": "5.1.4",
     "eslint": "7.4.0",
     "eslint-config-airbnb": "17.0.0",
@@ -69,10 +68,11 @@
     "@fortawesome/free-brands-svg-icons": "5.15.1",
     "@fortawesome/free-solid-svg-icons": "5.13.1",
     "@fortawesome/react-fontawesome": "0.1.11",
-    "@konforti/react-truncate": "1.1.0",
     "@rollup/plugin-multi-entry": "4.0.0",
     "classnames": "2.2.6",
     "np": "6.5.0",
+    "react-truncate": "2.4.0",
+    "react-truncate-markup": "4.0.0",
     "rollup-plugin-bundle-scss": "0.1.1",
     "rollup-plugin-collect-sass": "1.0.9"
   },

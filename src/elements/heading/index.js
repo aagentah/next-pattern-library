@@ -1,5 +1,5 @@
 import React from 'react';
-import Truncate from '@konforti/react-truncate';
+import TruncateMarkup from 'react-truncate-markup';
 import WithLink from '../../utils/with-link';
 
 /**
@@ -21,7 +21,7 @@ export default function Heading(props) {
   } = props;
 
   const ElementType = htmlEntity || 'h1';
-  const ElementTypeInner = truncate ? Truncate : React.Fragment;
+  const ElementTypeInner = truncate ? TruncateMarkup : React.Fragment;
 
   const heightSmall = 22;
   const heightMedium = 24;
