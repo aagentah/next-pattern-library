@@ -1,5 +1,4 @@
 import React from 'react';
-import TruncateMarkup from 'react-truncate-markup';
 import WithLink from '../../utils/with-link';
 
 /**

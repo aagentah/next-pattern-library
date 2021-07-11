@@ -1,5 +1,5 @@
 import React from 'react';
-import TruncateMarkup from 'react-truncate-markup';
+import Truncate from '@konforti/react-truncate';
 
 /**
  * A Copy.
@@ -15,7 +15,7 @@ export default function Copy(props) {
     skeleton
   } = props;
 
-  const ElementType = truncate ? TruncateMarkup : React.Fragment;
+  const ElementType = truncate ? Truncate : React.Fragment;
 
   let lineHeight;
   switch (size) {
