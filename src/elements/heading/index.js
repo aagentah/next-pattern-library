@@ -1,5 +1,5 @@
 import React from 'react';
-import Truncate from 'react-truncate';
+import Truncate from '@konforti/react-truncate';
 import WithLink from '../../utils/with-link';
 
 /**
