@@ -174,9 +174,8 @@
 
     &:hover:not(.loading):not(.disabled):not(.white) {
       background-color: var($hex);
-      color: var($color);
-      fill: var($color);
-      mix-blend-mode: multiply;
+      color: var(--white);
+      fill: var(--white);
     }
 
     &:hover:not(.loading):not(.disabled).white {
