@@ -176,6 +176,7 @@
       background-color: var($hex);
       color: var($color);
       fill: var($color);
+      mix-blend-mode: multiply;
     }
   }
 
