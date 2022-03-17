@@ -172,11 +172,17 @@
     fill: var($hex);
     border-color: var($hex);
 
-    &:hover:not(.loading):not(.disabled) {
+    &:hover:not(.loading):not(.disabled):not(.white) {
       background-color: var($hex);
       color: var($color);
       fill: var($color);
       mix-blend-mode: multiply;
+    }
+
+    &:hover:not(.loading):not(.disabled).white {
+      background-color: var($hex);
+      color: var(--black);
+      fill: var(--black);
     }
   }
 
