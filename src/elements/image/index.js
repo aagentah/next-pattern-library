@@ -22,7 +22,7 @@ export default function Image(props) {
     withLinkProps
   } = props;
 
-  const heightVal = height ? `${height}px` : 'auto';
+  const heightVal = height ? `${height}px` : '100%';
   const widthVal = width ? `${width}px` : '100%';
 
   const dimensions = {
@@ -34,7 +34,7 @@ export default function Image(props) {
   const skeletonClass = skeleton ? 'skeleton  skeleton-active' : 'skeleton';
 
   return (
-    <figure className="image__figure">
+    <figure className="image__figure" style={dimensions}>
       <div style={dimensions}>
         <WithLink
           style={dimensions}
